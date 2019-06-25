@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="origin" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>asp.net Forms身份验证详解 - thz - 博客园</title>
+    <meta property="og:description" content="在做网站的时候，都会用到用户登录的功能。对于一些敏感的资源，我们只希望被授权的用户才能够访问，这让然需要用户的身份验证。对于初学者，通常将用户登录信息存放在Session中，笔者在刚接触到asp.ne" />
+    <link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=svlZeZMvc3He7PqOD4T7SOuQn0_kIfLBYiy3idqd35Y1"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory.css?v=EanP3quXYv9G0oFCmz4BNBHvmK7M_Si1iD1EpUHL_441"/>
+<link type="text/css" rel="stylesheet" href="/blog/customcss/48401.css?v=DqZ3CvsYd7%2bi8a5G9iaSggMKS1s%3d"/>
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.css?v=C8rNZMN1xUcogg2mnN6C_ci7S2vGnJTt9TmfmncHzEA1"/>
+    <link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/youring2/rss"/>
+    <link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/youring2/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/youring2/wlwmanifest.xml"/>
+    <script src="//common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script>var currentBlogId=48401;var currentBlogApp='youring2',cb_enable_mathjax=false;var isLogined=true;</script>
+    <script src="/bundles/blog-common.js?v=jRyV_qDu-4wPc6tJs6U-WEk24ivFCfVIHz5t3j6euGM1" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="https://www.cnblogs.com/youring2/"><img id="blogLogo" src="/Skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="https://www.cnblogs.com/youring2/">拓荒者</a></h1>
+<h2><div>
+<span>对酒当歌，人生几何？</span>
+</div></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/youring2/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/thz">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/youring2/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="https://www.cnblogs.com/youring2/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 326&nbsp; </span>
+<span id="stats_article_count">文章 - 0&nbsp; </span>
+<span id="stats-comment_count">评论 - 635</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+        <div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class = "post">
+		<h1 class = "postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/youring2/archive/2011/07/17/2108639.html">asp.net Forms身份验证详解</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="blogpost-body"><p>　　在做网站的时候，都会用到用户登录的功能。对于一些敏感的资源，我们只希望被授权的用户才能够访问，这让然需要用户的身份验证。对于初学者，通常将用户登录信息存放在Session中，笔者在刚接触到asp.net的时候就是这么做的。当我将用户信息存在在Session中时，常常会遇到Session丢失导致用户无法正常访问被授权的资源，保持用户登录状态时的安全性问题，无休止的将用户导航到登录页面等莫名其妙的问题。</p>
+<p>　　其实，在asp.net中，我们有更好的解决方案，那就是通过Forms身份验证，从而对用户进行授权，这种方法可以轻松的保持用户的登录状态（如果用户想这样），便捷的用户授权配置，增强的安全性等好处。废话不再多说，下面我们来做一个简单的用户身份验证。</p>
+<p>　　在做例子之前，我们先定义如下用户类，类名为SampleUser，代码如下：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">    </span><span style="color: #0000ff;">public</span><span style="color: #000000;"> </span><span style="color: #0000ff;">partial</span><span style="color: #000000;"> </span><span style="color: #0000ff;">class</span><span style="color: #000000;"> SampleUser<br />    {<br />        </span><span style="color: #0000ff;">string</span><span style="color: #000000;"> username;<br />        </span><span style="color: #0000ff;">public</span><span style="color: #000000;"> </span><span style="color: #0000ff;">string</span><span style="color: #000000;"> UserName<br />        {<br />            </span><span style="color: #0000ff;">get</span><span style="color: #000000;"> { </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> username; }<br />            </span><span style="color: #0000ff;">set</span><span style="color: #000000;"> { username </span><span style="color: #000000;">=</span><span style="color: #000000;"> value; }<br />        }<br /><br />        </span><span style="color: #0000ff;">string</span><span style="color: #000000;"> userpwd;<br />        </span><span style="color: #0000ff;">public</span><span style="color: #000000;"> </span><span style="color: #0000ff;">string</span><span style="color: #000000;"> UserPWD<br />        {<br />            </span><span style="color: #0000ff;">get</span><span style="color: #000000;"> { </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> userpwd; }<br />            </span><span style="color: #0000ff;">set</span><span style="color: #000000;"> { userpwd </span><span style="color: #000000;">=</span><span style="color: #000000;"> value; }<br />        }<br /><br />        </span><span style="color: #0000ff;">public</span><span style="color: #000000;"> </span><span style="color: #0000ff;">override</span><span style="color: #000000;"> </span><span style="color: #0000ff;">bool</span><span style="color: #000000;"> Equals(</span><span style="color: #0000ff;">object</span><span style="color: #000000;"> obj)<br />        {<br />            SampleUser other </span><span style="color: #000000;">=</span><span style="color: #000000;"> obj </span><span style="color: #0000ff;">as</span><span style="color: #000000;"> SampleUser;<br />            </span><span style="color: #0000ff;">if</span><span style="color: #000000;"> (other </span><span style="color: #000000;">==</span><span style="color: #000000;"> </span><span style="color: #0000ff;">null</span><span style="color: #000000;"> </span><span style="color: #000000;">||</span><span style="color: #000000;"> other.UserName </span><span style="color: #000000;">!=</span><span style="color: #000000;"> </span><span style="color: #0000ff;">this</span><span style="color: #000000;">.UserName)<br />                </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> </span><span style="color: #0000ff;">false</span><span style="color: #000000;">;<br />            </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> </span><span style="color: #0000ff;">true</span><span style="color: #000000;">;<br />        }<br />    }<br /><br />    </span><span style="color: #0000ff;">public</span><span style="color: #000000;"> </span><span style="color: #0000ff;">partial</span><span style="color: #000000;"> </span><span style="color: #0000ff;">class</span><span style="color: #000000;"> SampleUser<br />    {<br />        </span><span style="color: #0000ff;">public</span><span style="color: #000000;"> </span><span style="color: #0000ff;">static</span><span style="color: #000000;"> List</span><span style="color: #000000;">&lt;</span><span style="color: #000000;">SampleUser</span><span style="color: #000000;">&gt;</span><span style="color: #000000;"> userList </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> List</span><span style="color: #000000;">&lt;</span><span style="color: #000000;">SampleUser</span><span style="color: #000000;">&gt;</span><span style="color: #000000;"> {<br />            </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> SampleUser() { UserName </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #800000;">"</span><span style="color: #800000;">01</span><span style="color: #800000;">"</span><span style="color: #000000;">, UserPWD </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #800000;">"</span><span style="color: #800000;">123</span><span style="color: #800000;">"</span><span style="color: #000000;">}, <br />            </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> SampleUser() { UserName </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #800000;">"</span><span style="color: #800000;">02</span><span style="color: #800000;">"</span><span style="color: #000000;">, UserPWD </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #800000;">"</span><span style="color: #800000;">123</span><span style="color: #800000;">"</span><span style="color: #000000;">  }, <br />            </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> SampleUser() { UserName </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #800000;">"</span><span style="color: #800000;">03</span><span style="color: #800000;">"</span><span style="color: #000000;">, UserPWD </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #800000;">"</span><span style="color: #800000;">123</span><span style="color: #800000;">"</span><span style="color: #000000;"> }, <br />            </span><span style="color: #0000ff;">new</span><span style="color: #000000;"> SampleUser() { UserName </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #800000;">"</span><span style="color: #800000;">04</span><span style="color: #800000;">"</span><span style="color: #000000;">, UserPWD </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #800000;">"</span><span style="color: #800000;">123</span><span style="color: #800000;">"</span><span style="color: #000000;"> }, <br />        };<br /><br />        </span><span style="color: #0000ff;">public</span><span style="color: #000000;"> </span><span style="color: #0000ff;">static</span><span style="color: #000000;"> SampleUser GetUser(</span><span style="color: #0000ff;">string</span><span style="color: #000000;"> userName)<br />        {<br />            </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> userList.Find(u</span><span style="color: #000000;">=&gt;</span><span style="color: #000000;">u.UserName </span><span style="color: #000000;">==</span><span style="color: #000000;"> userName);<br />        }<br />    }</span></pre>
+</div>
+<p>　　在类SampleUser中，定义了UserName和UserPWD两个字段，分别用来存储用户的登录名和密码信息。在SampleUser类的另一部分中，我们提供了一个用户的静态类表，用来代替存储在数据库中的用户信息，提供一个方法GetUser，用来获取用户信息。</p>
+<p>　　在这个例子中，我们<span style="color: #ff0000;">演示用户必须进行登录才能访问网站的资源</span>，如果没有登录，则将用户导航到login.aspx页面中。</p>
+<p>　　第一步，在web.config中添加配置信息，说明网站要使用Forms身份验证，并指定登录页面和默认登录成功后的跳转页面，然后指定拒绝未登录用户的访问，代码如下：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">    </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">authentication </span><span style="color: #ff0000;">mode</span><span style="color: #0000ff;">="Forms"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br />      </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">forms </span><span style="color: #ff0000;">loginUrl</span><span style="color: #0000ff;">="~/Login.aspx"</span><span style="color: #ff0000;"> defaultUrl</span><span style="color: #0000ff;">="~/Default.aspx"</span><span style="color: #ff0000;"> </span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br />    </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">authentication</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br />    </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">authorization</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br />      </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">deny </span><span style="color: #ff0000;">users</span><span style="color: #0000ff;">="?"</span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br />    </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">authorization</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>　　完成这一步后，我们再打开Default.aspx页面，在没有登录的情况下，页面会被导航到Login.aspx页面，我们的第一步的目的已经达到了。</p>
+<p>　　第二步，完成Login.aspx的页面逻辑。在页面中添加两个TextBox控件，用来输入用户名和密码；添加一个CheckBox控件，用来选择是否保持登录状态；添加一个Button控件，响应用户的登录操作。相应的代码如下：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">    </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">fieldset</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br />        </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">legend</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">用户登陆</span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">legend</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br />        </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br />            用户名：</span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp:TextBox </span><span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="txtUserID"</span><span style="color: #ff0000;"> runat</span><span style="color: #0000ff;">="server"</span><span style="color: #ff0000;"> Width</span><span style="color: #0000ff;">="150"</span><span style="color: #ff0000;"> </span><span style="color: #0000ff;">/&gt;&lt;</span><span style="color: #800000;">br </span><span style="color: #0000ff;">/&gt;&lt;</span><span style="color: #800000;">br </span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br />            密</span><span style="color: #ff0000;">&amp;nbsp;&amp;nbsp;&amp;nbsp;</span><span style="color: #000000;">码：</span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp:TextBox </span><span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="txtUserPWD"</span><span style="color: #ff0000;"> runat</span><span style="color: #0000ff;">="server"</span><span style="color: #ff0000;"> TextMode</span><span style="color: #0000ff;">="Password"</span><span style="color: #ff0000;"> Width</span><span style="color: #0000ff;">="150"</span><span style="color: #ff0000;"> </span><span style="color: #0000ff;">/&gt;&lt;</span><span style="color: #800000;">br </span><span style="color: #0000ff;">/&gt;&lt;</span><span style="color: #800000;">br </span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br />            </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp:CheckBox </span><span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="cbSaveUserName"</span><span style="color: #ff0000;"> runat</span><span style="color: #0000ff;">="server"</span><span style="color: #ff0000;"> Checked</span><span style="color: #0000ff;">="true"</span><span style="color: #ff0000;"> Text</span><span style="color: #0000ff;">="保持登录状态"</span><span style="color: #ff0000;"> </span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br />        </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;&lt;</span><span style="color: #800000;">br </span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br />        </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp:Literal </span><span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="ltMessage"</span><span style="color: #ff0000;"> Text</span><span style="color: #0000ff;">=""</span><span style="color: #ff0000;"> runat</span><span style="color: #0000ff;">="server"</span><span style="color: #ff0000;"> Visible</span><span style="color: #0000ff;">="false"</span><span style="color: #ff0000;"> </span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br />        </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">br </span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br />        </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">p</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br />            </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp:Button </span><span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="btnLogin"</span><span style="color: #ff0000;"> Text</span><span style="color: #0000ff;">="登陆"</span><span style="color: #ff0000;"> runat</span><span style="color: #0000ff;">="server"</span><span style="color: #ff0000;"> OnClick</span><span style="color: #0000ff;">="btnLogin_Click"</span><span style="color: #ff0000;"> </span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br />        </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">p</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br />    </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">fieldset</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>　　接下来完成后台代码，添加登陆按钮的后台处理方法：对用户名和密码进行验证，如果验证通过，则<span class="comment">为用户名创建一个身份验证票据，并将其添加到响应的Cookie中。代码如下：</span></p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">        </span><span style="color: #0000ff;">protected</span><span style="color: #000000;"> </span><span style="color: #0000ff;">void</span><span style="color: #000000;"> btnLogin_Click(</span><span style="color: #0000ff;">object</span><span style="color: #000000;"> sender, EventArgs e)<br />        {<br />            </span><span style="color: #0000ff;">string</span><span style="color: #000000;"> userID </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #0000ff;">this</span><span style="color: #000000;">.txtUserID.Text.Trim();<br />            </span><span style="color: #0000ff;">string</span><span style="color: #000000;"> userPWD </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #0000ff;">this</span><span style="color: #000000;">.txtUserPWD.Text.Trim();<br /><br />            SampleUser userEx </span><span style="color: #000000;">=</span><span style="color: #000000;"> SampleUser.GetUser(userID);<br />            </span><span style="color: #0000ff;">if</span><span style="color: #000000;"> (userEx </span><span style="color: #000000;">==</span><span style="color: #000000;"> </span><span style="color: #0000ff;">null</span><span style="color: #000000;">)<br />            {<br />                ltMessage.Text </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #800000;">"</span><span style="color: #800000;">用户不存在！</span><span style="color: #800000;">"</span><span style="color: #000000;">;<br />                ltMessage.Visible </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #0000ff;">true</span><span style="color: #000000;">;<br />                </span><span style="color: #0000ff;">return</span><span style="color: #000000;">;<br />            }<br /><br />            </span><span style="color: #0000ff;">if</span><span style="color: #000000;"> (userEx.UserPWD </span><span style="color: #000000;">!=</span><span style="color: #000000;"> userPWD)<br />            {<br />                ltMessage.Text </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #800000;">"</span><span style="color: #800000;">用户名或密码错误，请重新输入！</span><span style="color: #800000;">"</span><span style="color: #000000;">;<br />                ltMessage.Visible </span><span style="color: #000000;">=</span><span style="color: #000000;"> </span><span style="color: #0000ff;">true</span><span style="color: #000000;">;<br />                </span><span style="color: #0000ff;">return</span><span style="color: #000000;">;<br />            }<br /><br />            </span><span style="color: #008000;">//添加票据，并将用户导航到默认页面</span><span style="color: #008000;"><br /></span><span style="color: #000000;">            FormsAuthentication.RedirectFromLoginPage(userEx.UserName, </span><span style="color: #0000ff;">this</span><span style="color: #000000;">.cbSaveUserName.Checked);<br />        }</span></pre>
+</div>
+<p>　　完成这一步后，我们就已经完成了简单Froms验证的功能。运行程序，你会发现，这里存在一个问题！！！</p>
+<p>　　你发现了吗？当我们被导航到login.aspx时，这个页面的样式丢失了！这是因为我们对整个网站的资源进行了访问限制，如果没有登陆，用户不仅无法访问.aspx页面，甚至连css文件、js文件都无法访问。显然，这不是我们想要的，因为这些资源并不是敏感的资源。在通常情况下，我们只希望对部分文件夹中的文件进行验证访问限制，而不是整个网站，例如，我们允许只对User文件夹下的页面进行访问限制，因为这个文件夹中存放的是用户的私人信息，这些信息是敏感的。这该如何实现呢？</p>
+<p>　　为了完成<span style="color: #ff0000;">演示分目录验证</span>，我们在项目中添加一个User文件夹，并添加UserInfo.aspx、 UserLogin.aspx两个页面。UserInfo.aspx用来展示用户信息，它的业务逻辑我们不是我们关心的，UserLogin.aspx页面用来让用户登陆，代码跟Login.aspx页面几乎完全相同。</p>
+<p>　　第一步：修改Web.config文件，允许匿名用户访问系统资源。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">    </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">authorization</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br />      </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">allow </span><span style="color: #ff0000;">users</span><span style="color: #0000ff;">="?"</span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br />    </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">authorization</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>　　第二步：在User文件夹下添加一个Web.config文件，修改代码，拒绝匿名用户访问该文件夹下的资源。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">      </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">authorization</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br />        </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">deny </span><span style="color: #ff0000;">users</span><span style="color: #0000ff;">="?"</span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br />      </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">authorization</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>　　完成这两步后，我们访问UserInfo.aspx时，如果没有登陆，则会被导航到~/User/UserLogin.aspx页面，当登陆后，又会被导航到~/User/UserInfo.aspx页面。这个时侯，我们的登陆页面样式并没有丢失，这说明我们的配置文件起作用了。</p>
+<p>　　接下来，我们想在UserInfo.aspx页面中显示出已登陆用户的用户名和密码（这里完全是为了<span style="color: #ff0000;">演示如何获取登陆用户数据</span>才这样做的，通常用户的密码是不会展示的）。在进行登陆后，用户的票据信息被加密保存在Cookie中，这个票据中，有已登录用户的名称信息，我们通过获取票据中的用户名，即可获取到完整的用户信息。</p>
+<p>　　为了显示用户信息，我们在页面中放置两个Label控件，代码如下：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">h2</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br /></span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">p</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">用户名：</span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp:Label </span><span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="lblUserName"</span><span style="color: #ff0000;"> Text</span><span style="color: #0000ff;">=""</span><span style="color: #ff0000;"> runat</span><span style="color: #0000ff;">="server"</span><span style="color: #ff0000;"> </span><span style="color: #0000ff;">/&gt;&lt;/</span><span style="color: #800000;">p</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br /></span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">p</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">密</span><span style="color: #ff0000;">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span><span style="color: #000000;">码：</span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">asp:Label </span><span style="color: #ff0000;">ID</span><span style="color: #0000ff;">="lblUserPWD"</span><span style="color: #ff0000;"> Text</span><span style="color: #0000ff;">=""</span><span style="color: #ff0000;"> runat</span><span style="color: #0000ff;">="server"</span><span style="color: #ff0000;"> </span><span style="color: #0000ff;">/&gt;&lt;/</span><span style="color: #800000;">p</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br /></span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">h2</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>　　然后，我们在页面的Load方法中，获取并展示用户信息：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">if</span><span style="color: #000000;"> (</span><span style="color: #0000ff;">this</span><span style="color: #000000;">.Context.User </span><span style="color: #000000;">!=</span><span style="color: #000000;"> </span><span style="color: #0000ff;">null</span><span style="color: #000000;"> </span><span style="color: #000000;">&amp;&amp;</span><span style="color: #000000;"> </span><span style="color: #0000ff;">this</span><span style="color: #000000;">.Context.User.Identity </span><span style="color: #000000;">!=</span><span style="color: #000000;"> </span><span style="color: #0000ff;">null</span><span style="color: #000000;"> </span><span style="color: #000000;">&amp;&amp;</span><span style="color: #000000;"> </span><span style="color: #0000ff;">this</span><span style="color: #000000;">.Context.User.Identity.IsAuthenticated)<br />{<br />    SampleUser user </span><span style="color: #000000;">=</span><span style="color: #000000;"> SampleUser.GetUser(</span><span style="color: #0000ff;">this</span><span style="color: #000000;">.Context.User.Identity.Name);<br />    </span><span style="color: #0000ff;">if</span><span style="color: #000000;"> (user </span><span style="color: #000000;">!=</span><span style="color: #000000;"> </span><span style="color: #0000ff;">null</span><span style="color: #000000;">)<br />    {<br />        </span><span style="color: #0000ff;">this</span><span style="color: #000000;">.lblUserName.Text </span><span style="color: #000000;">=</span><span style="color: #000000;"> user.UserName;<br />        </span><span style="color: #0000ff;">this</span><span style="color: #000000;">.lblUserPWD.Text </span><span style="color: #000000;">=</span><span style="color: #000000;"> user.UserPWD;<br />    }<br />}</span></pre>
+</div>
+<p>　　再次运行我们的代码，当用户登陆后（如果保持登陆状态，即使关掉并重新打开浏览器），我们都可以获取到已登录用户的Name，从而获取用户的对象。</p>
+<p>　　如果要退出登陆，我们只需要删除保存在Cookie中的票证信息即可，这个功能Forms验证已经帮我们完成，代码很简单：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">FormsAuthentication.SignOut();　　</span><span style="color: #008000;">//</span><span style="color: #008000;">退出登陆</span></pre>
+</div>
+<p></p>
+<p>　　在本文中，没有涉及到角色的验证，这是因为通过在配置文件中指定角色这种方法并不够灵活，如果角色是可以在程序中维护的，那么我们在这里的指定就形同虚设了。感兴趣的朋友可以自行学习，也并不复杂。在本文的结尾，附上详细的Forms验证在Web.config中的配置说明：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">  </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">forms <br />     </span><span style="color: #ff0000;">name</span><span style="color: #0000ff;">="name"</span><span style="color: #ff0000;"> <br />     loginUrl</span><span style="color: #0000ff;">="URL"</span><span style="color: #ff0000;"> <br />     defaultUrl</span><span style="color: #0000ff;">="URL"</span><span style="color: #ff0000;"><br />     protection</span><span style="color: #0000ff;">="[All|None|Encryption|Validation]"</span><span style="color: #ff0000;"><br />     timeout</span><span style="color: #0000ff;">="[MM]"</span><span style="color: #ff0000;"><br />     path</span><span style="color: #0000ff;">="path"</span><span style="color: #ff0000;"><br />     requireSSL</span><span style="color: #0000ff;">="[true|false]"</span><span style="color: #ff0000;"><br />     slidingExpiration</span><span style="color: #0000ff;">="[true|false]"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br />     enableCrossAppRedirects="[true|false]"<br />     cookieless="[UseUri|UseCookie|AutoDetect|UseDeviceProfile]" <br />     domain="domain name"<br />     ticketCompatibilityMode="[Framework20|Framework40]"&gt;<br />     </span><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">credentials</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">...</span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">credentials</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br />  </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">forms</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<ul>
+<li>name：指定要用于身份验证的 HTTP Cookie。如果正在一台服务器上运行多个应用程序并且每个应用程序都需要唯一的 Cookie，则必须在每个应用程序的 Web.config 文件中配置 Cookie 名称。默认值为 ".ASPXAUTH"。</li>
+<li>loginUrl：指定如果找不到任何有效的身份验证 Cookie，将请求重定向到的用于登录的 URL。默认值为 login.aspx。</li>
+<li>defaultUrl：定义在身份验证之后用于重定向的默认 URL。默认值为 "default.aspx"。&nbsp;</li>
+<li>protection：<sentence id="tgt53" class="tgtSentence" xmlns="http://msdn2.microsoft.com/mtps" sentenceid="a66aa85794fe92f48dfca4832b112d93" runat="server">指定 Cookie 
+使用的加密类型（如果有）。默认值为 All。</sentence></li>
+<li>timeout：指定 Cookie 过期前逝去的时间（以整数分钟为单位）。如果 SlidingExpiration 属性为 true，则 timeout 属性是滑动值，会在接收到上一个请求之后的指定时间（以分钟为单位）后过期。 为防止危及性能并避免向开启 Cookie 警告的用户发出多个浏览器警告，当指定的时间逝去大半时将更新 Cookie。这可能导致精确性受损。默认值为 "30"（30 分钟）。&nbsp;</li>
+<li>path：为应用程序发出的 Cookie 指定路径。默认值是斜杠 ( /)，这是因为大多数浏览器是区分大小写的，如果路径大小写不匹配，浏览器不会送回 Cookie。</li>
+<li>requireSSL：指定是否需要 SSL 连接来传输身份验证 Cookie。默认值为 False。&nbsp;</li>
+<li>slidingExpiration：指定是否启用可调过期时间。可调过期将 Cookie 的当前身份验证时间重置为在单个会话期间收到每个请求时过期。默认值为 True。</li>
+<li>enableCrossAppRedirects：表明是否将通过身份验证的用户重定向到其他 Web 应用程序中的 URL。默认值为 False。&nbsp;</li>
+<li>cookieless：定义是否使用 Cookie 以及 Cookie 的行为。默认值为 UseDeviceProfile.</li>
+<li>domain：指定在传出 Forms 身份验证 Cookie 中设置的可选域。此设置的优先级高于 httpCookies 元素中使用的域。默认值为空字符串 ("")。</li>
+<li>ticketCompatibilityMode：指定在 Forms 身份验证中对于票证到期日期使用协调世界时 (UTC) 还是本地时间。默认值为 Framework20。</li>
+</ul>
+<div>子元素
+<pre><span>credentials：</span><span class="Apple-style-span" style="font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; white-space: normal;"><sentence id="tgt106" class="tgtSentence" xmlns="http://msdn2.microsoft.com/mtps" sentenceid="7057bc2a9b33d32122f675ea3833fd04" runat="server">允许选择在配置文件中定义名称和密码凭据。</sentence><sentence id="tgt107" class="tgtSentence" xmlns="http://msdn2.microsoft.com/mtps" sentenceid="16a54162de1f2c127b1d486a2fc6c782" runat="server">您还可以实现自定义的密码架构，以使用外部源（如数据库）来控制验证。</sentence></span></pre>
+</div>
+<p></p>
+<p></p>
+<p></p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+		</div>
+		<div class = "postDesc">posted @ <span id="post-date">2011-07-17 13:55</span> <a href='https://www.cnblogs.com/youring2/'>thz</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=2108639" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(2108639);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=48401,cb_entryId=2108639,cb_blogApp=currentBlogApp,cb_blogUserGuid='bf03470b-63cf-dd11-9e4d-001cf0cd104b',cb_entryCreatedDate='2011/7/17 13:55:00';loadViewCount(cb_entryId);var cb_postType=1;var isMarkdown=false;</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+  googletag.cmd.push(function() {
+        googletag.defineSlot('/1090369/C1', [300, 250], 'div-gpt-ad-1546353474406-0').addService(googletag.pubads());
+        googletag.defineSlot('/1090369/C2', [468, 60], 'div-gpt-ad-1539008685004-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+  });
+</script>
+<div id='cnblogs_c1' class='c_ad_block'>
+    <div id='div-gpt-ad-1546353474406-0' style='height:250px; width:300px;'></div>
+</div>
+<div id='under_post_news'></div>
+<div id='cnblogs_c2' class='c_ad_block'>
+    <div id='div-gpt-ad-1539008685004-0' style='height:60px; width:468px;'></div>
+</div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+ if(enablePostBottom()) {
+    codeHighlight();
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverT2();
+    deliverC1();
+    deliverC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);  
+}
+</script>
+</div>
+
+    
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright &copy;2019 thz
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+</body>
+</html>

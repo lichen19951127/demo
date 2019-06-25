@@ -1,0 +1,173 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "Microsoft.International.Converters.PinYinConverter/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/ChnCharInfo.dll": {}
+        },
+        "runtime": {
+          "lib/ChnCharInfo.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/3.0.0-preview5.19224.8": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "NPinyin.Core/2.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NPinyin.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NPinyin.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.International.Converters.PinYinConverter/1.0.0": {
+      "sha512": "hEs/VPwGFeVNLf2Wc6k2bMYF71zE6x+lW4MfebRAjkVbAbaa4DbEmdFRfSBymvGLtdsCUvXo2aa/yFKYSCYmEQ==",
+      "type": "package",
+      "path": "microsoft.international.converters.pinyinconverter/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/ChnCharInfo.dll",
+        "microsoft.international.converters.pinyinconverter.1.0.0.nupkg.sha512",
+        "microsoft.international.converters.pinyinconverter.nuspec"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/3.0.0-preview5.19224.8": {
+      "sha512": "MEt1XzSndofi4WBoGaRcMZdy9rqNtZITVZev2PTtXizcNe4csoN7U638Q73M93I/LxroBAI1IB+6HQOuklkKrw==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/3.0.0-preview5.19224.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.3.0.0-preview5.19224.8.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "NPinyin.Core/2.1.3": {
+      "sha512": "jNV6+RlXKRd6DBxUWzTYiwqh1ZvkNaw43bfoh0rK2wPpuor1zV0HQvSsB55+q4tFz7t5G8/FCdVFUjZflrp5Ew==",
+      "type": "package",
+      "path": "npinyin.core/2.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NPinyin.Core.dll",
+        "lib/netstandard2.0/NPinyin.Core.xml",
+        "npinyin.core.2.1.3.nupkg.sha512",
+        "npinyin.core.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "Microsoft.International.Converters.PinYinConverter >= 1.0.0",
+      "Microsoft.NETCore.Platforms >= 3.0.0-preview5.19224.8",
+      "NPinyin.Core >= 2.1.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\59428\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "F:\\资料\\资料\\demo\\人民币大小写转换\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectName": "ConsoleApp1",
+      "projectPath": "F:\\资料\\资料\\demo\\人民币大小写转换\\ConsoleApp1\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\59428\\.nuget\\packages\\",
+      "outputPath": "F:\\资料\\资料\\demo\\人民币大小写转换\\ConsoleApp1\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\59428\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "dependencies": {
+          "Microsoft.International.Converters.PinYinConverter": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "Microsoft.NETCore.Platforms": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.0.0-preview5.19224.8, )",
+            "autoReferenced": true
+          },
+          "NPinyin.Core": {
+            "target": "Package",
+            "version": "[2.1.3, )"
+          }
+        },
+        "imports": [
+          "net461"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": [
+          "Microsoft.NETCore.App"
+        ]
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1”而不是项目目标框架“.NETCoreApp,Version=v3.0”还原包“Microsoft.International.Converters.PinYinConverter 1.0.0”。此包可能与项目不完全兼容。",
+      "libraryId": "Microsoft.International.Converters.PinYinConverter",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.0"
+      ]
+    }
+  ]
+}

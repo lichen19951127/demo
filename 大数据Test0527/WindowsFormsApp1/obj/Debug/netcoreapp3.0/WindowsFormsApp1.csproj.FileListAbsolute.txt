@@ -1,0 +1,14 @@
+F:\资料\资料\demo\大数据Test0527\WindowsFormsApp1\bin\Debug\netcoreapp3.0\WindowsFormsApp1.exe
+F:\资料\资料\demo\大数据Test0527\WindowsFormsApp1\bin\Debug\netcoreapp3.0\WindowsFormsApp1.deps.json
+F:\资料\资料\demo\大数据Test0527\WindowsFormsApp1\bin\Debug\netcoreapp3.0\WindowsFormsApp1.runtimeconfig.json
+F:\资料\资料\demo\大数据Test0527\WindowsFormsApp1\bin\Debug\netcoreapp3.0\WindowsFormsApp1.runtimeconfig.dev.json
+F:\资料\资料\demo\大数据Test0527\WindowsFormsApp1\bin\Debug\netcoreapp3.0\WindowsFormsApp1.dll
+F:\资料\资料\demo\大数据Test0527\WindowsFormsApp1\bin\Debug\netcoreapp3.0\WindowsFormsApp1.pdb
+F:\资料\资料\demo\大数据Test0527\WindowsFormsApp1\obj\Debug\netcoreapp3.0\WindowsFormsApp1.csprojAssemblyReference.cache
+F:\资料\资料\demo\大数据Test0527\WindowsFormsApp1\obj\Debug\netcoreapp3.0\WindowsFormsApp1.Form1.resources
+F:\资料\资料\demo\大数据Test0527\WindowsFormsApp1\obj\Debug\netcoreapp3.0\WindowsFormsApp1.csproj.GenerateResource.cache
+F:\资料\资料\demo\大数据Test0527\WindowsFormsApp1\obj\Debug\netcoreapp3.0\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\大数据Test0527\WindowsFormsApp1\obj\Debug\netcoreapp3.0\WindowsFormsApp1.AssemblyInfoInputs.cache
+F:\资料\资料\demo\大数据Test0527\WindowsFormsApp1\obj\Debug\netcoreapp3.0\WindowsFormsApp1.AssemblyInfo.cs
+F:\资料\资料\demo\大数据Test0527\WindowsFormsApp1\obj\Debug\netcoreapp3.0\WindowsFormsApp1.dll
+F:\资料\资料\demo\大数据Test0527\WindowsFormsApp1\obj\Debug\netcoreapp3.0\WindowsFormsApp1.pdb

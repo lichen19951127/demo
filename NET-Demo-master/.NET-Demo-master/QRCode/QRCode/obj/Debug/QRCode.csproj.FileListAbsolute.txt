@@ -1,0 +1,15 @@
+D:\Work\DEMO\QRCode\QRCode\bin\Debug\QRCode.exe
+D:\Work\DEMO\QRCode\QRCode\bin\Debug\QRCode.pdb
+D:\Work\DEMO\QRCode\QRCode\obj\Debug\QRCode.FrmMain.resources
+D:\Work\DEMO\QRCode\QRCode\obj\Debug\QRCode.Properties.Resources.resources
+D:\Work\DEMO\QRCode\QRCode\obj\Debug\QRCode.csproj.GenerateResource.Cache
+D:\Work\DEMO\QRCode\QRCode\obj\Debug\QRCode.exe
+D:\Work\DEMO\QRCode\QRCode\obj\Debug\QRCode.pdb
+D:\c\github\WinForm-Demo\QRCode\QRCode\obj\Debug\QRCode.exe
+D:\c\github\WinForm-Demo\QRCode\QRCode\obj\Debug\QRCode.pdb
+D:\c\github\WinForm-Demo\QRCode\QRCode\bin\Debug\QRCode.exe
+D:\c\github\WinForm-Demo\QRCode\QRCode\bin\Debug\QRCode.pdb
+D:\c\github\WinForm-Demo\QRCode\QRCode\obj\Debug\QRCode.csprojResolveAssemblyReference.cache
+D:\c\github\WinForm-Demo\QRCode\QRCode\obj\Debug\QRCode.FrmMain.resources
+D:\c\github\WinForm-Demo\QRCode\QRCode\obj\Debug\QRCode.Properties.Resources.resources
+D:\c\github\WinForm-Demo\QRCode\QRCode\obj\Debug\QRCode.csproj.GenerateResource.Cache

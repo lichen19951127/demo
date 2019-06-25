@@ -1,0 +1,7 @@
+E:\案例111\demo\test0118\oracle\bin\Debug\oracle.exe.config
+E:\案例111\demo\test0118\oracle\bin\Debug\oracle.exe
+E:\案例111\demo\test0118\oracle\bin\Debug\oracle.pdb
+E:\案例111\demo\test0118\oracle\obj\Debug\oracle.csprojAssemblyReference.cache
+E:\案例111\demo\test0118\oracle\obj\Debug\oracle.csproj.CoreCompileInputs.cache
+E:\案例111\demo\test0118\oracle\obj\Debug\oracle.exe
+E:\案例111\demo\test0118\oracle\obj\Debug\oracle.pdb

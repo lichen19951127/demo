@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="a">
+<text>123</text>
+  <view class="b">
+    <button> 获取头像昵称 </button>
+<text>123456</text>
+  </view>
+  <view class="c">
+
+  </view>
+</view>

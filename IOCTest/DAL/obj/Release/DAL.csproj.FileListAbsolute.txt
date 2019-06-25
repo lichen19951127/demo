@@ -1,0 +1,12 @@
+F:\14.大实训\demo\IOCTest\DAL\bin\Release\DAL.dll
+F:\14.大实训\demo\IOCTest\DAL\bin\Release\DAL.pdb
+F:\14.大实训\demo\IOCTest\DAL\bin\Release\Entity.dll
+F:\14.大实训\demo\IOCTest\DAL\bin\Release\IDAL.dll
+F:\14.大实训\demo\IOCTest\DAL\bin\Release\Newtonsoft.Json.dll
+F:\14.大实训\demo\IOCTest\DAL\bin\Release\Entity.pdb
+F:\14.大实训\demo\IOCTest\DAL\bin\Release\IDAL.pdb
+F:\14.大实训\demo\IOCTest\DAL\obj\Release\DAL.csprojAssemblyReference.cache
+F:\14.大实训\demo\IOCTest\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+F:\14.大实训\demo\IOCTest\DAL\obj\Release\DAL.csproj.CopyComplete
+F:\14.大实训\demo\IOCTest\DAL\obj\Release\DAL.dll
+F:\14.大实训\demo\IOCTest\DAL\obj\Release\DAL.pdb

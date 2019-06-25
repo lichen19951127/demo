@@ -1,0 +1,1 @@
+F:\14.大实训\demo\Elasticsearch\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache

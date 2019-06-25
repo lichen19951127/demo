@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Content/jquery-3.1.1.js"></script>
+</head>
+<body>
+    <div> 
+        @ViewBag.testService
+    </div>
+</body>
+</html>
+<script>
+    $(function () {
+        $.ajax({
+            url: "http://127.0.0.1:8011/TestApi/GetApi",
+            type: "post",
+            success: function (d) {
+                alert(d);
+            }
+        })
+    })
+</script>

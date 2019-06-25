@@ -1,0 +1,12 @@
+D:\BPDM\VS.CoreApi\VS.IRepository\bin\Debug\netcoreapp2.0\VS.IRepository.deps.json
+D:\BPDM\VS.CoreApi\VS.IRepository\bin\Debug\netcoreapp2.0\VS.IRepository.dll
+D:\BPDM\VS.CoreApi\VS.IRepository\bin\Debug\netcoreapp2.0\VS.IRepository.pdb
+D:\BPDM\VS.CoreApi\VS.IRepository\obj\Debug\netcoreapp2.0\VS.IRepository.csproj.CoreCompileInputs.cache
+D:\BPDM\VS.CoreApi\VS.IRepository\obj\Debug\netcoreapp2.0\VS.IRepository.AssemblyInfoInputs.cache
+D:\BPDM\VS.CoreApi\VS.IRepository\obj\Debug\netcoreapp2.0\VS.IRepository.AssemblyInfo.cs
+D:\BPDM\VS.CoreApi\VS.IRepository\obj\Debug\netcoreapp2.0\VS.IRepository.dll
+D:\BPDM\VS.CoreApi\VS.IRepository\obj\Debug\netcoreapp2.0\VS.IRepository.pdb
+D:\BPDM\VS.CoreApi\VS.IRepository\bin\Debug\netcoreapp2.0\Model.dll
+D:\BPDM\VS.CoreApi\VS.IRepository\bin\Debug\netcoreapp2.0\Model.pdb
+D:\BPDM\VS.CoreApi\VS.IRepository\obj\Debug\netcoreapp2.0\VS.IRepository.csprojAssemblyReference.cache
+D:\BPDM\VS.CoreApi\VS.IRepository\obj\Debug\netcoreapp2.0\VS.IRepository.csproj.CopyComplete

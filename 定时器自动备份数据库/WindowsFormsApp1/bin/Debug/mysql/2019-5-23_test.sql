@@ -1,0 +1,86 @@
+-- MySqlBackup.NET 2.0.9.2
+-- Dump Time: 2019-05-23 17:00:01
+-- --------------------------------------
+-- Server version 5.7.26-log MySQL Community Server (GPL)
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES latin1 */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+-- 
+-- Definition of aa
+-- 
+
+DROP TABLE IF EXISTS `aa`;
+CREATE TABLE IF NOT EXISTS `aa` (
+  `id` int(10) NOT NULL AUTO_INCREMENT COMMENT '书籍编号',
+  `year` varchar(4) NOT NULL DEFAULT '' COMMENT '年',
+  `month` varchar(2) NOT NULL DEFAULT '0' COMMENT '月份',
+  `mount` double DEFAULT NULL COMMENT '数量',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table aa
+-- 
+
+/*!40000 ALTER TABLE `aa` DISABLE KEYS */;
+INSERT INTO `aa`(`id`,`year`,`month`,`mount`) VALUES
+(1,'2011','1',1.1),
+(2,'2011','2',1.2),
+(3,'2011','3',1.3),
+(4,'2011','4',1.4),
+(5,'2012','1',2.1),
+(6,'2012','2',2.2),
+(7,'2012','3',2.3),
+(8,'2012','4',2.4),
+(9,'2013','1',3.1),
+(10,'2013','2',3.2),
+(11,'2013','3',3.3),
+(12,'2013','4',3.4),
+(13,'2014','1',4.1),
+(14,'2014','2',4.2),
+(15,'2014','3',4.3),
+(16,'2014','4',4.4);
+/*!40000 ALTER TABLE `aa` ENABLE KEYS */;
+
+-- 
+-- Definition of users
+-- 
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `Id` int(11) NOT NULL,
+  `Name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 
+-- Dumping data for table users
+-- 
+
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users`(`Id`,`Name`) VALUES
+(2,'李四123'),
+(3,'王五');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+
+-- Dump completed on 2019-05-23 17:00:01
+-- Total time: 0:0:0:0:98 (d:h:m:s:ms)

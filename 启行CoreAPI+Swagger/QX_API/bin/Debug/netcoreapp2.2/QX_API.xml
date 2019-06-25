@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QX_API</name>
+    </assembly>
+    <members>
+        <member name="M:QX_API.Controllers.ValuesController.Post(QX_Models.ClassInfo)">
+            <summary>
+            我是post请求的方法
+            </summary>
+            <param name="value">传递的对象</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

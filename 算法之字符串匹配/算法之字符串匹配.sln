@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BF算法", "BF算法\BF算法.csproj", "{2A90B10D-814C-4C99-8659-AECA1AFEAC46}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MP算法", "MP算法\MP算法.csproj", "{0BD9F95F-3EAC-4E37-938B-308A77F21858}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KMP算法", "KMP算法\KMP算法.csproj", "{D89A9949-D147-4B99-9E76-0A4D3B581C2B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BM算法", "BM算法\BM算法.csproj", "{C95117E0-8471-490F-A04B-4F7210AE4645}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMH算法", "BMH算法\BMH算法.csproj", "{D1857FC5-60F7-452C-BE33-0444D3B81B72}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RK算法", "RK算法\RK算法.csproj", "{B27CA39D-48C1-4BD4-B9B3-53562AA15104}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DFA算法过滤敏感词.Net", "敏感词过滤\DFA算法过滤敏感词.Net.csproj", "{F7955556-71FD-4A6A-A517-7F112EBB6387}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A90B10D-814C-4C99-8659-AECA1AFEAC46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A90B10D-814C-4C99-8659-AECA1AFEAC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A90B10D-814C-4C99-8659-AECA1AFEAC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A90B10D-814C-4C99-8659-AECA1AFEAC46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BD9F95F-3EAC-4E37-938B-308A77F21858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BD9F95F-3EAC-4E37-938B-308A77F21858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BD9F95F-3EAC-4E37-938B-308A77F21858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BD9F95F-3EAC-4E37-938B-308A77F21858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D89A9949-D147-4B99-9E76-0A4D3B581C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D89A9949-D147-4B99-9E76-0A4D3B581C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D89A9949-D147-4B99-9E76-0A4D3B581C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D89A9949-D147-4B99-9E76-0A4D3B581C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C95117E0-8471-490F-A04B-4F7210AE4645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C95117E0-8471-490F-A04B-4F7210AE4645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C95117E0-8471-490F-A04B-4F7210AE4645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C95117E0-8471-490F-A04B-4F7210AE4645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1857FC5-60F7-452C-BE33-0444D3B81B72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1857FC5-60F7-452C-BE33-0444D3B81B72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1857FC5-60F7-452C-BE33-0444D3B81B72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1857FC5-60F7-452C-BE33-0444D3B81B72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B27CA39D-48C1-4BD4-B9B3-53562AA15104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B27CA39D-48C1-4BD4-B9B3-53562AA15104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B27CA39D-48C1-4BD4-B9B3-53562AA15104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B27CA39D-48C1-4BD4-B9B3-53562AA15104}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7955556-71FD-4A6A-A517-7F112EBB6387}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7955556-71FD-4A6A-A517-7F112EBB6387}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7955556-71FD-4A6A-A517-7F112EBB6387}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7955556-71FD-4A6A-A517-7F112EBB6387}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E8F5E41-4098-4CFA-95C7-7F2D1D5423F9}
+	EndGlobalSection
+EndGlobal

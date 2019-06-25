@@ -1,0 +1,69 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>导入</title>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/jquery.form.js"></script>
+</head>
+<body>
+    <div>
+        <p>
+            1.导入Excele表格格式参考（<a href="/Areas/Admin/Content/客户信息模板.xls" download="客户信息模板.xls">点击下载客户导入模板</a>）
+        </p>
+        <p>
+            2.如果一个客户有多个联系人，则联系人共同占用一条记录，如模板所示。请按照模板填写
+        </p>
+        <p>
+            3.单次导入行数限制为10000行，超出请分批导入
+        </p>
+        <p>
+            <form id="form0">
+                4.选择导入文件<input class="btn btn-block" type="file" name="file" />
+            </form>
+        </p>
+        <p>
+            <input type="button" class="btn btn-default" value="确定" onclick="upLoad()" />
+        </p>
+    </div>
+</body>
+</html>
+<script>
+    function upLoad() {
+        var formData = new FormData($("#form0")[0]);
+        console.log(formData);
+        $.ajax({
+            url: "/test/UpLoad",
+            type: "post",
+            data: formData,
+            contentType: false,
+            processData: false,
+            cache: false,
+            success: function (d) {
+                console.log(d);
+                if (d > 0) {
+                    layer.msg('导入成功', { time: 2000 });
+                    setTimeout(function () {
+                        window.parent.location.reload();//关闭当前页
+                    }, 2000)
+                }
+                else if (d==-1)
+                {
+                    layer.msg('请选择要导入的文件', { time: 2000 });
+                }
+                else if (d == -2) {
+                    layer.msg('文件不正确', { time: 2000 });
+                }
+                else {
+                    layer.msg('导入失败', { time: 2000 });
+                }
+            }
+        })
+    }
+</script>

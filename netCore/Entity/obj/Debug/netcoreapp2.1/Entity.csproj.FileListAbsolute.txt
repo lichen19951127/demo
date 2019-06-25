@@ -1,0 +1,8 @@
+F:\14.大实训\demo\netCore\Entity\bin\Debug\netcoreapp2.1\Entity.deps.json
+F:\14.大实训\demo\netCore\Entity\bin\Debug\netcoreapp2.1\Entity.dll
+F:\14.大实训\demo\netCore\Entity\bin\Debug\netcoreapp2.1\Entity.pdb
+F:\14.大实训\demo\netCore\Entity\obj\Debug\netcoreapp2.1\Entity.csproj.CoreCompileInputs.cache
+F:\14.大实训\demo\netCore\Entity\obj\Debug\netcoreapp2.1\Entity.AssemblyInfoInputs.cache
+F:\14.大实训\demo\netCore\Entity\obj\Debug\netcoreapp2.1\Entity.AssemblyInfo.cs
+F:\14.大实训\demo\netCore\Entity\obj\Debug\netcoreapp2.1\Entity.dll
+F:\14.大实训\demo\netCore\Entity\obj\Debug\netcoreapp2.1\Entity.pdb

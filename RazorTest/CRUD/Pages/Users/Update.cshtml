@@ -1,0 +1,26 @@
+﻿@page "{id:int}"
+@model CRUD.Pages.Users.UpdateModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Update</title>
+</head>
+<body>
+    <h2>编辑</h2>
+    <div asp-validation-summary="All"></div>
+    <form method="post">
+        <input asp-for="Users.Id" type="hidden" />
+        <div>
+            Name:<input asp-for="Users.Name" />
+            <span asp-validation-for="Users.Name"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">提交</button>
+    </form>
+</body>
+</html>

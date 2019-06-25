@@ -1,0 +1,7 @@
+F:\资料\资料\demo\消息队列\MSMQ.Net\bin\Debug\MSMQ.Net.exe.config
+F:\资料\资料\demo\消息队列\MSMQ.Net\bin\Debug\MSMQ.Net.exe
+F:\资料\资料\demo\消息队列\MSMQ.Net\bin\Debug\MSMQ.Net.pdb
+F:\资料\资料\demo\消息队列\MSMQ.Net\obj\Debug\MSMQ.Net.csprojAssemblyReference.cache
+F:\资料\资料\demo\消息队列\MSMQ.Net\obj\Debug\MSMQ.Net.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\消息队列\MSMQ.Net\obj\Debug\MSMQ.Net.exe
+F:\资料\资料\demo\消息队列\MSMQ.Net\obj\Debug\MSMQ.Net.pdb

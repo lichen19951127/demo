@@ -1,0 +1,6 @@
+F:\14.大实训\demo\IOCTest\Entity\bin\Release\Entity.dll
+F:\14.大实训\demo\IOCTest\Entity\bin\Release\Entity.pdb
+F:\14.大实训\demo\IOCTest\Entity\obj\Release\Entity.csprojAssemblyReference.cache
+F:\14.大实训\demo\IOCTest\Entity\obj\Release\Entity.csproj.CoreCompileInputs.cache
+F:\14.大实训\demo\IOCTest\Entity\obj\Release\Entity.dll
+F:\14.大实训\demo\IOCTest\Entity\obj\Release\Entity.pdb

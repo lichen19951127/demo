@@ -1,0 +1,16 @@
+D:\Work\DEMO\SocketDemo\SocketDemo\bin\Debug\SocketDemo.exe
+D:\Work\DEMO\SocketDemo\SocketDemo\bin\Debug\SocketDemo.pdb
+D:\Work\DEMO\SocketDemo\SocketDemo\obj\Debug\SocketDemo.csprojResolveAssemblyReference.cache
+D:\Work\DEMO\SocketDemo\SocketDemo\obj\Debug\SocketDemo.exe
+D:\Work\DEMO\SocketDemo\SocketDemo\obj\Debug\SocketDemo.pdb
+D:\c\github\WinForm-Demo\SocketDemo\SocketDemo\obj\Debug\SocketDemo.exe
+D:\c\github\WinForm-Demo\SocketDemo\SocketDemo\obj\Debug\SocketDemo.pdb
+D:\c\github\WinForm-Demo\SocketDemo\SocketDemo\bin\Debug\SocketDemo.exe
+D:\c\github\WinForm-Demo\SocketDemo\SocketDemo\bin\Debug\SocketDemo.pdb
+D:\c\github\WinForm-Demo\SocketDemo\SocketDemo\obj\Debug\SocketDemo.csprojResolveAssemblyReference.cache
+C:\Users\59428\Desktop\NET-Demo-master\.NET-Demo-master\SocketDemo\SocketDemo\bin\Debug\SocketDemo.exe
+C:\Users\59428\Desktop\NET-Demo-master\.NET-Demo-master\SocketDemo\SocketDemo\bin\Debug\SocketDemo.pdb
+C:\Users\59428\Desktop\NET-Demo-master\.NET-Demo-master\SocketDemo\SocketDemo\obj\Debug\SocketDemo.csprojAssemblyReference.cache
+C:\Users\59428\Desktop\NET-Demo-master\.NET-Demo-master\SocketDemo\SocketDemo\obj\Debug\SocketDemo.csproj.CoreCompileInputs.cache
+C:\Users\59428\Desktop\NET-Demo-master\.NET-Demo-master\SocketDemo\SocketDemo\obj\Debug\SocketDemo.exe
+C:\Users\59428\Desktop\NET-Demo-master\.NET-Demo-master\SocketDemo\SocketDemo\obj\Debug\SocketDemo.pdb

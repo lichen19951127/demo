@@ -1,0 +1,1 @@
+F:\资料\资料\demo\MSIX打包WPF\WapProjTemplate1\AppPackages\WapProjTemplate1_1.0.0.0_Debug_Test\WapProjTemplate1_1.0.0.0_x64_Debug.appxbundle

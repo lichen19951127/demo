@@ -1,0 +1,8 @@
+D:\BPDM\VS.CoreApi\Model\bin\Debug\netcoreapp2.0\Model.deps.json
+D:\BPDM\VS.CoreApi\Model\bin\Debug\netcoreapp2.0\Model.dll
+D:\BPDM\VS.CoreApi\Model\bin\Debug\netcoreapp2.0\Model.pdb
+D:\BPDM\VS.CoreApi\Model\obj\Debug\netcoreapp2.0\Model.csproj.CoreCompileInputs.cache
+D:\BPDM\VS.CoreApi\Model\obj\Debug\netcoreapp2.0\Model.AssemblyInfoInputs.cache
+D:\BPDM\VS.CoreApi\Model\obj\Debug\netcoreapp2.0\Model.AssemblyInfo.cs
+D:\BPDM\VS.CoreApi\Model\obj\Debug\netcoreapp2.0\Model.dll
+D:\BPDM\VS.CoreApi\Model\obj\Debug\netcoreapp2.0\Model.pdb

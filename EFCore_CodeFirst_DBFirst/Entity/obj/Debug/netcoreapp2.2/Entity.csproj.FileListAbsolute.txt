@@ -1,0 +1,9 @@
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\Entity\bin\Debug\netcoreapp2.2\Entity.deps.json
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\Entity\bin\Debug\netcoreapp2.2\Entity.dll
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\Entity\bin\Debug\netcoreapp2.2\Entity.pdb
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\Entity\obj\Debug\netcoreapp2.2\Entity.csprojAssemblyReference.cache
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\Entity\obj\Debug\netcoreapp2.2\Entity.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\Entity\obj\Debug\netcoreapp2.2\Entity.AssemblyInfoInputs.cache
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\Entity\obj\Debug\netcoreapp2.2\Entity.AssemblyInfo.cs
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\Entity\obj\Debug\netcoreapp2.2\Entity.dll
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\Entity\obj\Debug\netcoreapp2.2\Entity.pdb

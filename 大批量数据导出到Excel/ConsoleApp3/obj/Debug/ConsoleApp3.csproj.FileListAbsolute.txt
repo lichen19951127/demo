@@ -1,0 +1,13 @@
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp3\bin\Debug\ConsoleApp3.exe.config
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp3\bin\Debug\ConsoleApp3.exe
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp3\bin\Debug\ConsoleApp3.pdb
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp3\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp3\bin\Debug\NPOI.dll
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp3\bin\Debug\NPOI.OOXML.dll
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp3\bin\Debug\NPOI.OpenXml4Net.dll
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp3\bin\Debug\NPOI.OpenXmlFormats.dll
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp3\obj\Debug\ConsoleApp3.csprojAssemblyReference.cache
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.CopyComplete
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp3\obj\Debug\ConsoleApp3.exe
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp3\obj\Debug\ConsoleApp3.pdb

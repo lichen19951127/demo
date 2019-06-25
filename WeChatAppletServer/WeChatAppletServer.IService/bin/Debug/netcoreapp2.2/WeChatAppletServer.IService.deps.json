@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "WeChatAppletServer.IService/1.0.0": {
+        "dependencies": {
+          "WeChatAppletServer.Entity": "1.0.0"
+        },
+        "runtime": {
+          "WeChatAppletServer.IService.dll": {}
+        }
+      },
+      "WeChatAppletServer.Entity/1.0.0": {
+        "runtime": {
+          "WeChatAppletServer.Entity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WeChatAppletServer.IService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WeChatAppletServer.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

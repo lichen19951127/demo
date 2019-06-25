@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="origin" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>谁都能看懂的单点登录（SSO）实现方式（附源码） - thz - 博客园</title>
+    <meta property="og:description" content="SSO的基本概念 SSO英文全称Single Sign On（单点登录）。SSO是在多个应用系统中，用户只需要登录一次就可以访问所有相互信任的应用系统。它包括可以将这次主要的登录映射到其他应用中用于同" />
+    <link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=svlZeZMvc3He7PqOD4T7SOuQn0_kIfLBYiy3idqd35Y1"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory.css?v=EanP3quXYv9G0oFCmz4BNBHvmK7M_Si1iD1EpUHL_441"/>
+<link type="text/css" rel="stylesheet" href="/blog/customcss/48401.css?v=DqZ3CvsYd7%2bi8a5G9iaSggMKS1s%3d"/>
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.css?v=C8rNZMN1xUcogg2mnN6C_ci7S2vGnJTt9TmfmncHzEA1"/>
+    <link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/youring2/rss"/>
+    <link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/youring2/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/youring2/wlwmanifest.xml"/>
+    <script src="//common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script>var currentBlogId=48401;var currentBlogApp='youring2',cb_enable_mathjax=false;var isLogined=true;</script>
+    <script src="/bundles/blog-common.js?v=jRyV_qDu-4wPc6tJs6U-WEk24ivFCfVIHz5t3j6euGM1" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="https://www.cnblogs.com/youring2/"><img id="blogLogo" src="/Skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="https://www.cnblogs.com/youring2/">拓荒者</a></h1>
+<h2><div>
+<span>对酒当歌，人生几何？</span>
+</div></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/youring2/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/thz">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/youring2/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="https://www.cnblogs.com/youring2/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 326&nbsp; </span>
+<span id="stats_article_count">文章 - 0&nbsp; </span>
+<span id="stats-comment_count">评论 - 635</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+        <div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class = "post">
+		<h1 class = "postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/youring2/p/sso-practice.html">谁都能看懂的单点登录（SSO）实现方式（附源码）</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="blogpost-body"><h2>SSO的基本概念</h2>
+<p>SSO英文全称Single Sign On（单点登录）。SSO是在多个应用系统中，用户只需要登录一次就可以访问所有相互信任的应用系统。它包括可以将这次主要的登录映射到其他应用中用于同一个用户的登录的机制。它是目前比较流行的企业业务整合的解决方案之一。（本段内容来自百度百科）</p>
+<p>今天这篇文章将介绍SSO的一种实现方式，代码超简单，仅用来验证我的思路是否可行，具体细节请大家来完善！</p>
+<h2>二级域名的单点登录</h2>
+<p>什么是二级域名呢？例如：</p>
+<ul>
+<li>site1.domain.com</li>
+<li>site2.domain.com</li>
+</ul>
+<p>对于二级域名的单点登录，我们可以非常方便的通过共享cookie来实现，简单的说，就是在设置Form票据的时候，将cookie的domain设置为顶级域名即可，例如：</p>
+<pre class="code"><span style="color: #2b91af;">HttpCookie </span><span style="color: black;">cookie = </span><span style="color: blue;">new </span><span style="color: #2b91af;">HttpCookie</span><span style="color: black;">(FormsAuthCookieName, encryptedTicket);
+cookie.Expires = rememberMe ? expirationDate : </span><span style="color: #2b91af;">DateTime</span><span style="color: black;">.MinValue;
+cookie.HttpOnly = </span><span style="color: blue;">true</span><span style="color: black;">;
+cookie.Path = </span><span style="color: #a31515;">"/"</span><span style="color: black;">;
+cookie.Domain = </span><span style="color: #a31515;">"domain.com"</span><span style="color: black;">;
+context.Response.Cookies.Set(cookie);</span></pre>
+<p>这种方式不涉及跨域，当cookie的domain属性设置为顶级域名之后，所有的二级域名都可以访问到身份验证的cookie，在服务器端只要验证了这个cookie就可以实现身份的验证。</p>
+<p>但是，当跨域的时候，例如：</p>
+<ul>
+<li>site1.com</li>
+<li>site2.com</li>
+</ul>
+<p>这个时候就不能共享cookie了，所以上面的解决方案就会失效。那么，要实现跨域的单点登录该如何做呢？请继续往下看。</p>
+<h2>跨域的单点登录</h2>
+<p>关于跨域的SSO的设计思路，我画了一个简单的流程图：</p>
+<p><a href="https://images0.cnblogs.com/blog/44814/201404/091757195756445.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="image" src="https://images0.cnblogs.com/blog/44814/201404/091757204819300.png" alt="image" width="721" height="426" border="0" /></a></p>
+<p>首先，我将跨域的SSO分为SSO-Server和SSO-Client两个部分，SSO-Client可以是多个的。</p>
+<h3>SSO-Server</h3>
+<p>SSO-Server主要负责用户登录、注销、为SSO-Client分配taken、验证taken的工作。</p>
+<p>登录和注销采用的是Form认证方式，很多地方都有详细的介绍，我之前也写过一篇文章，想了解的可以去看看：<a href="http://www.cnblogs.com/youring2/archive/2011/07/17/2108639.html">asp.net Forms身份验证详解</a></p>
+<h4>SSO-Server分配Token</h4>
+<p>为SSO-Client分配Token的部分，在SSO-Client请求SSO受信页面的时候，检查SSO-Server是否登录，如果没有登录则跳转到SSO-Server的登录页面，如果已登录，则执行分配Token的代码，在分配完成以后将TokenID作为参数添加到returnUrl中，并跳转到returnUrl，具体的分配代码如下：</p>
+<pre class="code"><span style="color: blue;">if </span><span style="color: black;">(Domain.Security.</span><span style="color: #2b91af;">SmartAuthenticate</span><span style="color: black;">.LoginUser != </span><span style="color: blue;">null</span><span style="color: black;">)
+{
+    </span><span style="color: green;">//生成Token，并持久化Token
+    </span><span style="color: black;">Domain.SSO.Entity.</span><span style="color: #2b91af;">SSOToken </span><span style="color: black;">token = </span><span style="color: blue;">new </span><span style="color: black;">Entity.</span><span style="color: #2b91af;">SSOToken</span><span style="color: black;">();
+    
+    token.User = </span><span style="color: blue;">new </span><span style="color: black;">Entity.</span><span style="color: #2b91af;">SSOUser</span><span style="color: black;">();
+    token.User.UserName = Domain.Security.</span><span style="color: #2b91af;">SmartAuthenticate</span><span style="color: black;">.LoginUser.UserName;
+    token.LoginID = Session.SessionID;
+    Domain.SSO.Entity.</span><span style="color: #2b91af;">SSOToken</span><span style="color: black;">.SSOTokenList.Add(token);
+
+    </span><span style="color: green;">//拼接返回的url，参数中带Token
+    </span><span style="color: blue;">string </span><span style="color: black;">spliter = returnUrl.Contains(</span><span style="color: #a31515;">'?'</span><span style="color: black;">) ? </span><span style="color: #a31515;">"&amp;" </span><span style="color: black;">: </span><span style="color: #a31515;">"?"</span><span style="color: black;">;
+    returnUrl = returnUrl + spliter + </span><span style="color: #a31515;">"token=" </span><span style="color: black;">+ token.ID;
+    Response.Redirect(returnUrl);
+}</span></pre>
+<p>当完成Token分配之后，页面将带有TokenID的参数跳转到SSO-Client页面，并在SSO-Client的Cookie中添加Token值，在以后的每次请求中，SSO-Client通过调用SSO-Server的服务来验证Token的合法性。</p>
+<h4>SSO-Server验证Token</h4>
+<p>我是通过WebService来验证Token的。</p>
+<p>首先在SSO-Server定义一个Web Service：</p>
+<pre class="code"><span style="color: black;">[</span><span style="color: #2b91af;">WebMethod</span><span style="color: black;">]
+</span><span style="color: blue;">public </span><span style="color: black;">Entity.</span><span style="color: #2b91af;">SSOToken </span><span style="color: black;">ValidateToken(</span><span style="color: blue;">string </span><span style="color: black;">tokenID)
+{
+    </span><span style="color: blue;">if </span><span style="color: black;">(!KeepToken(tokenID))
+        </span><span style="color: blue;">return null</span><span style="color: black;">;
+
+    </span><span style="color: blue;">var </span><span style="color: black;">token = Domain.SSO.Entity.</span><span style="color: #2b91af;">SSOToken</span><span style="color: black;">.SSOTokenList.Find(m =&gt; m.ID == tokenID);
+    </span><span style="color: blue;">return </span><span style="color: black;">token;
+}
+
+[</span><span style="color: #2b91af;">WebMethod</span><span style="color: black;">]
+</span><span style="color: blue;">public bool </span><span style="color: black;">KeepToken(</span><span style="color: blue;">string </span><span style="color: black;">tokenID)
+{
+    </span><span style="color: blue;">var </span><span style="color: black;">token = Domain.SSO.Entity.</span><span style="color: #2b91af;">SSOToken</span><span style="color: black;">.SSOTokenList.Find(m =&gt; m.ID == tokenID);
+    </span><span style="color: blue;">if </span><span style="color: black;">(token == </span><span style="color: blue;">null</span><span style="color: black;">)
+        </span><span style="color: blue;">return false</span><span style="color: black;">;
+    </span><span style="color: blue;">if </span><span style="color: black;">(token.IsTimeOut())
+        </span><span style="color: blue;">return false</span><span style="color: black;">;
+
+    token.AuthTime = </span><span style="color: #2b91af;">DateTime</span><span style="color: black;">.Now;
+    </span><span style="color: blue;">return true</span><span style="color: black;">;
+}</span></pre>
+<p>ValidateToken用来验证TokenID的合法性，KeepToken用来保持Token不会过期。</p>
+<p>SSO-Client通过调用Validate验证Token，并得到当前的登录用户信息。接下来看看SSO-Client的实现。</p>
+<h3>SSO-Client</h3>
+<p>SSO-Client作为受信系统来存在的，它自己没有认证系统，只能通过SSO-Server来完成用户身份认证的工作。</p>
+<p>当用户请求SSO-Client的受保护资源时，SSO-Client会首先是否有TokenID，如果存在TokenID，则调用SSO-Server的WebService来验证这个TokenID是否合法；</p>
+<p>验证成功以后将会返回SSOToken的实例，里面包含已登录的用户信息。具体代码如下：</p>
+<pre class="code"><span style="color: blue;">if </span><span style="color: black;">(!</span><span style="color: blue;">string</span><span style="color: black;">.IsNullOrEmpty(tokenID))
+{
+    AuthTokenService.</span><span style="color: #2b91af;">AuthTokenServiceSoapClient </span><span style="color: black;">client = </span><span style="color: blue;">new </span><span style="color: black;">AuthTokenService.</span><span style="color: #2b91af;">AuthTokenServiceSoapClient</span><span style="color: black;">();
+    </span><span style="color: blue;">var </span><span style="color: black;">token = client.ValidateToken(tokenID);
+    </span><span style="color: blue;">if </span><span style="color: black;">(token != </span><span style="color: blue;">null</span><span style="color: black;">)
+    {
+        </span><span style="color: blue;">this</span><span style="color: black;">.lblMessage.Text = </span><span style="color: #a31515;">"登录成功，登录用户："
+            </span><span style="color: black;">+ token.User.UserName
+            + </span><span style="color: #a31515;">"&lt;a href='http://sso-server.com/logout.aspx?returnUrl="
+            </span><span style="color: black;">+ Server.UrlEncode(</span><span style="color: #a31515;">"http://sso-client.com"</span><span style="color: black;">)
+            + </span><span style="color: #a31515;">"'&gt;退出&lt;/a&gt;"</span><span style="color: black;">;
+    }
+    </span><span style="color: blue;">else
+    </span><span style="color: black;">{
+        Response.Redirect(</span><span style="color: #a31515;">"http://sso-server.com/sso.aspx?returnUrl=" </span><span style="color: black;">+
+            Server.UrlEncode(</span><span style="color: #a31515;">"http://sso-client.com/default.aspx"</span><span style="color: black;">));
+    }
+}
+</span><span style="color: blue;">else
+</span><span style="color: black;">{
+    Response.Redirect(</span><span style="color: #a31515;">"http://sso-server.com/sso.aspx?returnUrl=" </span><span style="color: black;">+
+        Server.UrlEncode(</span><span style="color: #a31515;">"http://sso-client.com/default.aspx"</span><span style="color: black;">));
+}</span></pre>
+<h2>源代码</h2>
+<p>文章中已经介绍了我的具体思路和一些实现，如果你仍然感兴趣，可以下载我的代码&gt;&gt;<a href="http://pan.baidu.com/s/1Adv2m">Demo.SSO</a></p>
+<p>源代码的部署：</p>
+<p>1. 在IIS中创建两个站点，分别绑定到SSO-Server和SSO-Client，它们绑定的域名分别是sso-server.com和sso-client.com</p>
+<p>2. 在hosts文件中添加两行映射，将sso-server.com和sso-client.com映射到127.0.0.1，确保可以访问</p>
+<p>3.访问sso-client.com，这个时候页面将跳转到sso-server.com的登录页面，用户名、密码随便输入，然后点击登录即可</p>
+<p>&nbsp;</p>
+<p>我很认真的完成了这个方案，也感谢你很认真的看完！欢迎拍砖！</p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+		</div>
+		<div class = "postDesc">posted @ <span id="post-date">2014-04-09 17:57</span> <a href='https://www.cnblogs.com/youring2/'>qifei2012</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=3654776" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(3654776);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=48401,cb_entryId=3654776,cb_blogApp=currentBlogApp,cb_blogUserGuid='bf03470b-63cf-dd11-9e4d-001cf0cd104b',cb_entryCreatedDate='2014/4/9 17:57:00';loadViewCount(cb_entryId);var cb_postType=1;var isMarkdown=false;</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+  googletag.cmd.push(function() {
+        googletag.defineSlot('/1090369/C1', [300, 250], 'div-gpt-ad-1546353474406-0').addService(googletag.pubads());
+        googletag.defineSlot('/1090369/C2', [468, 60], 'div-gpt-ad-1539008685004-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+  });
+</script>
+<div id='cnblogs_c1' class='c_ad_block'>
+    <div id='div-gpt-ad-1546353474406-0' style='height:250px; width:300px;'></div>
+</div>
+<div id='under_post_news'></div>
+<div id='cnblogs_c2' class='c_ad_block'>
+    <div id='div-gpt-ad-1539008685004-0' style='height:60px; width:468px;'></div>
+</div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+ if(enablePostBottom()) {
+    codeHighlight();
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverT2();
+    deliverC1();
+    deliverC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);  
+}
+</script>
+</div>
+
+    
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright &copy;2019 thz
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+</body>
+</html>

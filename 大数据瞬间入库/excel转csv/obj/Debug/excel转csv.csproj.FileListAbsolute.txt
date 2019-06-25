@@ -1,0 +1,13 @@
+F:\资料\资料\demo\大数据瞬间入库\excel转csv\bin\Debug\excel转csv.exe.config
+F:\资料\资料\demo\大数据瞬间入库\excel转csv\bin\Debug\excel转csv.exe
+F:\资料\资料\demo\大数据瞬间入库\excel转csv\bin\Debug\excel转csv.pdb
+F:\资料\资料\demo\大数据瞬间入库\excel转csv\bin\Debug\Microsoft.Office.Interop.Excel.dll
+F:\资料\资料\demo\大数据瞬间入库\excel转csv\bin\Debug\stdole.dll
+F:\资料\资料\demo\大数据瞬间入库\excel转csv\obj\Debug\excel转csv.csprojAssemblyReference.cache
+F:\资料\资料\demo\大数据瞬间入库\excel转csv\obj\Debug\excel转csv.Form1.resources
+F:\资料\资料\demo\大数据瞬间入库\excel转csv\obj\Debug\excel转csv.Properties.Resources.resources
+F:\资料\资料\demo\大数据瞬间入库\excel转csv\obj\Debug\excel转csv.csproj.GenerateResource.cache
+F:\资料\资料\demo\大数据瞬间入库\excel转csv\obj\Debug\excel转csv.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\大数据瞬间入库\excel转csv\obj\Debug\excel转csv.csproj.CopyComplete
+F:\资料\资料\demo\大数据瞬间入库\excel转csv\obj\Debug\excel转csv.exe
+F:\资料\资料\demo\大数据瞬间入库\excel转csv\obj\Debug\excel转csv.pdb

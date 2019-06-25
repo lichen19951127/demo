@@ -1,0 +1,7 @@
+E:\案例111\demo\test0118\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+E:\案例111\demo\test0118\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+E:\案例111\demo\test0118\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+E:\案例111\demo\test0118\ConsoleApp2\obj\Debug\ConsoleApp2.csprojAssemblyReference.cache
+E:\案例111\demo\test0118\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
+E:\案例111\demo\test0118\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+E:\案例111\demo\test0118\ConsoleApp2\obj\Debug\ConsoleApp2.pdb

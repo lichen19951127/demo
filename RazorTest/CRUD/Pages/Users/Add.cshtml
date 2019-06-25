@@ -1,0 +1,24 @@
+﻿@page
+@model CRUD.Pages.Users.AddModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+</head>
+<body>
+    <h2>新增</h2>
+    <div asp-validation-summary="All"></div>
+    <form method="post">
+        <div>
+            Name:<input asp-for="Users.Name" />
+        </div>
+        <button type="submit" class="btn btn-primary">提交</button>
+    </form>
+</body>
+</html>

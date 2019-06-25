@@ -1,0 +1,2 @@
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp2\obj\Debug\ConsoleApp2.csprojAssemblyReference.cache
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache

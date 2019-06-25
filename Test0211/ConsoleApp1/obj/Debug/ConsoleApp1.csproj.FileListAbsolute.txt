@@ -1,0 +1,7 @@
+E:\资料\04、其他内容\demo\Test0211\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
+E:\资料\04、其他内容\demo\Test0211\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+E:\资料\04、其他内容\demo\Test0211\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+E:\资料\04、其他内容\demo\Test0211\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+E:\资料\04、其他内容\demo\Test0211\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+E:\资料\04、其他内容\demo\Test0211\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+E:\资料\04、其他内容\demo\Test0211\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

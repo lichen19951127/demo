@@ -1,0 +1,7 @@
+F:\资料\资料\demo\多线程\ConsoleApp3\bin\Debug\ConsoleApp3.exe.config
+F:\资料\资料\demo\多线程\ConsoleApp3\bin\Debug\ConsoleApp3.exe
+F:\资料\资料\demo\多线程\ConsoleApp3\bin\Debug\ConsoleApp3.pdb
+F:\资料\资料\demo\多线程\ConsoleApp3\obj\Debug\ConsoleApp3.csprojAssemblyReference.cache
+F:\资料\资料\demo\多线程\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\多线程\ConsoleApp3\obj\Debug\ConsoleApp3.exe
+F:\资料\资料\demo\多线程\ConsoleApp3\obj\Debug\ConsoleApp3.pdb

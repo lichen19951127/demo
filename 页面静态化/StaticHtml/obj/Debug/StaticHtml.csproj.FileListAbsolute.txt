@@ -1,0 +1,7 @@
+F:\14.大实训\demo\页面静态化\StaticHtml\bin\Debug\StaticHtml.exe.config
+F:\14.大实训\demo\页面静态化\StaticHtml\bin\Debug\StaticHtml.exe
+F:\14.大实训\demo\页面静态化\StaticHtml\bin\Debug\StaticHtml.pdb
+F:\14.大实训\demo\页面静态化\StaticHtml\obj\Debug\StaticHtml.csprojAssemblyReference.cache
+F:\14.大实训\demo\页面静态化\StaticHtml\obj\Debug\StaticHtml.csproj.CoreCompileInputs.cache
+F:\14.大实训\demo\页面静态化\StaticHtml\obj\Debug\StaticHtml.exe
+F:\14.大实训\demo\页面静态化\StaticHtml\obj\Debug\StaticHtml.pdb

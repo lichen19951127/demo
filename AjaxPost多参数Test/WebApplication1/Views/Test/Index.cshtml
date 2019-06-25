@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Content/jquery-3.1.1.js"></script>
+</head>
+<body>
+    <div> 
+    </div>
+</body>
+</html>
+
+<script>
+    $(function () {
+        var model = {Name:"张三",Pwd:"123"};
+        $.ajax({
+            url: "/Test/Login",
+            type: "post",
+            data: {model:model,title:"这是标题"},
+            success: function (json) {
+                console.log(json);
+            }
+        })
+    })
+</script>

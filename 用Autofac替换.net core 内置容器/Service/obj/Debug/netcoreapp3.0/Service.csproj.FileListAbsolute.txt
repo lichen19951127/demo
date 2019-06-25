@@ -1,0 +1,12 @@
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service\bin\Debug\netcoreapp3.0\Service.deps.json
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service\bin\Debug\netcoreapp3.0\Service.dll
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service\bin\Debug\netcoreapp3.0\Service.pdb
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service\bin\Debug\netcoreapp3.0\IService.dll
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service\bin\Debug\netcoreapp3.0\IService.pdb
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service\obj\Debug\netcoreapp3.0\Service.csprojAssemblyReference.cache
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service\obj\Debug\netcoreapp3.0\Service.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service\obj\Debug\netcoreapp3.0\Service.AssemblyInfoInputs.cache
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service\obj\Debug\netcoreapp3.0\Service.AssemblyInfo.cs
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service\obj\Debug\netcoreapp3.0\Service.csproj.CopyComplete
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service\obj\Debug\netcoreapp3.0\Service.dll
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service\obj\Debug\netcoreapp3.0\Service.pdb

@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+</head>
+<body>
+    @*<form action="/Test/getData" method="post">*@
+        <input type="text" name="preword" value="" />
+        <div id="showList">
+
+        </div>
+        <input type="button" value="查询" onclick="search()" />
+    @*</form>*@
+</body>
+</html>
+<script>
+    function search() {
+        $.ajax({
+            url: "/Test/getData?preword=" + $("[name=preword]").val(),
+            type: "get",
+            success: function (json) {
+                console.log(json);
+                var html = "";
+                for (var i = 0; i < json.length; i++) {
+                    html += "<p>" + json[i] + "</p>";
+                }
+                $("#showList").html(html);
+            }
+
+        })
+    }
+</script>

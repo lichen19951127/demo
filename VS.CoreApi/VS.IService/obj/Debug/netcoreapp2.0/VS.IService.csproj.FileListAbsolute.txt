@@ -1,0 +1,14 @@
+D:\BPDM\VS.CoreApi\VS.IService\bin\Debug\netcoreapp2.0\VS.IService.deps.json
+D:\BPDM\VS.CoreApi\VS.IService\bin\Debug\netcoreapp2.0\VS.IService.dll
+D:\BPDM\VS.CoreApi\VS.IService\bin\Debug\netcoreapp2.0\VS.IService.pdb
+D:\BPDM\VS.CoreApi\VS.IService\obj\Debug\netcoreapp2.0\VS.IService.csproj.CoreCompileInputs.cache
+D:\BPDM\VS.CoreApi\VS.IService\obj\Debug\netcoreapp2.0\VS.IService.AssemblyInfoInputs.cache
+D:\BPDM\VS.CoreApi\VS.IService\obj\Debug\netcoreapp2.0\VS.IService.AssemblyInfo.cs
+D:\BPDM\VS.CoreApi\VS.IService\obj\Debug\netcoreapp2.0\VS.IService.dll
+D:\BPDM\VS.CoreApi\VS.IService\obj\Debug\netcoreapp2.0\VS.IService.pdb
+D:\BPDM\VS.CoreApi\VS.IService\bin\Debug\netcoreapp2.0\Model.dll
+D:\BPDM\VS.CoreApi\VS.IService\bin\Debug\netcoreapp2.0\VS.IRepository.dll
+D:\BPDM\VS.CoreApi\VS.IService\bin\Debug\netcoreapp2.0\Model.pdb
+D:\BPDM\VS.CoreApi\VS.IService\bin\Debug\netcoreapp2.0\VS.IRepository.pdb
+D:\BPDM\VS.CoreApi\VS.IService\obj\Debug\netcoreapp2.0\VS.IService.csprojAssemblyReference.cache
+D:\BPDM\VS.CoreApi\VS.IService\obj\Debug\netcoreapp2.0\VS.IService.csproj.CopyComplete

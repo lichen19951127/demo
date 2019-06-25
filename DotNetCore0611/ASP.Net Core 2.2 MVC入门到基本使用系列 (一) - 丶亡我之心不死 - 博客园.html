@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="origin" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>ASP.Net Core 2.2 MVC入门到基本使用系列 (一) - 丶亡我之心不死 - 博客园</title>
+    <meta property="og:description" content="本教程会对基本的.Net Core 进行一个大概的且不会太深入的讲解, 在您看完本系列之后, 能基本甚至熟练的使用.Net Core进行Web开发, 感受到.Net Core的魅力. 本教程知识点大体" />
+    <link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=KOZafwuaDasEedEenI5aTy8aXH0epbm6VUJ0v3vsT_Q1"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="/skins/sea/bundle-sea.css?v=PPe3jt1rcXPno6kucw0iQU2MWF3DbrvubQHRM0FEMas1"/>
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/sea/bundle-sea-mobile.css?v=yFtgEd5VFXGr9Lo4adjD_iDDW9y0pVJjEZ2io36-rWw1"/>
+    <link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/klwen/rss"/>
+    <link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/klwen/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/klwen/wlwmanifest.xml"/>
+    <script src="//common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script>var currentBlogId=488950;var currentBlogApp='klwen',cb_enable_mathjax=false;var isLogined=true;</script>
+    <script src="/bundles/blog-common.js?v=smtcUT5dhdu_5eEO8CKHYoVc7DPLgEBGzp6zKkstlzg1" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+
+<!--done-->
+<div id="header">
+	
+<!--done-->
+<div class="header">
+	<div class="headerText">
+		<a id="Header1_HeaderTitle" class="headermaintitle" href="https://www.cnblogs.com/klwen/">丶亡我之心不死</a><br>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="mytopmenu" >
+	
+		<div id="mylinks"><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">博客园</a> &nbsp;
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/klwen/">首页</a> &nbsp;
+<a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a> &nbsp;
+<a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E4%B8%B6%E4%BA%A1%E6%88%91%E4%B9%8B%E5%BF%83%E4%B8%8D%E6%AD%BB">联系</a> &nbsp;
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/klwen/rss">订阅</a><a id="blog_nav_rss_image" href="https://www.cnblogs.com/klwen/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>&nbsp;
+<a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a>
+</div>
+		<DIV id="mystats"><div id="blog_stats">
+随笔-4&nbsp;
+评论-17&nbsp;
+文章-0&nbsp;
+<!--trackbacks-0-->
+</div></DIV>
+	
+</div>
+<div id="centercontent" >
+	
+        <div id="post_detail">
+<div class = "post">
+	<h1 class = "postTitle"><a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/klwen/p/10288691.html">ASP.Net Core 2.2 MVC入门到基本使用系列 (一)</a></h1>
+	<div id="cnblogs_post_body" class="blogpost-body"><p><span style="font-size: 18pt;"><strong>本教程会对基本的.Net Core 进行一个大概的且不会太深入的讲解, 在您看完本系列之后, 能基本甚至熟练的使用.Net Core进行Web开发, 感受到.Net Core的魅力.</strong></span></p>
+<p><span style="font-size: 18pt;"><strong>本教程知识点大体分为以下几个阶段</strong></span></p>
+<ul>
+<li><span style="font-size: 16px;"><strong>ASP.Net Core MVC基础知识</strong></span></li>
+</ul>
+<ol>
+<li><span style="font-size: 16px;"><strong>Startup基本配置和理解</strong></span></li>
+<li><span style="font-size: 16px;"><strong>Controller使用</strong></span></li>
+<li><span style="font-size: 16px;"><strong>Razor视图</strong></span></li>
+<li><span style="font-size: 16px;"><strong>传统视图</strong></span></li>
+<li><span style="font-size: 16px;"><strong>Model Validation (基本用法)</strong></span></li>
+<li><span style="font-size: 16px;"><strong>一点点的Vue (教程使用Vue配合)</strong></span></li>
+</ol>
+<ul>
+<li><span style="font-size: 16px;"><strong>SqlSugar ORM (进行数据库交互)</strong></span></li>
+<li><span style="font-size: 16px;"><strong>Entity Framework&nbsp; Core(基本介绍使用)</strong></span></li>
+<li><span style="font-size: 16px;"><strong>授权和身份验证(MVC的, WebApi的不进行介绍)</strong></span></li>
+<li><span style="font-size: 16px;"><strong>安全性</strong></span></li>
+<li><span style="font-size: 16px;"><strong>测试 / 单元测试</strong></span></li>
+<li><span style="font-size: 16px;"><strong>性能基本优化</strong></span></li>
+<li><span style="font-size: 16px;"><strong>日志功能</strong></span></li>
+<li><span style="font-size: 16px;"><strong>CI/CD</strong></span></li>
+<li><span style="font-size: 16px;"><strong>Windows部署</strong></span></li>
+<li><span style="font-size: 16px;"><strong>Linux部署</strong></span></li>
+</ul>
+<p><span style="font-size: 18px;"><strong>一 : 系列教程环境介绍</strong></span></p>
+<p><span style="font-size: 18px;"><strong>　　</strong>1: 操作系统, Windows 10 专业版 64位&nbsp; (版本号: 1809)</span></p>
+<p><span style="font-size: 18px;">　　2: IDE使用Visual Studio 2017专业版 (版本号: 15.9.5)</span></p>
+<p><span style="font-size: 18px;">　　3: SDK环境 .Net Core 2.2.101</span></p>
+<p><span style="font-size: 18px;">　　4: 前端 Vue 2.X</span></p>
+<p><span style="font-size: 18px;">　　5: 数据库 MSSQL 2017</span></p>
+<p><span style="font-size: 18px;">　　6: 语言使用 C# 7.3</span></p>
+<p><span style="font-size: 18px;"><strong>二 : .Net Core 2.2环境安装</strong></span></p>
+<p><span style="font-size: 18px;"><strong>　　</strong>进行.Net Core开发, 需要安装.Net Core SDK, <a title=".Net Core SDK下载" href="https://dotnet.microsoft.com/download" target="_blank">下载地址</a><br /></span></p>
+<p><span style="font-size: 18px;">　　下载安装完成之后在CMD里面运行dotnet --version 查看版本号, 如图</span></p>
+<p><span style="font-size: 18px;"><strong>　　<img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190118161333411-1702307232.png" alt="" /></strong></span></p>
+<p><span style="font-size: 18px;"><strong>三: 新建一个ASP.Net Core MVC项目</strong></span></p>
+<p><span style="font-size: 18px;"><strong>　　</strong>打开VS2017, 新建项目, 选择.Net Core --&gt; ASP.NET Core Web应用程序, 如图</span></p>
+<p><span style="font-size: 18px;"><strong>　　<img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190118161759672-366214811.png" alt="" /></strong></span></p>
+<p><span style="font-size: 18px;"><strong>　　</strong>取好项目名字和选择完路径, 点击确定,进入下一步</span></p>
+<p><span style="font-size: 18px;"><strong>　　<img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190118161905838-22289400.png" alt="" /></strong></span></p>
+<p><span style="font-size: 18px;"><strong>　　</strong>选择Core 2.2, 选择空的模版, 这样才能一步步理解ASP.Net Core MVC</span></p>
+<p><span style="font-size: 18px;">　　点击确定之后, 项目结构应该是这样的</span></p>
+<p><span style="font-size: 18px;"><strong>　　<img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190118162046751-962495687.png" alt="" /></strong></span></p>
+<p><span style="font-size: 18px;"><strong>　　</strong>比较简洁, 下面开始介绍每个文件的作用</span></p>
+<p><span style="font-size: 18px;"><strong>四: 项目文件及默认配置解析</strong></span></p>
+<ol>
+<li><span style="font-size: 18px;">Connected Services. 这是存放服务引用的, 比如Web Services等等, 这个项目文件夹在硬盘上实际上是不存在的, 本系列教程也不会使用</span></li>
+<li><span style="font-size: 18px;">Properties. 这个项目文件夹在硬盘上是实际存在的, 里面有个launchSettings.json文件. 对项目开发进行一些基本配置, 比如启动方式, 当前环境等等, 后面的教程会有基本的讲解</span></li>
+<li><span style="font-size: 18px;">依赖项. 这也是个在硬盘上不存在的文件夹. 存放当前项目的引用. 和.Net Framework的引用是一个意思. 只不过.Net Core的引用都是基于Nuget管理, 不能直接添加DLL引用</span></li>
+<li><span style="font-size: 18px;">appsettings.json. 该文件是当前项目的配置信息. 等价于.Net Framework的Web.config文件, 可以把项目一些配置信息放在这里, 比如数据库连接字符串等等</span></li>
+<li><span style="font-size: 18px;">Program.cs不必多说</span></li>
+<li><span style="font-size: 18px;">Startup.cs. 主要是用来控制配置服务信息, 注册一些中间件什么的</span></li>
+<li><span style="font-size: 18px;">Welcome.csproj. 这个文件在VS里面是看不到的, 但是在硬盘上能看到, 如果需要在VS里面查看, 右键项目, 编辑Welcome.csproj即可, 如图<strong><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190118163321174-934071176.png" alt="" /><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190118163431023-2068439473.png" alt="" /></strong></span></li>
+<li>TargetFramework&nbsp; 表示当前使用的是.Net Core2.2版本</li>
+<li>AspNetCoreHostingModel, 这是.Net Core 2.2新加的, 优化了IIS的性能. 取值为InProcess表示让当前的这个MVC Web运行于IIS进程中, 就是那个w3wp.exe这个进程. 还有一个别的选项, 叫OutOfProcess. 取值这个表示使用反向代理模式, 比如使用nginx反向代理. 使用OutOfProcess没有InProcess性能好, 毕竟微软自家的东西, 有针对性优化</li>
+<li>PackageReference表示当前引用的Nuget包, 不做过多解释. 也可以在依赖项中展开查看,和这里面的名字一样</li>
+<li>Program类代码分析. 一个Main方法, 程序入口, 所有的程序都有的. 一个CreateWebHostBuilder方法, 这方法使用了WebHost类的CreateDefaultBuilder方法, 可以理解为创建了一个宿主, 然后再调用了IWebHostBuilder接口的扩展UseStartup方法, 传入Startup, 进行一些配置和服务注册</li>
+<li>CreateDefaultBuilder方法里面包含了一些默认配置, 比如使用了Kestrel服务器, 集成IIS, 日志输出功能等等, 这是个ASP.Net Core内置的一个跨平台托管服务器. 当然, 很多默认的配置都可以在Startup类中进行自定义配置. 可以在源码中查看. 怎么查看源码, VS2017自带了, 打开即可, 如图设置<img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190118165338033-1260009258.png" alt="" /></li>
+<li>然后我们在CreateDefaultBuilder方法上按F12, 即可看到源码, 源码如下:&nbsp;<img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190118165447923-1372803532.png" alt="" /></li>
+<li>能够很详细的看到, 使用了UseKestrel &amp;&nbsp;UseIIS &amp;&nbsp;UseIISIntegration等方法, 证明我上面的不是瞎说</li>
+
+</ol>
+<p><span style="font-size: 14pt;"><strong>好咯, 第一节都写到这里, 下一节讲究项目配置信息和来源</strong></span></p>
+<p><span style="font-size: 14pt;"><strong>如果在使用.Net Core遇到任何问题, 都加群进行讨论, 群号: 1群:&nbsp;225982985. 2群:&nbsp;726648662. 3群:&nbsp;654015377</strong></span></p>
+<p><span style="font-size: 18.6667px;"><strong>下一篇 :&nbsp;<a id="homepage1_HomePageDays_ctl00_DayList_TitleUrl_0" class="postTitle2" href="https://www.cnblogs.com/klwen/p/10289069.html">ASP.Net Core 2.2 MVC入门到基本使用系列 (二)</a></strong></span></p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+	<div class = "postDesc">posted on <span id="post-date">2019-01-18 17:08</span> <a href='https://www.cnblogs.com/klwen/'>丶亡我之心不死</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=10288691" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(10288691);return false;">收藏</a></div>
+</div>
+<script type="text/javascript">var allowComments=true,cb_blogId=488950,cb_entryId=10288691,cb_blogApp=currentBlogApp,cb_blogUserGuid='1795614f-09f3-4196-00f8-08d67c7ebe24',cb_entryCreatedDate='2019/1/18 17:08:00';loadViewCount(cb_entryId);var cb_postType=1;var isMarkdown=false;</script>
+
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+  googletag.cmd.push(function() {
+        googletag.defineSlot('/1090369/C1', [300, 250], 'div-gpt-ad-1546353474406-0').addService(googletag.pubads());
+        googletag.defineSlot('/1090369/C2', [468, 60], 'div-gpt-ad-1539008685004-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+  });
+</script>
+<div id='cnblogs_c1' class='c_ad_block'>
+    <div id='div-gpt-ad-1546353474406-0' style='height:250px; width:300px;'></div>
+</div>
+<div id='under_post_news'></div>
+<div id='cnblogs_c2' class='c_ad_block'>
+    <div id='div-gpt-ad-1539008685004-0' style='height:60px; width:468px;'></div>
+</div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+ if(enablePostBottom()) {
+    codeHighlight();
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverT2();
+    deliverC1();
+    deliverC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);  
+}
+</script>
+</div>
+
+    
+</div>
+<div id="leftcontent">
+	
+		<DIV id="leftcontentcontainer">
+			
+<!--done-->
+<div class="newsItem">
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script><br>
+			<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script></DIV>
+	
+</div>
+
+<!--done-->
+<div class="footer">
+	Powered by: <a href="http://www.cnblogs.com">博客园</a>	模板提供：<a href="http://blog.hjenglish.com">沪江博客</a>
+	Copyright &copy;2019 丶亡我之心不死
+</div>
+
+
+
+
+</body>
+</html>

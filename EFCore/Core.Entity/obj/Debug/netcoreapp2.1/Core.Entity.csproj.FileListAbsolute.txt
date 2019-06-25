@@ -1,0 +1,17 @@
+F:\Demo\net core\EFCore\Core.Entity\bin\Debug\netcoreapp2.1\Core.Entity.deps.json
+F:\Demo\net core\EFCore\Core.Entity\bin\Debug\netcoreapp2.1\Core.Entity.dll
+F:\Demo\net core\EFCore\Core.Entity\obj\Debug\netcoreapp2.1\Core.Entity.csproj.CoreCompileInputs.cache
+F:\Demo\net core\EFCore\Core.Entity\obj\Debug\netcoreapp2.1\Core.Entity.AssemblyInfoInputs.cache
+F:\Demo\net core\EFCore\Core.Entity\obj\Debug\netcoreapp2.1\Core.Entity.AssemblyInfo.cs
+F:\Demo\net core\EFCore\Core.Entity\bin\Debug\netcoreapp2.1\Core.Entity.pdb
+F:\Demo\net core\EFCore\Core.Entity\obj\Debug\netcoreapp2.1\Core.Entity.dll
+F:\Demo\net core\EFCore\Core.Entity\obj\Debug\netcoreapp2.1\Core.Entity.pdb
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Entity\obj\Debug\netcoreapp2.1\Core.Entity.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Entity\obj\Debug\netcoreapp2.1\Core.Entity.pdb
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Entity\bin\Debug\netcoreapp2.1\Core.Entity.deps.json
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Entity\bin\Debug\netcoreapp2.1\Core.Entity.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Entity\bin\Debug\netcoreapp2.1\Core.Entity.pdb
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Entity\obj\Debug\netcoreapp2.1\Core.Entity.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Entity\obj\Debug\netcoreapp2.1\Core.Entity.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Entity\obj\Debug\netcoreapp2.1\Core.Entity.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Entity\obj\Debug\netcoreapp2.1\Core.Entity.AssemblyInfo.cs

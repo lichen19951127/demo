@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<head>
+    <title>中英文切换</title>
+    <meta charset="UTF-8" />
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/js/language.js"></script>
+</head>
+<html>
+<body>
+    <button id="change">中英文切换</button>
+    <div style="text-align: center">
+        你好
+    </div>
+    <script type="text/javascript">
+        $("#change").click(function () {
+            translate();
+        })
+    </script>
+</body>
+</html>

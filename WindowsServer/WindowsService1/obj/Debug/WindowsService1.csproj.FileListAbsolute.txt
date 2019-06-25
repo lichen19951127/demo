@@ -1,0 +1,12 @@
+F:\14.大实训\demo\WindowsServer\WindowsService1\bin\Debug\WindowsService1.exe.config
+F:\14.大实训\demo\WindowsServer\WindowsService1\bin\Debug\WindowsService1.exe
+F:\14.大实训\demo\WindowsServer\WindowsService1\bin\Debug\WindowsService1.pdb
+F:\14.大实训\demo\WindowsServer\WindowsService1\obj\Debug\WindowsService1.ProjectInstaller.resources
+F:\14.大实训\demo\WindowsServer\WindowsService1\obj\Debug\WindowsService1.csproj.GenerateResource.cache
+F:\14.大实训\demo\WindowsServer\WindowsService1\obj\Debug\WindowsService1.csproj.CoreCompileInputs.cache
+F:\14.大实训\demo\WindowsServer\WindowsService1\obj\Debug\WindowsService1.exe
+F:\14.大实训\demo\WindowsServer\WindowsService1\obj\Debug\WindowsService1.pdb
+F:\14.大实训\demo\WindowsServer\WindowsService1\bin\Debug\Dapper.dll
+F:\14.大实训\demo\WindowsServer\WindowsService1\bin\Debug\Dapper.xml
+F:\14.大实训\demo\WindowsServer\WindowsService1\obj\Debug\WindowsService1.csprojAssemblyReference.cache
+F:\14.大实训\demo\WindowsServer\WindowsService1\obj\Debug\WindowsService1.csproj.CopyComplete

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nameof用法", "ConsoleApp1\nameof用法.csproj", "{7C9E048A-FCD8-4367-B4CB-255860DEE974}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "上传文件转二进制", "上传文件转二进制\上传文件转二进制.csproj", "{DF3158CE-03C6-4BBB-A251-6922D6D2C103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{12EB4EE5-0B2C-49BF-AC35-0CBE6854EDB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C9E048A-FCD8-4367-B4CB-255860DEE974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9E048A-FCD8-4367-B4CB-255860DEE974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9E048A-FCD8-4367-B4CB-255860DEE974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9E048A-FCD8-4367-B4CB-255860DEE974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF3158CE-03C6-4BBB-A251-6922D6D2C103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF3158CE-03C6-4BBB-A251-6922D6D2C103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF3158CE-03C6-4BBB-A251-6922D6D2C103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF3158CE-03C6-4BBB-A251-6922D6D2C103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12EB4EE5-0B2C-49BF-AC35-0CBE6854EDB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12EB4EE5-0B2C-49BF-AC35-0CBE6854EDB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12EB4EE5-0B2C-49BF-AC35-0CBE6854EDB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12EB4EE5-0B2C-49BF-AC35-0CBE6854EDB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41D76E72-01D4-4032-B65A-81586FA10627}
+	EndGlobalSection
+EndGlobal

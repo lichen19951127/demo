@@ -1,0 +1,2 @@
+MainPackage=F:\资料\资料\demo\MSIX打包WPF\WapProjTemplate1\bin\x64\Debug\WapProjTemplate1_1.0.0.0_x64_Debug.appx
+SymbolPackage=F:\资料\资料\demo\MSIX打包WPF\WapProjTemplate1\obj\x64\Debug\Symbols\WapProjTemplate1_1.0.0.0_x64_Debug.appxsym

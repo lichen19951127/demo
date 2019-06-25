@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="origin" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>ASP.Net Core 2.2 MVC入门到基本使用系列 (五) - 丶亡我之心不死 - 博客园</title>
+    <meta property="og:description" content="本教程会对基本的.Net Core 进行一个大概的且不会太深入的讲解, 在您看完本系列之后, 能基本甚至熟练的使用.Net Core进行Web开发, 感受到.Net Core的魅力. 本教程知识点大体" />
+    <link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=KOZafwuaDasEedEenI5aTy8aXH0epbm6VUJ0v3vsT_Q1"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="/skins/sea/bundle-sea.css?v=PPe3jt1rcXPno6kucw0iQU2MWF3DbrvubQHRM0FEMas1"/>
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/sea/bundle-sea-mobile.css?v=yFtgEd5VFXGr9Lo4adjD_iDDW9y0pVJjEZ2io36-rWw1"/>
+    <link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/klwen/rss"/>
+    <link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/klwen/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/klwen/wlwmanifest.xml"/>
+    <script src="//common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script>var currentBlogId=488950;var currentBlogApp='klwen',cb_enable_mathjax=false;var isLogined=true;</script>
+    <script src="/bundles/blog-common.js?v=smtcUT5dhdu_5eEO8CKHYoVc7DPLgEBGzp6zKkstlzg1" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+
+<!--done-->
+<div id="header">
+	
+<!--done-->
+<div class="header">
+	<div class="headerText">
+		<a id="Header1_HeaderTitle" class="headermaintitle" href="https://www.cnblogs.com/klwen/">丶亡我之心不死</a><br>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="mytopmenu" >
+	
+		<div id="mylinks"><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">博客园</a> &nbsp;
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/klwen/">首页</a> &nbsp;
+<a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a> &nbsp;
+<a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E4%B8%B6%E4%BA%A1%E6%88%91%E4%B9%8B%E5%BF%83%E4%B8%8D%E6%AD%BB">联系</a> &nbsp;
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/klwen/rss">订阅</a><a id="blog_nav_rss_image" href="https://www.cnblogs.com/klwen/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>&nbsp;
+<a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a>
+</div>
+		<DIV id="mystats"><div id="blog_stats">
+随笔-4&nbsp;
+评论-17&nbsp;
+文章-0&nbsp;
+<!--trackbacks-0-->
+</div></DIV>
+	
+</div>
+<div id="centercontent" >
+	
+        <div id="post_detail">
+<div class = "post">
+	<h1 class = "postTitle"><a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/klwen/p/11004655.html">ASP.Net Core 2.2 MVC入门到基本使用系列 (五)</a></h1>
+	<div id="cnblogs_post_body" class="blogpost-body"><p><strong>本教程会对基本的.Net Core 进行一个大概的且不会太深入的讲解, 在您看完本系列之后, 能基本甚至熟练的使用.Net Core进行Web开发, 感受到.Net Core的魅力.</strong></p>
+<p><strong>本教程知识点大体分为以下几个阶段</strong></p>
+<ul>
+<li><strong>ASP.Net Core MVC基础知识</strong></li>
+</ul>
+<ol>
+<li><strong>Startup基本配置和理解</strong></li>
+<li><strong>Controller使用</strong></li>
+<li><strong>Razor视图</strong></li>
+<li><strong>传统视图</strong></li>
+<li><strong>Model Validation (基本用法)</strong></li>
+<li><strong>一点点的Vue (教程使用Vue配合)</strong></li>
+</ol>
+<ul>
+<li><strong>SqlSugar ORM (进行数据库交互)</strong></li>
+<li><strong>Entity Framework&nbsp; Core(基本介绍使用)</strong></li>
+<li><strong>授权和身份验证(MVC的, WebApi的不进行介绍)</strong></li>
+<li><strong>安全性</strong></li>
+<li><strong>测试 / 单元测试</strong></li>
+<li><strong>性能基本优化</strong></li>
+<li><strong>日志功能</strong></li>
+<li><strong>CI/CD</strong></li>
+<li><strong>Windows部署</strong></li>
+<li><strong>Linux部署</strong></li>
+</ul>
+<p><strong>上一节我们介绍了中间件的基本使用, 这一节我们讲一讲.Net Core的环境设置, 以及根据不同的环境加载不同的配置信息</strong></p>
+<p><strong>PS: 由于最近一直比较忙, 一直没抽时间更新这个系列, 最近居多的博友催我, 所以继续挤挤时间更新这个系列, 感谢大家的对本系列教程的喜欢和支持.</strong></p>
+<p>在实际开发中, 我们的系统往往会是至少两个以上的运行环境, 最基本的就是, 开发环境和运营环境, 体系完整的公司, 还会有测试环境, 预发布环境, 和一些自定义环境等等, 这些环境使用的配置或是一些参数肯定是不一样的, 我们不可能为一个环境准备一份代码, 我们可以通过环境配置, 和 一些 if 判断, 就可以做到环境的自动切换, 下面就仔细说说.</p>
+<p>我们先通过默认的.Net Core MVC设置, 感受一下. 以前的代码找不到了, 新建一个空的.Net Core MVC项目吧, 代码后面会上传到百度云, 提供下载.&nbsp;</p>
+<p><strong>PS: IDE我已经使用VS2019</strong></p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201906/1590212-20190611155222256-1482255872.png" alt="" /></p>
+<p>建好之后, 我们打开<strong>Startup.cs</strong>代码文件, 看<strong>Configure</strong>方法, 我相信, 有的博友已经发现了, 里面的第一行代码是个if, 意思就是判断当前环境是不是开发环境, 看单词的字面意思也是这个意思, 所以学好英文对开发程序有很大的buff加成啊~~~</p>
+<p>对于if里的是什么, 上一节已经讲过, 不再称述.</p>
+<p>由此我们得出, 控制环境和判断环境, 都是在<strong>Configure</strong>方法中, 注入的<strong>IHostingEnvironment</strong>接口对象进行的. 这里我说一下, 系统默认提供的几个判断环境的方法. 我们使用env.Is, VS的智能提示, 可以得到下面四个方法, 如图:&nbsp;</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201906/1590212-20190611155828746-1538901215.png" alt="" /></p>
+<p>IsDevelopment方法大家已经知道了, 判断当前是不是开发环境.</p>
+<p>IsProduction方法, 判断当前是不是运营(正式)环境</p>
+<p>IsStaging方法, 判断当前是不是预运行环境</p>
+<p>IsEnvironment方法, 根据传入的环境名称, 判断是不是当前环境类型 (用于自定义环境判断)</p>
+<p>我们修改一下<strong>Configure</strong>方法的代码, 修改后为:&nbsp;</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:csharp;gutter:true;">        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.Run(async (context) =&gt;
+            {
+                context.Response.ContentType = "text/plain;charset=utf-8";  //防止WriteAsync方法输出中文乱码
+                if (env.IsDevelopment())
+                {
+                    await context.Response.WriteAsync("开发环境", Encoding.UTF8);
+                }
+                else if (env.IsProduction())
+                {
+                    await context.Response.WriteAsync("运营环境", Encoding.UTF8);
+                }
+                else if (env.IsStaging())
+                {
+                    await context.Response.WriteAsync("预发布环境", Encoding.UTF8);
+                }
+                else
+                {
+                    await context.Response.WriteAsync("自定义环境", Encoding.UTF8);
+                }
+            });
+        }
+</pre>
+</div>
+<p>然后F5运行, 浏览器会不出意外的输出: "开发环境"</p>
+<p>&nbsp;<img src="https://img2018.cnblogs.com/blog/1590212/201906/1590212-20190611160653755-1731196160.png" alt="" /></p>
+<p>没毛病, 我们修改一下编译环境, 把Debug修改为Release, 然后生成, 如图:</p>
+<p>&nbsp;<img src="https://img2018.cnblogs.com/blog/1590212/201906/1590212-20190611160948103-1349697234.png" alt="" /></p>
+<p>然后生成项目, 生成成功之后, 到项目的bin/Release/netcoreapp2.2目录下, 打开CMD, 执行dotnet&nbsp;Unit1.dll命令, 就会是这样的, 如图:</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201906/1590212-20190611161120635-914550676.png" alt="" /></p>
+<p>我们在浏览器输入&nbsp;<a href="http://localhost:5000/">http://localhost:5000/</a>回车, 不出意外, 会输出: 运营环境 四个大字.</p>
+<p>以上的流程, 就演示了最基本的开发环境和运营环境的配置和判断. 下面我们演示自定义环境. 我们接着修改代码, 为当前环境设置个名字, 代码如下</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:csharp;gutter:true;">        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            env.EnvironmentName = "Cus";    //设置自定义环境名称
+
+            app.Run(async (context) =&gt;
+            {
+                context.Response.ContentType = "text/plain;charset=utf-8";  //防止WriteAsync方法输出中文乱码
+                if (env.IsDevelopment())
+                {
+                    await context.Response.WriteAsync("开发环境", Encoding.UTF8);
+                }
+                else if (env.IsProduction())
+                {
+                    await context.Response.WriteAsync("运营环境", Encoding.UTF8);
+                }
+                else if (env.IsStaging())
+                {
+                    await context.Response.WriteAsync("预发布环境", Encoding.UTF8);
+                }
+                else
+                {
+                    await context.Response.WriteAsync("自定义环境", Encoding.UTF8);
+                }
+            });
+        }
+</pre>
+</div>
+<p>F5运行项目, 浏览器毫不意外的输出了: 自定义环境</p>
+<p>如果我们要输出&nbsp;<strong>预发布环境&nbsp;</strong>的话, 只需要把&nbsp;EnvironmentName 属性的值改成 "<strong><code>Staging</code></strong>" 即可, 这里不做演示, 自行尝试, 设置代码如下:</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:csharp;gutter:true;">env.EnvironmentName = "Staging"; //设置为预发布环境
+</pre>
+</div>
+<p>发设置为<strong><code>Staging</code></strong><code>和其它值的区别就是系统系统了一个</code><code>IsStaging方法</code><code><br /></code></p>
+<p>为了更加直观的演示自定义环境, 我们把else改一下, 改完之后的代码如下:</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:csharp;gutter:true;">        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            env.EnvironmentName = "Cus";    //设置自定义环境名称
+
+            app.Run(async (context) =&gt;
+            {
+                context.Response.ContentType = "text/plain;charset=utf-8";  //防止WriteAsync方法输出中文乱码
+                if (env.IsDevelopment())
+                {
+                    await context.Response.WriteAsync("开发环境", Encoding.UTF8);
+                }
+                else if (env.IsProduction())
+                {
+                    await context.Response.WriteAsync("运营环境", Encoding.UTF8);
+                }
+                else if (env.IsStaging())
+                {
+                    await context.Response.WriteAsync("预发布环境", Encoding.UTF8);
+                }
+                else
+                {
+                    if (env.IsEnvironment("Cus"))
+                    {
+                        await context.Response.WriteAsync("自定义环境: Cus", Encoding.UTF8);
+                    }
+                    else if (env.IsEnvironment("Cus1"))
+                    {
+                        await context.Response.WriteAsync("自定义环境: Cus1", Encoding.UTF8);
+                    }
+                    else
+                    {
+                        await context.Response.WriteAsync($"自定义环境: {env.EnvironmentName}", Encoding.UTF8);
+                    }
+                }
+            });
+        }
+</pre>
+</div>
+<p>具体运行效果和预计的一样, 会输出对应的自定义环境</p>
+<p>但是实际开发过程中, 我不推荐在代码里面修改当前环境, 而且通过项目的环境变量设置对应的环境, 具体修改方法如下</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201906/1590212-20190611162522472-421171215.png" alt="" /></p>
+<p>1: 点开Properties</p>
+<p>2: 打开launchSettings.json</p>
+<p>3: 修改ASPNETCORE_ENVIRONMENT的值.</p>
+<p>我们修改EnvironmentName属性的代码删掉, 修改launchSettings.json的配置为Cus, 运行是什么效果, 修改后的效果如图</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201906/1590212-20190611162712135-44185965.png" alt="" /></p>
+<p>没出任何以外, 浏览器输出的是自定义环境: Cus, 改成其它的值, 就输入对应的自定义环境, 修改为Development就是开发环境,&nbsp;<code>Staging就是预运营环境,&nbsp;Production就是运营环境</code></p>
+<p>可能有人就要问了, 你只修改了上面的ASPNETCORE_ENVIRONMENT, 下面还有一个ASPNETCORE_ENVIRONMENT配置, 没修改, 怎么也可以. 别急, 马上就说明</p>
+<p>.Net Core MVC程序, 提供了两种托管方式, 一种是通过IIS托管, 一种是自托管, 我们刚刚修改的环境, 只修改了IIS托管模式, VS默认又是IIS调试, 所以, 会有效果</p>
+<p>如果使用自托管模式调试或发布运行程序, 则修改下面的Unit1节点的配置即可. 当然, VS也提供了调试方式, 切换方法, 点击运行模式即可, 如图:</p>
+<p>&nbsp;<img src="https://img2018.cnblogs.com/blog/1590212/201906/1590212-20190611163304305-446848293.png" alt="" /></p>
+<p>选择Unit1, 就是自托管模式啦~ , 然后F5运行, 浏览器输出的依然是开发环境, 虽然IIS配置的是Cus环境, 但是Unit1自托管没有修改, 我们修改一下Unit1的环境试试, 这里我修改为Cus100, 然后选择Unit1调试, F5运行, 浏览器输出的就是</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201906/1590212-20190611163528948-677675807.png" alt="" /></p>
+<p>没有任何问题</p>
+<p>如果你觉得这种修改方式麻烦, 还有一种界面修改方法</p>
+<p>我们在项目上右键 --&gt; 属性 --&gt; 调试, 就能看到对应的配置了, 如图:</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201906/1590212-20190611163704096-653362225.png" alt="" /></p>
+<p>当前是自托管模式, 我修改为Cus100, 这里显示的就是Cus100, 点击上面的配置文件, 还可以修改不同的托管模式的配置:</p>
+<p>&nbsp;<img src="https://img2018.cnblogs.com/blog/1590212/201906/1590212-20190611163756548-1337677844.png" alt="" /></p>
+<p>这里就不做演示了, 修改效果和直接修改launchSettings.json文件是一样的</p>
+<p>-------------------------------------------------------------------------------分割线-------------------------------------------------------------------------------</p>
+<p><strong>PS: 我们已经把两种托管模式的环境都设置为了默认的Development, 开发环境.</strong></p>
+<p>上面已经讲完了环境的配置和切换, 下面讲讲根据不同的环境, 自动读取不同的配置文件, 我们先修改一下代码, 让输入的文件是从appsettings.json配置里面读取的, 修改后的Startup类代码如下:&nbsp;</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:csharp;gutter:true;">using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using System.Text;
+
+namespace Unit1
+{
+    public class Startup
+    {
+        private readonly IConfiguration _Configuration;
+
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="configuration"&gt;注入或者配置文件的接口对象&lt;/param&gt;
+        public Startup(IConfiguration configuration)
+        {
+            this._Configuration = configuration;
+        }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public void ConfigureServices(IServiceCollection services)
+        {
+        }
+
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            //env.EnvironmentName = "Cus1";    //设置自定义环境名称
+
+            app.Run(async (context) =&gt;
+            {
+                context.Response.ContentType = "text/plain;charset=utf-8";  //防止WriteAsync方法输出中文乱码
+                var msg = this._Configuration.GetValue&lt;string&gt;("hello");
+                await context.Response.WriteAsync(msg, Encoding.UTF8);
+                /*if (env.IsDevelopment())
+                {
+                    await context.Response.WriteAsync("开发环境", Encoding.UTF8);
+                }
+                else if (env.IsProduction())
+                {
+                    await context.Response.WriteAsync("运营环境", Encoding.UTF8);
+                }
+                else if (env.IsStaging())
+                {
+                    await context.Response.WriteAsync("预发布环境", Encoding.UTF8);
+                }
+                else
+                {
+                    if (env.IsEnvironment("Cus"))
+                    {
+                        await context.Response.WriteAsync("自定义环境: Cus", Encoding.UTF8);
+                    }
+                    else if (env.IsEnvironment("Cus1"))
+                    {
+                        await context.Response.WriteAsync("自定义环境: Cus1", Encoding.UTF8);
+                    }
+                    else
+                    {
+                        await context.Response.WriteAsync($"自定义环境: {env.EnvironmentName}", Encoding.UTF8);
+                    }
+                }*/
+            });
+        }
+    }
+}
+</pre>
+</div>
+<p>然后我们在appsettings.json配置中, 新增一行:&nbsp;"hello": "appsettings.json", 如图:</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201906/1590212-20190611164725315-2035953816.png" alt="" /></p>
+<p>F5执行, 浏览器输出了appsettings.json, 没问题</p>
+<p>然后我们点一下appsettings.json文件前面的箭头, 会发现里面还有个appsettings.Development.json文件, 如图:</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201906/1590212-20190611164838635-704961917.png" alt="" /></p>
+<p>打开appsettings.Development.json文件, 在里面和配置appsettings.json一样, 添加个hello配置, 把值设置为appsettings.Development.json, 如图:&nbsp;</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201906/1590212-20190611165037903-509743368.png" alt="" /></p>
+<p>然后再F5运行, 浏览器输出的就是appsettings.Development.json啦~, 这里的原因, 前面章节已经讲过, 这里不再称述.&nbsp;</p>
+<p>我们新建个appsettings.Cus.json文件, 然后在里面加个hello配置, 值为appsettings.Cus.json, 如图:</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201906/1590212-20190611165256365-1463492807.png" alt="" /></p>
+<p>然后再修改运行环境为Cus, 修改方法参考上面, 然后F5运行, 浏览器就输出appsettings.Cus.json啦~</p>
+<p>&nbsp;</p>
+<p><strong>到这里, 这一节就结束了, 到目前为止, 我们对.Net Core MVC的环境和配置文件切换, 有了一个比较熟悉的了解了, 可以实际运用一下了, 再也不用担心不同环境不同的配置搞混了</strong></p>
+<p><strong>我们再下一节讲ASP.Net Core MVC的路由</strong></p>
+<p>&nbsp;</p>
+<p><strong>如果在使用.Net Core遇到任何问题, 都加群进行讨论, 群号: 1群:&nbsp;225982985. 2群:&nbsp;726648662. 3群:&nbsp;654015377</strong></p>
+<p><strong>本节代码:&nbsp;链接: https://pan.baidu.com/s/1r98sWbVdM6UMtzUEgztY2A 提取码: 6e35</strong></p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+	<div class = "postDesc">posted on <span id="post-date">2019-06-11 16:57</span> <a href='https://www.cnblogs.com/klwen/'>丶亡我之心不死</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=11004655" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(11004655);return false;">收藏</a></div>
+</div>
+<script type="text/javascript">var allowComments=true,cb_blogId=488950,cb_entryId=11004655,cb_blogApp=currentBlogApp,cb_blogUserGuid='1795614f-09f3-4196-00f8-08d67c7ebe24',cb_entryCreatedDate='2019/6/11 16:57:00';loadViewCount(cb_entryId);var cb_postType=1;var isMarkdown=false;</script>
+
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+  googletag.cmd.push(function() {
+        googletag.defineSlot('/1090369/C1', [300, 250], 'div-gpt-ad-1546353474406-0').addService(googletag.pubads());
+        googletag.defineSlot('/1090369/C2', [468, 60], 'div-gpt-ad-1539008685004-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+  });
+</script>
+<div id='cnblogs_c1' class='c_ad_block'>
+    <div id='div-gpt-ad-1546353474406-0' style='height:250px; width:300px;'></div>
+</div>
+<div id='under_post_news'></div>
+<div id='cnblogs_c2' class='c_ad_block'>
+    <div id='div-gpt-ad-1539008685004-0' style='height:60px; width:468px;'></div>
+</div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+ if(enablePostBottom()) {
+    codeHighlight();
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverT2();
+    deliverC1();
+    deliverC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);  
+}
+</script>
+</div>
+
+    
+</div>
+<div id="leftcontent">
+	
+		<DIV id="leftcontentcontainer">
+			
+<!--done-->
+<div class="newsItem">
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script><br>
+			<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script></DIV>
+	
+</div>
+
+<!--done-->
+<div class="footer">
+	Powered by: <a href="http://www.cnblogs.com">博客园</a>	模板提供：<a href="http://blog.hjenglish.com">沪江博客</a>
+	Copyright &copy;2019 丶亡我之心不死
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication1</name>
+    </assembly>
+    <members>
+        <member name="M:WebApplication1.Controllers.TestController.Query">
+            <summary>
+            获取数据1
+            </summary>
+            <returns>返回123</returns>
+        </member>
+    </members>
+</doc>

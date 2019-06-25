@@ -1,0 +1,49 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+</head>
+<body>
+    <div>
+        @{ 
+             var h = 1;
+
+        }
+        @foreach (var item in ViewBag.data)
+        {
+            char zm = Convert.ToChar(65 + (item.Num - 1));
+           
+            for (char i = 'A'; i <= zm; i++)
+            {
+                <input type="radio" name="xx_@h" value="@i" />@i             
+            }
+            <br />
+             h++;
+        }
+    </div>
+    <div id="div">
+
+    </div>
+</body>
+</html>
+<script>
+    $(function () {
+        $.ajax({
+            url: "/Test/getData",
+            type: "get",
+            success: function (json) {
+                console.log(json);
+
+
+            }
+        })
+    })
+</script>

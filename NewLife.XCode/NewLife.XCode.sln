@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewLife.XCode.Web", "NewLife.XCode.Web\NewLife.XCode.Web.csproj", "{598AD4D4-57F0-4A0B-8AEE-32F808EE50BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewLife.XCode.WebNet", "NewLife.XCode.WebNet\NewLife.XCode.WebNet.csproj", "{ABBFBA92-2556-4128-B957-D8F3EB5AC961}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{598AD4D4-57F0-4A0B-8AEE-32F808EE50BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{598AD4D4-57F0-4A0B-8AEE-32F808EE50BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{598AD4D4-57F0-4A0B-8AEE-32F808EE50BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{598AD4D4-57F0-4A0B-8AEE-32F808EE50BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABBFBA92-2556-4128-B957-D8F3EB5AC961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABBFBA92-2556-4128-B957-D8F3EB5AC961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABBFBA92-2556-4128-B957-D8F3EB5AC961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABBFBA92-2556-4128-B957-D8F3EB5AC961}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D7081A3-45ED-4971-B88F-57E563BC82BF}
+	EndGlobalSection
+EndGlobal

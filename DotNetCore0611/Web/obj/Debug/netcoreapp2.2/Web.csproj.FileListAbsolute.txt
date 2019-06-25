@@ -1,0 +1,17 @@
+F:\资料\资料\demo\DotNetCore0611\Web\bin\Debug\netcoreapp2.2\appsettings.Development.json
+F:\资料\资料\demo\DotNetCore0611\Web\bin\Debug\netcoreapp2.2\appsettings.json
+F:\资料\资料\demo\DotNetCore0611\Web\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+F:\资料\资料\demo\DotNetCore0611\Web\bin\Debug\netcoreapp2.2\Web.deps.json
+F:\资料\资料\demo\DotNetCore0611\Web\bin\Debug\netcoreapp2.2\Web.runtimeconfig.json
+F:\资料\资料\demo\DotNetCore0611\Web\bin\Debug\netcoreapp2.2\Web.runtimeconfig.dev.json
+F:\资料\资料\demo\DotNetCore0611\Web\bin\Debug\netcoreapp2.2\Web.dll
+F:\资料\资料\demo\DotNetCore0611\Web\bin\Debug\netcoreapp2.2\Web.pdb
+F:\资料\资料\demo\DotNetCore0611\Web\obj\Debug\netcoreapp2.2\Web.csprojAssemblyReference.cache
+F:\资料\资料\demo\DotNetCore0611\Web\obj\Debug\netcoreapp2.2\Web.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\DotNetCore0611\Web\obj\Debug\netcoreapp2.2\Web.RazorAssemblyInfo.cache
+F:\资料\资料\demo\DotNetCore0611\Web\obj\Debug\netcoreapp2.2\Web.RazorAssemblyInfo.cs
+F:\资料\资料\demo\DotNetCore0611\Web\obj\Debug\netcoreapp2.2\Web.AssemblyInfoInputs.cache
+F:\资料\资料\demo\DotNetCore0611\Web\obj\Debug\netcoreapp2.2\Web.AssemblyInfo.cs
+F:\资料\资料\demo\DotNetCore0611\Web\obj\Debug\netcoreapp2.2\Web.RazorTargetAssemblyInfo.cache
+F:\资料\资料\demo\DotNetCore0611\Web\obj\Debug\netcoreapp2.2\Web.dll
+F:\资料\资料\demo\DotNetCore0611\Web\obj\Debug\netcoreapp2.2\Web.pdb

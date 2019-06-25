@@ -1,0 +1,13 @@
+F:\资料\资料\demo\AutoMapper\ConsoleApp7\bin\Debug\netcoreapp3.0\ConsoleApp7.exe
+F:\资料\资料\demo\AutoMapper\ConsoleApp7\obj\Debug\netcoreapp3.0\ConsoleApp7.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\AutoMapper\ConsoleApp7\obj\Debug\netcoreapp3.0\ConsoleApp7.AssemblyInfoInputs.cache
+F:\资料\资料\demo\AutoMapper\ConsoleApp7\obj\Debug\netcoreapp3.0\ConsoleApp7.AssemblyInfo.cs
+F:\资料\资料\demo\AutoMapper\ConsoleApp7\bin\Debug\netcoreapp3.0\ConsoleApp7.deps.json
+F:\资料\资料\demo\AutoMapper\ConsoleApp7\bin\Debug\netcoreapp3.0\ConsoleApp7.runtimeconfig.json
+F:\资料\资料\demo\AutoMapper\ConsoleApp7\bin\Debug\netcoreapp3.0\ConsoleApp7.runtimeconfig.dev.json
+F:\资料\资料\demo\AutoMapper\ConsoleApp7\bin\Debug\netcoreapp3.0\ConsoleApp7.dll
+F:\资料\资料\demo\AutoMapper\ConsoleApp7\bin\Debug\netcoreapp3.0\ConsoleApp7.pdb
+F:\资料\资料\demo\AutoMapper\ConsoleApp7\bin\Debug\netcoreapp3.0\AutoMapper.dll
+F:\资料\资料\demo\AutoMapper\ConsoleApp7\obj\Debug\netcoreapp3.0\ConsoleApp7.csproj.CopyComplete
+F:\资料\资料\demo\AutoMapper\ConsoleApp7\obj\Debug\netcoreapp3.0\ConsoleApp7.dll
+F:\资料\资料\demo\AutoMapper\ConsoleApp7\obj\Debug\netcoreapp3.0\ConsoleApp7.pdb

@@ -1,0 +1,14 @@
+F:\资料\资料\demo\AutoMapper\ConsoleApp4\bin\Debug\netcoreapp3.0\ConsoleApp4.exe
+F:\资料\资料\demo\AutoMapper\ConsoleApp4\obj\Debug\netcoreapp3.0\ConsoleApp4.csprojAssemblyReference.cache
+F:\资料\资料\demo\AutoMapper\ConsoleApp4\obj\Debug\netcoreapp3.0\ConsoleApp4.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\AutoMapper\ConsoleApp4\obj\Debug\netcoreapp3.0\ConsoleApp4.AssemblyInfoInputs.cache
+F:\资料\资料\demo\AutoMapper\ConsoleApp4\obj\Debug\netcoreapp3.0\ConsoleApp4.AssemblyInfo.cs
+F:\资料\资料\demo\AutoMapper\ConsoleApp4\bin\Debug\netcoreapp3.0\ConsoleApp4.deps.json
+F:\资料\资料\demo\AutoMapper\ConsoleApp4\bin\Debug\netcoreapp3.0\ConsoleApp4.runtimeconfig.json
+F:\资料\资料\demo\AutoMapper\ConsoleApp4\bin\Debug\netcoreapp3.0\ConsoleApp4.runtimeconfig.dev.json
+F:\资料\资料\demo\AutoMapper\ConsoleApp4\bin\Debug\netcoreapp3.0\ConsoleApp4.dll
+F:\资料\资料\demo\AutoMapper\ConsoleApp4\bin\Debug\netcoreapp3.0\ConsoleApp4.pdb
+F:\资料\资料\demo\AutoMapper\ConsoleApp4\bin\Debug\netcoreapp3.0\AutoMapper.dll
+F:\资料\资料\demo\AutoMapper\ConsoleApp4\obj\Debug\netcoreapp3.0\ConsoleApp4.csproj.CopyComplete
+F:\资料\资料\demo\AutoMapper\ConsoleApp4\obj\Debug\netcoreapp3.0\ConsoleApp4.dll
+F:\资料\资料\demo\AutoMapper\ConsoleApp4\obj\Debug\netcoreapp3.0\ConsoleApp4.pdb

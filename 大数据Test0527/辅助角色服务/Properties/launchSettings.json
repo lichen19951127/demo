@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "辅助角色服务": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

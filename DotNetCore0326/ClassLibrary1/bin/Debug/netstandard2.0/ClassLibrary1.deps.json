@@ -1,0 +1,63 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "76125be42c7460fe43abf51cdd64c0df1db19bee"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "ClassLibrary1/1.0.0": {
+        "dependencies": {
+          "Huitian.PowerCollections": "1.0.0",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "ClassLibrary1.dll": {}
+        }
+      },
+      "Huitian.PowerCollections/1.0.0": {
+        "runtime": {
+          "lib/net45/PowerCollections.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ClassLibrary1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Huitian.PowerCollections/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P0kapQepNO2HfLoK12oVSWRKn+RueOUz5UuUQYTfmi3SyIxewBc4IUOpfcpe9I0KY6k4niFD/FDKXcrS8bwPQg==",
+      "path": "huitian.powercollections/1.0.0",
+      "hashPath": "huitian.powercollections.1.0.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/xF2ZYNxIwxaTlPDqlUvc8oR4DZGZvORdzJAhHs/l9EmKr2msU6hikcyvw5mSvtzvo0S17AHkFbb21a/fvKb0w==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    }
+  }
+}

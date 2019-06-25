@@ -1,0 +1,5 @@
+E:\案例111\demo\winform上传图片到服务器\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+E:\案例111\demo\winform上传图片到服务器\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\案例111\demo\winform上传图片到服务器\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\案例111\demo\winform上传图片到服务器\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\案例111\demo\winform上传图片到服务器\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache

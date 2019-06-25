@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFToWorld", "PDFToWorld\PDFToWorld.csproj", "{1635382B-1608-4D2A-919C-5E97A9AF466B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1635382B-1608-4D2A-919C-5E97A9AF466B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1635382B-1608-4D2A-919C-5E97A9AF466B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1635382B-1608-4D2A-919C-5E97A9AF466B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1635382B-1608-4D2A-919C-5E97A9AF466B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06AE8E7B-530F-4F13-88D0-0280B61B0B6C}
+	EndGlobalSection
+EndGlobal

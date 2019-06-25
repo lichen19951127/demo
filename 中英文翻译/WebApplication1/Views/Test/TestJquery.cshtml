@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>国际化</title>
+</head>
+<body>
+
+    <label data-locale="username">用户名：</label><input type="text">
+    <label data-locale="password">密码：</label><input type="password">
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <!-- 加载语言包文件 -->
+    <script src="~/lib/jquery-i18n-properties/jquery.i18n.properties-min-1.0.9.js"></script>
+    <script type="text/javascript">
+        loadProperties();
+        function loadProperties() {
+            $.i18n.properties({
+                name: 'strings',    //属性文件名     命名格式： 文件名_国家代号.properties
+                path: '~/lib/jquery-i18n-properties/',   //注意这里路径是你属性文件的所在文件夹
+                mode: 'map',
+                language: "zh",     //这就是国家代号 name+language刚好组成属性文件名：strings+zh -> strings_zh.properties
+                //language:$.i18n.browserLang()
+                callback: function () {
+                    $("[data-locale]").each(function () {
+                        console.log($(this).data("locale"));
+                        $(this).html($.i18n.prop($(this).data("locale")));
+
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>

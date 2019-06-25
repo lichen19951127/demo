@@ -1,0 +1,10 @@
+F:\资料\资料\demo\基于Topshelf创建Windows服务\Test1\bin\Debug\Test1.exe.config
+F:\资料\资料\demo\基于Topshelf创建Windows服务\Test1\bin\Debug\Test1.exe
+F:\资料\资料\demo\基于Topshelf创建Windows服务\Test1\bin\Debug\Test1.pdb
+F:\资料\资料\demo\基于Topshelf创建Windows服务\Test1\bin\Debug\Topshelf.dll
+F:\资料\资料\demo\基于Topshelf创建Windows服务\Test1\bin\Debug\Topshelf.xml
+F:\资料\资料\demo\基于Topshelf创建Windows服务\Test1\obj\Debug\Test1.csprojAssemblyReference.cache
+F:\资料\资料\demo\基于Topshelf创建Windows服务\Test1\obj\Debug\Test1.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\基于Topshelf创建Windows服务\Test1\obj\Debug\Test1.csproj.CopyComplete
+F:\资料\资料\demo\基于Topshelf创建Windows服务\Test1\obj\Debug\Test1.exe
+F:\资料\资料\demo\基于Topshelf创建Windows服务\Test1\obj\Debug\Test1.pdb

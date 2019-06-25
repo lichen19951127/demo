@@ -1,0 +1,93 @@
+﻿@{
+
+}
+<script src="~/js/jquery-3.3.1.min.js"></script>
+<script src="~/js/vue.min.js"></script>
+
+<div id="app">
+    <input type="button" value="what fuck?" id="InsertBtu" v-on:click='AddUsers()' />
+    Account:<input type="text" class="Account" v-model="user.Account" id="Account"   />
+    Password:<input type="text" class="Password" v-model="user.Password" id="Password"   />
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Account</th>
+                <th>Password</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="tb">
+            <tr v-for="(item,index) in users">
+                <td>{{index+1}}</td>
+                <td>{{item.account}}</td>
+                
+                <td>{{item.password}}</td>
+                <td><input type="button" value="删除" id="deleteBtu" v-on:click="DeleteInfo(item.ID)"/></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    var vue = new Vue({
+        el: '#app',
+        data: {
+            UID: '',
+            user: { ID: '', Account: '', Password: '' },
+            url: "https://localhost:44318/Home/GetList",
+            users: [],
+            Account: '',
+            Password:''
+        },
+        created: function () {
+            this.initUser();
+        },
+        watch: {
+            UID: function () { }
+        },
+        methods: {
+            initUser: function () {
+                var self = this;
+                $.get(self.url).done(function (d) {
+                    debugger;
+                    self.users = d;
+                });
+            },
+            AddUsers: function () {
+                //var user = {
+                //    Account: this.Account,
+                //    Password: this.Password
+                //}
+        
+                debugger;
+                $.ajax({
+                    type: "post",
+                    data: { entity: this.user },
+                    url: "https://localhost:44318/Home/Insert",
+                    success: function (result) {
+                        if (result) {
+                            this.users.push(this.user);
+                            alert("添加成功！");
+                        }
+                    }
+                })
+            },
+            DeleteInfo: function (ID) {
+                this.user.ID = ID;
+                this.users.push(this.user);
+                $.ajax({
+                    type: "post",
+                    data: { list: this.users },
+                    url: "https://localhost:44318/Home/Delete",
+                    success: function (result) {
+                        if (result) {
+                            alert("添加成功！");
+                        }
+                    }
+                })
+            }
+        }
+    })
+
+</script>

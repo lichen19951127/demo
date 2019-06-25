@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="origin" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>ASP.Net Core 2.2 MVC入门到基本使用系列 (三) - 丶亡我之心不死 - 博客园</title>
+    <meta property="og:description" content="本教程会对基本的.Net Core 进行一个大概的且不会太深入的讲解, 在您看完本系列之后, 能基本甚至熟练的使用.Net Core进行Web开发, 感受到.Net Core的魅力. 本教程知识点大体" />
+    <link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=KOZafwuaDasEedEenI5aTy8aXH0epbm6VUJ0v3vsT_Q1"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="/skins/sea/bundle-sea.css?v=PPe3jt1rcXPno6kucw0iQU2MWF3DbrvubQHRM0FEMas1"/>
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/sea/bundle-sea-mobile.css?v=yFtgEd5VFXGr9Lo4adjD_iDDW9y0pVJjEZ2io36-rWw1"/>
+    <link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/klwen/rss"/>
+    <link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/klwen/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/klwen/wlwmanifest.xml"/>
+    <script src="//common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script>var currentBlogId=488950;var currentBlogApp='klwen',cb_enable_mathjax=false;var isLogined=true;</script>
+    <script src="/bundles/blog-common.js?v=smtcUT5dhdu_5eEO8CKHYoVc7DPLgEBGzp6zKkstlzg1" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+
+<!--done-->
+<div id="header">
+	
+<!--done-->
+<div class="header">
+	<div class="headerText">
+		<a id="Header1_HeaderTitle" class="headermaintitle" href="https://www.cnblogs.com/klwen/">丶亡我之心不死</a><br>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="mytopmenu" >
+	
+		<div id="mylinks"><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">博客园</a> &nbsp;
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/klwen/">首页</a> &nbsp;
+<a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a> &nbsp;
+<a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E4%B8%B6%E4%BA%A1%E6%88%91%E4%B9%8B%E5%BF%83%E4%B8%8D%E6%AD%BB">联系</a> &nbsp;
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/klwen/rss">订阅</a><a id="blog_nav_rss_image" href="https://www.cnblogs.com/klwen/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>&nbsp;
+<a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a>
+</div>
+		<DIV id="mystats"><div id="blog_stats">
+随笔-4&nbsp;
+评论-17&nbsp;
+文章-0&nbsp;
+<!--trackbacks-0-->
+</div></DIV>
+	
+</div>
+<div id="centercontent" >
+	
+        <div id="post_detail">
+<div class = "post">
+	<h1 class = "postTitle"><a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/klwen/p/10303059.html">ASP.Net Core 2.2 MVC入门到基本使用系列 (三)</a></h1>
+	<div id="cnblogs_post_body" class="blogpost-body"><p><strong>本教程会对基本的.Net Core 进行一个大概的且不会太深入的讲解, 在您看完本系列之后, 能基本甚至熟练的使用.Net Core进行Web开发, 感受到.Net Core的魅力.</strong></p>
+<p><strong>本教程知识点大体分为以下几个阶段</strong></p>
+<ul>
+<li><strong>ASP.Net Core MVC基础知识</strong></li>
+</ul>
+<ol>
+<li><strong>Startup基本配置和理解</strong></li>
+<li><strong>Controller使用</strong></li>
+<li><strong>Razor视图</strong></li>
+<li><strong>传统视图</strong></li>
+<li><strong>Model Validation (基本用法)</strong></li>
+<li><strong>一点点的Vue (教程使用Vue配合)</strong></li>
+</ol>
+<ul>
+<li><strong>SqlSugar ORM (进行数据库交互)</strong></li>
+<li><strong>Entity Framework&nbsp; Core(基本介绍使用)</strong></li>
+<li><strong>授权和身份验证(MVC的, WebApi的不进行介绍)</strong></li>
+<li><strong>安全性</strong></li>
+<li><strong>测试 / 单元测试</strong></li>
+<li><strong>性能基本优化</strong></li>
+<li><strong>日志功能</strong></li>
+<li><strong>CI/CD</strong></li>
+<li><strong>Windows部署</strong></li>
+<li><strong>Linux部署</strong></li>
+</ul>
+<p><span style="font-size: 14pt;"><strong><strong>想必大家都知道ASP.Net Core MVC默认自带了DI容器的, 我们可以很方便的进行使用, 来方便管理对象和生命周期, 那么这一节我就会详细讲解服务注册, 顺便简单讲解一下管道, 让大家知道了基本的MVC运行流程.</strong></strong></span></p>
+<p><span style="font-size: 14pt;"><strong><strong>　　</strong></strong><span style="font-size: 14px;">回顾一下上一节的内容, 我们从配置文件中获取了输出的字符, 也介绍各个配置的 "优先级" (其实是配置覆盖), 那么我们这一节以服务的方式输出这个字符串, 然后用过DI进行注册服务, 快速了解服务注册.</span></span></p>
+<p><span style="font-size: 14pt;"><span style="font-size: 14px;">　　DI容器呢, 依赖接口, 所以我们先新建一个接口, 就叫 IWelcome , 接口里面定义个方法, 叫GetWelcomMsg, 然后再建个类, 实现这个接口, 这样, 我们的一个最基本的服务就做好了. 代码结构和代码如下图 (我建了个文件夹, 存放这些服务):</span></span></p>
+<p><span style="font-size: 14pt;"><span style="font-size: 14px;">　　<img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190122112342624-128201436.png" alt="" /><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190122112349162-271143209.png" alt="" /><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190122112354918-473088222.png" alt="" /></span></span></p>
+<p><span style="font-size: 14pt;"><span style="font-size: 14px;">代码编写完之后, 我们尝试在Configure方法里面注入引用这个接口, 因为我们获取配置信息的时候也是直接在这个方法里面注入使用的, 那我们来试试, 代码如下图 :&nbsp;</span></span></p>
+<p><span style="font-size: 14pt;"><span style="font-size: 14px;"><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190122112629724-538503779.png" alt="" /></span></span></p>
+<p>&nbsp;</p>
+<p>一切都很正常, 方法也能调用, 我们跑起来试试看, 能不能正常使用.&nbsp;</p>
+<p>一点都不意外, 它报错了, 报错信息如下图 :&nbsp;</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190122112819699-866342391.png" alt="" /></p>
+<p>意思就是无法解析IWelcome这个服务, 也是就无法注入这个服务.&nbsp;</p>
+<p>那么为什么&nbsp;IConfiguration,&nbsp;IHostingEnvironment,&nbsp;IApplicationBuilder等等之类的接口, 我们能直接注入使用呢, 那是ASP.Net Core MVC里面的源包里面, 已经自动为我们注册好了这几个服务, 我们直接可以使用. 我们要使用自定义的服务或者组件, 需要我们自己进行注册.</p>
+<p>说到自定义服务注册, 就不得不说服务注册的几种方式, 或者说是几种不同的注册方法. 总共分为三种, 也就是三个注册服务的方法.</p>
+<p>我们看看 Startup 这个类, 会发现它里面有个ConfigureServices方法, 看名字就知道, 它是配置服务用的, 有个IServiceCollection接口参数, 这个接口就是.Net Core默认提供的DI服务的接口管理对象, 我们所有注册的服务都可以通过这个接口进行管理或操作. 如果使用第三方包, 如Autofac另说, 这里不介绍Autofac的使用.</p>
+<p>那么我们就可以通过IServiceCollection接口进行我们自定义服务的注册了, 上面提到了有三个注册服务的方法, 分别是 :&nbsp;</p>
+<p>　　1.&nbsp;AddSingleton (单例模式注册服务, 也就是在整个应用程序中, 只会创建一个接口对象, 所有的请求都会使用这个接口对象, 可能会有并发问题)</p>
+<p>　　2.&nbsp;AddTransient (管道机制注册服务. 也是在每个请求发生的时候, 都会创建一个接口对象, 给当前请求使用)</p>
+<p>　　3.&nbsp;AddScoped (会话机制注册服务. 也就是在当前会话中, 只会创建一个接口对象. 什么是一个会话, 可以简单理解为当前浏览器打开到关闭, 这个过程就是一整个会话的过程)</p>
+<p>那么这里, 我们先使用AddSingleton单例模式注册服务, 代码如下 :&nbsp;</p>
+<p>　　services.AddSingleton&lt;IWelcome, Welcome.Services.Welcome&gt;();</p>
+<p>上面提到的三个方法, 使用方式都一样, 都是两个泛型参数, 第一个泛型参数是接口, 第二个是泛型参数是接口实现类.</p>
+<p>那么再运行一个我们的程序, 可以看到浏览器正常输出我们的字符串了.</p>
+<p>至于上面三个不同生命周期的注册方法, 怎么使用, 看服务的用途, 一般我推荐使用AddScoped注册服务</p>
+<p>到这里, 我们一个简单的服务就从定义到实现到注册到使用就完成了. 是不是很简单呢.</p>
+<p><span style="font-size: 14pt;"><strong>下面我们简单讲讲ASP.Net Core MVC的管道</strong></span></p>
+<p><span style="font-size: 14pt;"><strong>这里我只会简单讲解ASP.Net Core MVC的管道运行流程, 不会讲解从监听端口到转发到ASP.Net Core MVC里面是怎么实现的</strong></span></p>
+<p><span style="font-size: 14px;">比如我们现在发起一个Get请求, 在MVC收到这个请求的时候, 我们的管道流程就开始运行了, 它会最先触发Logger这个中间件, 就是日志中间件, 这个中间件里面可以获取很多信息, 比如请求头部信息, 参数信息等等, 甚至我们可以对这些信息进行修改. 这些信息也会在控制台输出, 如果用的是dotnet run命令运行这个MVC程序的话, 这里不放截图了, 你们可以自己试试</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14px;">在日志中间件执行完之后, 就会执行其它的中间件, 如果我们启用了其它的中间件. 比如我们启用了身份验证中间件, 那么在日志中间件执行完成之后, 就会执行身份验证中间件, 进行身份验证, 如果验证成功了, 继续下一步处理, 如果验证失败了, 就做其它处理, 比如重定向到登录页面等等.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14px;">在这一步执行完成之后, MVC管道就会进入路由匹配的过程. 如果匹配成了, 就正常返回HTML或JSON或XML数据等等, 如果匹配失败了, 就404错误等等.</span></p>
+<p>&nbsp;</p>
+<p>这就是ASP.Net Core MVC管道的一个基本流程, 其实里面做的事情远远不止这些, 这里就不做深入的讲解, 如果有需要, 自行学习. 因为讲一个真正的管道机制, 一下子也讲不完. 这里的目的只是要大家基本了解ASP.Net Core MVC的基本运行流程.</p>
+<p>&nbsp;</p>
+<p><strong>到这里, 这一节的内容就结束了. 上面提到了中间件这个东西, 那下一节我们就讲究什么是中间件, 怎么使用中间件.</strong></p>
+<p><strong><strong>如果在使用.Net Core遇到任何问题, 都加群进行讨论, 群号: 1群:&nbsp;225982985. 2群:&nbsp;726648662. 3群:&nbsp;654015377</strong></strong></p>
+<p>&nbsp;</p>
+<p><strong>上一篇:&nbsp;</strong><a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/klwen/p/10289069.html">ASP.Net Core 2.2 MVC入门到基本使用系列 (二)</a></p>
+<p>下一篇:&nbsp;<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/klwen/p/10303273.html">ASP.Net Core 2.2 MVC入门到基本使用系列 (四)</a></p>
+<p><strong><a id="homepage1_HomePageDays_ctl00_DayList_TitleUrl_1" class="postTitle2" href="https://www.cnblogs.com/klwen/p/10288691.html">&nbsp;</a></strong></p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+	<div class = "postDesc">posted on <span id="post-date">2019-01-22 12:01</span> <a href='https://www.cnblogs.com/klwen/'>丶亡我之心不死</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=10303059" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(10303059);return false;">收藏</a></div>
+</div>
+<script type="text/javascript">var allowComments=true,cb_blogId=488950,cb_entryId=10303059,cb_blogApp=currentBlogApp,cb_blogUserGuid='1795614f-09f3-4196-00f8-08d67c7ebe24',cb_entryCreatedDate='2019/1/22 12:01:00';loadViewCount(cb_entryId);var cb_postType=1;var isMarkdown=false;</script>
+
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+  googletag.cmd.push(function() {
+        googletag.defineSlot('/1090369/C1', [300, 250], 'div-gpt-ad-1546353474406-0').addService(googletag.pubads());
+        googletag.defineSlot('/1090369/C2', [468, 60], 'div-gpt-ad-1539008685004-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+  });
+</script>
+<div id='cnblogs_c1' class='c_ad_block'>
+    <div id='div-gpt-ad-1546353474406-0' style='height:250px; width:300px;'></div>
+</div>
+<div id='under_post_news'></div>
+<div id='cnblogs_c2' class='c_ad_block'>
+    <div id='div-gpt-ad-1539008685004-0' style='height:60px; width:468px;'></div>
+</div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+ if(enablePostBottom()) {
+    codeHighlight();
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverT2();
+    deliverC1();
+    deliverC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);  
+}
+</script>
+</div>
+
+    
+</div>
+<div id="leftcontent">
+	
+		<DIV id="leftcontentcontainer">
+			
+<!--done-->
+<div class="newsItem">
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script><br>
+			<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script></DIV>
+	
+</div>
+
+<!--done-->
+<div class="footer">
+	Powered by: <a href="http://www.cnblogs.com">博客园</a>	模板提供：<a href="http://blog.hjenglish.com">沪江博客</a>
+	Copyright &copy;2019 丶亡我之心不死
+</div>
+
+
+
+
+</body>
+</html>

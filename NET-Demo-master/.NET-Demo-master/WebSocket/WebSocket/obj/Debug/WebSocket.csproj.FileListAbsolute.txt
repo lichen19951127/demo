@@ -1,0 +1,5 @@
+D:\Work\WebSocket\WebSocket\WebSocket\bin\Debug\WebSocket.exe
+D:\Work\WebSocket\WebSocket\WebSocket\bin\Debug\WebSocket.pdb
+D:\Work\WebSocket\WebSocket\WebSocket\obj\Debug\WebSocket.csprojResolveAssemblyReference.cache
+D:\Work\WebSocket\WebSocket\WebSocket\obj\Debug\WebSocket.exe
+D:\Work\WebSocket\WebSocket\WebSocket\obj\Debug\WebSocket.pdb

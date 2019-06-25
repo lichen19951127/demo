@@ -1,0 +1,868 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-KUCB0MD</Machine>
+    <WindowsUser>59428</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>7b472e87-33f3-4027-9325-e77f51b02a54</PackageIdentityName>
+    <PackageIdentityPublisher>CN=59428</PackageIdentityPublisher>
+    <IntermediateOutputPath>F:\资料\资料\demo\MSIX打包WPF\WapProjTemplate1\obj\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath></WindowsSdkPath>
+    <LayoutDir>F:\资料\资料\demo\MSIX打包WPF\WapProjTemplate1\bin\AnyCPU\Debug\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="F:\资料\资料\demo\MSIX打包WPF\WapProjTemplate1\bin\AnyCPU\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="F:\资料\资料\demo\MSIX打包WPF\WapProjTemplate1\Images\SplashScreen.scale-200.png">
+      <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\资料\资料\demo\MSIX打包WPF\WapProjTemplate1\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\资料\资料\demo\MSIX打包WPF\WapProjTemplate1\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\资料\资料\demo\MSIX打包WPF\WapProjTemplate1\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\资料\资料\demo\MSIX打包WPF\WapProjTemplate1\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\资料\资料\demo\MSIX打包WPF\WapProjTemplate1\Images\StoreLogo.png">
+      <PackagePath>Images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\资料\资料\demo\MSIX打包WPF\WapProjTemplate1\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\资料\资料\demo\MSIX打包WPF\WapProjTemplate1\bin\AnyCPU\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\Microsoft.CSharp.dll">
+      <PackagePath>WpfApp1\Microsoft.CSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\Microsoft.VisualBasic.Core.dll">
+      <PackagePath>WpfApp1\Microsoft.VisualBasic.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\Microsoft.VisualBasic.dll">
+      <PackagePath>WpfApp1\Microsoft.VisualBasic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\Microsoft.Win32.Primitives.dll">
+      <PackagePath>WpfApp1\Microsoft.Win32.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\Microsoft.Win32.Registry.dll">
+      <PackagePath>WpfApp1\Microsoft.Win32.Registry.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\mscorlib.dll">
+      <PackagePath>WpfApp1\mscorlib.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\netstandard.dll">
+      <PackagePath>WpfApp1\netstandard.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\SOS.NETCore.dll">
+      <PackagePath>WpfApp1\SOS.NETCore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.AppContext.dll">
+      <PackagePath>WpfApp1\System.AppContext.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Buffers.dll">
+      <PackagePath>WpfApp1\System.Buffers.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Collections.Concurrent.dll">
+      <PackagePath>WpfApp1\System.Collections.Concurrent.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Collections.dll">
+      <PackagePath>WpfApp1\System.Collections.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Collections.Immutable.dll">
+      <PackagePath>WpfApp1\System.Collections.Immutable.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Collections.NonGeneric.dll">
+      <PackagePath>WpfApp1\System.Collections.NonGeneric.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Collections.Specialized.dll">
+      <PackagePath>WpfApp1\System.Collections.Specialized.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ComponentModel.Annotations.dll">
+      <PackagePath>WpfApp1\System.ComponentModel.Annotations.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ComponentModel.DataAnnotations.dll">
+      <PackagePath>WpfApp1\System.ComponentModel.DataAnnotations.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ComponentModel.dll">
+      <PackagePath>WpfApp1\System.ComponentModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ComponentModel.EventBasedAsync.dll">
+      <PackagePath>WpfApp1\System.ComponentModel.EventBasedAsync.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ComponentModel.Primitives.dll">
+      <PackagePath>WpfApp1\System.ComponentModel.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ComponentModel.TypeConverter.dll">
+      <PackagePath>WpfApp1\System.ComponentModel.TypeConverter.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Configuration.dll">
+      <PackagePath>WpfApp1\System.Configuration.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Console.dll">
+      <PackagePath>WpfApp1\System.Console.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Core.dll">
+      <PackagePath>WpfApp1\System.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Data.Common.dll">
+      <PackagePath>WpfApp1\System.Data.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Data.dll">
+      <PackagePath>WpfApp1\System.Data.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.Contracts.dll">
+      <PackagePath>WpfApp1\System.Diagnostics.Contracts.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.Debug.dll">
+      <PackagePath>WpfApp1\System.Diagnostics.Debug.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll">
+      <PackagePath>WpfApp1\System.Diagnostics.DiagnosticSource.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.FileVersionInfo.dll">
+      <PackagePath>WpfApp1\System.Diagnostics.FileVersionInfo.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.Process.dll">
+      <PackagePath>WpfApp1\System.Diagnostics.Process.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.StackTrace.dll">
+      <PackagePath>WpfApp1\System.Diagnostics.StackTrace.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.TextWriterTraceListener.dll">
+      <PackagePath>WpfApp1\System.Diagnostics.TextWriterTraceListener.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.Tools.dll">
+      <PackagePath>WpfApp1\System.Diagnostics.Tools.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.TraceSource.dll">
+      <PackagePath>WpfApp1\System.Diagnostics.TraceSource.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.Tracing.dll">
+      <PackagePath>WpfApp1\System.Diagnostics.Tracing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.dll">
+      <PackagePath>WpfApp1\System.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Drawing.Primitives.dll">
+      <PackagePath>WpfApp1\System.Drawing.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Dynamic.Runtime.dll">
+      <PackagePath>WpfApp1\System.Dynamic.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Globalization.Calendars.dll">
+      <PackagePath>WpfApp1\System.Globalization.Calendars.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Globalization.dll">
+      <PackagePath>WpfApp1\System.Globalization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Globalization.Extensions.dll">
+      <PackagePath>WpfApp1\System.Globalization.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.Compression.Brotli.dll">
+      <PackagePath>WpfApp1\System.IO.Compression.Brotli.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.Compression.dll">
+      <PackagePath>WpfApp1\System.IO.Compression.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.Compression.FileSystem.dll">
+      <PackagePath>WpfApp1\System.IO.Compression.FileSystem.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.Compression.ZipFile.dll">
+      <PackagePath>WpfApp1\System.IO.Compression.ZipFile.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.dll">
+      <PackagePath>WpfApp1\System.IO.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.FileSystem.AccessControl.dll">
+      <PackagePath>WpfApp1\System.IO.FileSystem.AccessControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.FileSystem.dll">
+      <PackagePath>WpfApp1\System.IO.FileSystem.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.FileSystem.DriveInfo.dll">
+      <PackagePath>WpfApp1\System.IO.FileSystem.DriveInfo.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.FileSystem.Primitives.dll">
+      <PackagePath>WpfApp1\System.IO.FileSystem.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.FileSystem.Watcher.dll">
+      <PackagePath>WpfApp1\System.IO.FileSystem.Watcher.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.IsolatedStorage.dll">
+      <PackagePath>WpfApp1\System.IO.IsolatedStorage.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.MemoryMappedFiles.dll">
+      <PackagePath>WpfApp1\System.IO.MemoryMappedFiles.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.Pipes.AccessControl.dll">
+      <PackagePath>WpfApp1\System.IO.Pipes.AccessControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.Pipes.dll">
+      <PackagePath>WpfApp1\System.IO.Pipes.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.IO.UnmanagedMemoryStream.dll">
+      <PackagePath>WpfApp1\System.IO.UnmanagedMemoryStream.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Linq.dll">
+      <PackagePath>WpfApp1\System.Linq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Linq.Expressions.dll">
+      <PackagePath>WpfApp1\System.Linq.Expressions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Linq.Parallel.dll">
+      <PackagePath>WpfApp1\System.Linq.Parallel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Linq.Queryable.dll">
+      <PackagePath>WpfApp1\System.Linq.Queryable.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Memory.dll">
+      <PackagePath>WpfApp1\System.Memory.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.dll">
+      <PackagePath>WpfApp1\System.Net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.Http.dll">
+      <PackagePath>WpfApp1\System.Net.Http.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.HttpListener.dll">
+      <PackagePath>WpfApp1\System.Net.HttpListener.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.Mail.dll">
+      <PackagePath>WpfApp1\System.Net.Mail.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.NameResolution.dll">
+      <PackagePath>WpfApp1\System.Net.NameResolution.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.NetworkInformation.dll">
+      <PackagePath>WpfApp1\System.Net.NetworkInformation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.Ping.dll">
+      <PackagePath>WpfApp1\System.Net.Ping.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.Primitives.dll">
+      <PackagePath>WpfApp1\System.Net.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.Requests.dll">
+      <PackagePath>WpfApp1\System.Net.Requests.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.Security.dll">
+      <PackagePath>WpfApp1\System.Net.Security.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.ServicePoint.dll">
+      <PackagePath>WpfApp1\System.Net.ServicePoint.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.Sockets.dll">
+      <PackagePath>WpfApp1\System.Net.Sockets.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.WebClient.dll">
+      <PackagePath>WpfApp1\System.Net.WebClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.WebHeaderCollection.dll">
+      <PackagePath>WpfApp1\System.Net.WebHeaderCollection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.WebProxy.dll">
+      <PackagePath>WpfApp1\System.Net.WebProxy.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.WebSockets.Client.dll">
+      <PackagePath>WpfApp1\System.Net.WebSockets.Client.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Net.WebSockets.dll">
+      <PackagePath>WpfApp1\System.Net.WebSockets.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Numerics.dll">
+      <PackagePath>WpfApp1\System.Numerics.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Numerics.Vectors.dll">
+      <PackagePath>WpfApp1\System.Numerics.Vectors.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ObjectModel.dll">
+      <PackagePath>WpfApp1\System.ObjectModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Private.DataContractSerialization.dll">
+      <PackagePath>WpfApp1\System.Private.DataContractSerialization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Private.Uri.dll">
+      <PackagePath>WpfApp1\System.Private.Uri.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Private.Xml.dll">
+      <PackagePath>WpfApp1\System.Private.Xml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Private.Xml.Linq.dll">
+      <PackagePath>WpfApp1\System.Private.Xml.Linq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.DispatchProxy.dll">
+      <PackagePath>WpfApp1\System.Reflection.DispatchProxy.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.dll">
+      <PackagePath>WpfApp1\System.Reflection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.Emit.dll">
+      <PackagePath>WpfApp1\System.Reflection.Emit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.Emit.ILGeneration.dll">
+      <PackagePath>WpfApp1\System.Reflection.Emit.ILGeneration.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.Emit.Lightweight.dll">
+      <PackagePath>WpfApp1\System.Reflection.Emit.Lightweight.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.Extensions.dll">
+      <PackagePath>WpfApp1\System.Reflection.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.Metadata.dll">
+      <PackagePath>WpfApp1\System.Reflection.Metadata.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.Primitives.dll">
+      <PackagePath>WpfApp1\System.Reflection.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Reflection.TypeExtensions.dll">
+      <PackagePath>WpfApp1\System.Reflection.TypeExtensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Resources.Reader.dll">
+      <PackagePath>WpfApp1\System.Resources.Reader.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Resources.ResourceManager.dll">
+      <PackagePath>WpfApp1\System.Resources.ResourceManager.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Resources.Writer.dll">
+      <PackagePath>WpfApp1\System.Resources.Writer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.CompilerServices.VisualC.dll">
+      <PackagePath>WpfApp1\System.Runtime.CompilerServices.VisualC.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.dll">
+      <PackagePath>WpfApp1\System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Extensions.dll">
+      <PackagePath>WpfApp1\System.Runtime.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Handles.dll">
+      <PackagePath>WpfApp1\System.Runtime.Handles.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.InteropServices.dll">
+      <PackagePath>WpfApp1\System.Runtime.InteropServices.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.InteropServices.RuntimeInformation.dll">
+      <PackagePath>WpfApp1\System.Runtime.InteropServices.RuntimeInformation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.InteropServices.WindowsRuntime.dll">
+      <PackagePath>WpfApp1\System.Runtime.InteropServices.WindowsRuntime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Intrinsics.dll">
+      <PackagePath>WpfApp1\System.Runtime.Intrinsics.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Loader.dll">
+      <PackagePath>WpfApp1\System.Runtime.Loader.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Numerics.dll">
+      <PackagePath>WpfApp1\System.Runtime.Numerics.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Serialization.dll">
+      <PackagePath>WpfApp1\System.Runtime.Serialization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Serialization.Formatters.dll">
+      <PackagePath>WpfApp1\System.Runtime.Serialization.Formatters.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Serialization.Json.dll">
+      <PackagePath>WpfApp1\System.Runtime.Serialization.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Serialization.Primitives.dll">
+      <PackagePath>WpfApp1\System.Runtime.Serialization.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.Serialization.Xml.dll">
+      <PackagePath>WpfApp1\System.Runtime.Serialization.Xml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.WindowsRuntime.dll">
+      <PackagePath>WpfApp1\System.Runtime.WindowsRuntime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Runtime.WindowsRuntime.UI.Xaml.dll">
+      <PackagePath>WpfApp1\System.Runtime.WindowsRuntime.UI.Xaml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.AccessControl.dll">
+      <PackagePath>WpfApp1\System.Security.AccessControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Claims.dll">
+      <PackagePath>WpfApp1\System.Security.Claims.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.Algorithms.dll">
+      <PackagePath>WpfApp1\System.Security.Cryptography.Algorithms.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.Cng.dll">
+      <PackagePath>WpfApp1\System.Security.Cryptography.Cng.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.Csp.dll">
+      <PackagePath>WpfApp1\System.Security.Cryptography.Csp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.Encoding.dll">
+      <PackagePath>WpfApp1\System.Security.Cryptography.Encoding.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.OpenSsl.dll">
+      <PackagePath>WpfApp1\System.Security.Cryptography.OpenSsl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.Primitives.dll">
+      <PackagePath>WpfApp1\System.Security.Cryptography.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.X509Certificates.dll">
+      <PackagePath>WpfApp1\System.Security.Cryptography.X509Certificates.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.dll">
+      <PackagePath>WpfApp1\System.Security.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Principal.dll">
+      <PackagePath>WpfApp1\System.Security.Principal.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Principal.Windows.dll">
+      <PackagePath>WpfApp1\System.Security.Principal.Windows.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Security.SecureString.dll">
+      <PackagePath>WpfApp1\System.Security.SecureString.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ServiceModel.Web.dll">
+      <PackagePath>WpfApp1\System.ServiceModel.Web.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ServiceProcess.dll">
+      <PackagePath>WpfApp1\System.ServiceProcess.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Text.Encoding.dll">
+      <PackagePath>WpfApp1\System.Text.Encoding.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Text.Encoding.Extensions.dll">
+      <PackagePath>WpfApp1\System.Text.Encoding.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Text.Json.dll">
+      <PackagePath>WpfApp1\System.Text.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Text.RegularExpressions.dll">
+      <PackagePath>WpfApp1\System.Text.RegularExpressions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.dll">
+      <PackagePath>WpfApp1\System.Threading.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.Overlapped.dll">
+      <PackagePath>WpfApp1\System.Threading.Overlapped.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.Tasks.Dataflow.dll">
+      <PackagePath>WpfApp1\System.Threading.Tasks.Dataflow.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.Tasks.dll">
+      <PackagePath>WpfApp1\System.Threading.Tasks.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.Tasks.Extensions.dll">
+      <PackagePath>WpfApp1\System.Threading.Tasks.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.Tasks.Parallel.dll">
+      <PackagePath>WpfApp1\System.Threading.Tasks.Parallel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.Thread.dll">
+      <PackagePath>WpfApp1\System.Threading.Thread.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.ThreadPool.dll">
+      <PackagePath>WpfApp1\System.Threading.ThreadPool.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.Timer.dll">
+      <PackagePath>WpfApp1\System.Threading.Timer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Transactions.dll">
+      <PackagePath>WpfApp1\System.Transactions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Transactions.Local.dll">
+      <PackagePath>WpfApp1\System.Transactions.Local.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.ValueTuple.dll">
+      <PackagePath>WpfApp1\System.ValueTuple.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Web.dll">
+      <PackagePath>WpfApp1\System.Web.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Web.HttpUtility.dll">
+      <PackagePath>WpfApp1\System.Web.HttpUtility.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.dll">
+      <PackagePath>WpfApp1\System.Windows.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.dll">
+      <PackagePath>WpfApp1\System.Xml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.Linq.dll">
+      <PackagePath>WpfApp1\System.Xml.Linq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.ReaderWriter.dll">
+      <PackagePath>WpfApp1\System.Xml.ReaderWriter.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.Serialization.dll">
+      <PackagePath>WpfApp1\System.Xml.Serialization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.XDocument.dll">
+      <PackagePath>WpfApp1\System.Xml.XDocument.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.XmlDocument.dll">
+      <PackagePath>WpfApp1\System.Xml.XmlDocument.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.XmlSerializer.dll">
+      <PackagePath>WpfApp1\System.Xml.XmlSerializer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.XPath.dll">
+      <PackagePath>WpfApp1\System.Xml.XPath.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\lib\netcoreapp3.0\System.Xml.XPath.XDocument.dll">
+      <PackagePath>WpfApp1\System.Xml.XPath.XDocument.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-console-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-console-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-datetime-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-datetime-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-debug-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-debug-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-errorhandling-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-errorhandling-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-file-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-file-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-file-l1-2-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-file-l1-2-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-file-l2-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-file-l2-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-handle-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-handle-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-heap-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-heap-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-interlocked-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-interlocked-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-libraryloader-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-libraryloader-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-localization-l1-2-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-localization-l1-2-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-memory-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-memory-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-namedpipe-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-namedpipe-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-processenvironment-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-processenvironment-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-processthreads-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-processthreads-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-processthreads-l1-1-1.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-processthreads-l1-1-1.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-profile-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-profile-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-rtlsupport-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-rtlsupport-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-string-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-string-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-synch-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-synch-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-synch-l1-2-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-synch-l1-2-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-sysinfo-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-sysinfo-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-timezone-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-timezone-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-core-util-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-core-util-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\API-MS-Win-core-xstate-l2-1-0.dll">
+      <PackagePath>WpfApp1\API-MS-Win-core-xstate-l2-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-conio-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-crt-conio-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-convert-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-crt-convert-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-environment-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-crt-environment-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-filesystem-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-crt-filesystem-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-heap-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-crt-heap-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-locale-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-crt-locale-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-math-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-crt-math-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-multibyte-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-crt-multibyte-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-private-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-crt-private-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-process-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-crt-process-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-runtime-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-crt-runtime-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-stdio-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-crt-stdio-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-string-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-crt-string-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-time-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-crt-time-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\api-ms-win-crt-utility-l1-1-0.dll">
+      <PackagePath>WpfApp1\api-ms-win-crt-utility-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\clrcompression.dll">
+      <PackagePath>WpfApp1\clrcompression.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\clretwrc.dll">
+      <PackagePath>WpfApp1\clretwrc.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\clrjit.dll">
+      <PackagePath>WpfApp1\clrjit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\coreclr.dll">
+      <PackagePath>WpfApp1\coreclr.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\dbgshim.dll">
+      <PackagePath>WpfApp1\dbgshim.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\Microsoft.DiaSymReader.Native.x86.dll">
+      <PackagePath>WpfApp1\Microsoft.DiaSymReader.Native.x86.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\mscordaccore.dll">
+      <PackagePath>WpfApp1\mscordaccore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\mscordaccore_x86_x86_4.6.27422.72.dll">
+      <PackagePath>WpfApp1\mscordaccore_x86_x86_4.6.27422.72.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\mscordbi.dll">
+      <PackagePath>WpfApp1\mscordbi.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\mscorrc.debug.dll">
+      <PackagePath>WpfApp1\mscorrc.debug.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\mscorrc.dll">
+      <PackagePath>WpfApp1\mscorrc.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\sos.dll">
+      <PackagePath>WpfApp1\sos.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\sos_x86_x86_4.6.27422.72.dll">
+      <PackagePath>WpfApp1\sos_x86_x86_4.6.27422.72.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\System.Private.CoreLib.dll">
+      <PackagePath>WpfApp1\System.Private.CoreLib.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.app\3.0.0-preview3-27503-5\runtimes\win-x86\native\ucrtbase.dll">
+      <PackagePath>WpfApp1\ucrtbase.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.dotnethostresolver\3.0.0-preview3-27503-5\runtimes\win-x86\native\hostfxr.dll">
+      <PackagePath>WpfApp1\hostfxr.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.netcore.dotnethostpolicy\3.0.0-preview3-27503-5\runtimes\win-x86\native\hostpolicy.dll">
+      <PackagePath>WpfApp1\hostpolicy.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\Accessibility.dll">
+      <PackagePath>WpfApp1\Accessibility.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\DirectWriteForwarder.dll">
+      <PackagePath>WpfApp1\DirectWriteForwarder.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>WpfApp1\Microsoft.Win32.SystemEvents.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationCore-CommonResources.dll">
+      <PackagePath>WpfApp1\PresentationCore-CommonResources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationCore.dll">
+      <PackagePath>WpfApp1\PresentationCore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework-SystemCore.dll">
+      <PackagePath>WpfApp1\PresentationFramework-SystemCore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework-SystemData.dll">
+      <PackagePath>WpfApp1\PresentationFramework-SystemData.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework-SystemDrawing.dll">
+      <PackagePath>WpfApp1\PresentationFramework-SystemDrawing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework-SystemXml.dll">
+      <PackagePath>WpfApp1\PresentationFramework-SystemXml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework-SystemXmlLinq.dll">
+      <PackagePath>WpfApp1\PresentationFramework-SystemXmlLinq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework.Aero.dll">
+      <PackagePath>WpfApp1\PresentationFramework.Aero.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework.Aero2.dll">
+      <PackagePath>WpfApp1\PresentationFramework.Aero2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework.AeroLite.dll">
+      <PackagePath>WpfApp1\PresentationFramework.AeroLite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework.Classic.dll">
+      <PackagePath>WpfApp1\PresentationFramework.Classic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework.dll">
+      <PackagePath>WpfApp1\PresentationFramework.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework.Luna.dll">
+      <PackagePath>WpfApp1\PresentationFramework.Luna.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationFramework.Royale.dll">
+      <PackagePath>WpfApp1\PresentationFramework.Royale.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\PresentationUI.dll">
+      <PackagePath>WpfApp1\PresentationUI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\ReachFramework.dll">
+      <PackagePath>WpfApp1\ReachFramework.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.CodeDom.dll">
+      <PackagePath>WpfApp1\System.CodeDom.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Configuration.ConfigurationManager.dll">
+      <PackagePath>WpfApp1\System.Configuration.ConfigurationManager.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Design.dll">
+      <PackagePath>WpfApp1\System.Design.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Diagnostics.EventLog.dll">
+      <PackagePath>WpfApp1\System.Diagnostics.EventLog.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.DirectoryServices.dll">
+      <PackagePath>WpfApp1\System.DirectoryServices.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Drawing.Common.dll">
+      <PackagePath>WpfApp1\System.Drawing.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Drawing.Design.dll">
+      <PackagePath>WpfApp1\System.Drawing.Design.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Drawing.dll">
+      <PackagePath>WpfApp1\System.Drawing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Printing.dll">
+      <PackagePath>WpfApp1\System.Printing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll">
+      <PackagePath>WpfApp1\System.Security.Cryptography.Pkcs.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll">
+      <PackagePath>WpfApp1\System.Security.Cryptography.ProtectedData.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Cryptography.Xml.dll">
+      <PackagePath>WpfApp1\System.Security.Cryptography.Xml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Security.Permissions.dll">
+      <PackagePath>WpfApp1\System.Security.Permissions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Threading.AccessControl.dll">
+      <PackagePath>WpfApp1\System.Threading.AccessControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.Controls.Ribbon.dll">
+      <PackagePath>WpfApp1\System.Windows.Controls.Ribbon.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.Extensions.dll">
+      <PackagePath>WpfApp1\System.Windows.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.Forms.Design.dll">
+      <PackagePath>WpfApp1\System.Windows.Forms.Design.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.Forms.Design.Editors.dll">
+      <PackagePath>WpfApp1\System.Windows.Forms.Design.Editors.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.Forms.dll">
+      <PackagePath>WpfApp1\System.Windows.Forms.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.Input.Manipulations.dll">
+      <PackagePath>WpfApp1\System.Windows.Input.Manipulations.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Windows.Presentation.dll">
+      <PackagePath>WpfApp1\System.Windows.Presentation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\System.Xaml.dll">
+      <PackagePath>WpfApp1\System.Xaml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\UIAutomationClient.dll">
+      <PackagePath>WpfApp1\UIAutomationClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\UIAutomationClientSideProviders.dll">
+      <PackagePath>WpfApp1\UIAutomationClientSideProviders.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\UIAutomationProvider.dll">
+      <PackagePath>WpfApp1\UIAutomationProvider.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\UIAutomationTypes.dll">
+      <PackagePath>WpfApp1\UIAutomationTypes.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\WindowsBase.dll">
+      <PackagePath>WpfApp1\WindowsBase.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\lib\netcoreapp3.0\WindowsFormsIntegration.dll">
+      <PackagePath>WpfApp1\WindowsFormsIntegration.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\native\PenImc_cor3.dll">
+      <PackagePath>WpfApp1\PenImc_cor3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\native\PresentationNative_cor3.dll">
+      <PackagePath>WpfApp1\PresentationNative_cor3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\59428\.nuget\packages\runtime.win-x86.microsoft.windowsdesktop.app\3.0.0-preview3-27504-2\runtimes\win-x86\native\wpfgfx_cor3.dll">
+      <PackagePath>WpfApp1\wpfgfx_cor3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\资料\资料\demo\MSIX打包WPF\WpfApp1\obj\Debug\netcoreapp3.0\win-x86\WpfApp1.exe">
+      <PackagePath>WpfApp1\WpfApp1.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\资料\资料\demo\MSIX打包WPF\WpfApp1\bin\Debug\netcoreapp3.0\win-x86\WpfApp1.runtimeconfig.json">
+      <PackagePath>WpfApp1\WpfApp1.runtimeconfig.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\资料\资料\demo\MSIX打包WPF\WpfApp1\bin\Debug\netcoreapp3.0\win-x86\WpfApp1.dll">
+      <PackagePath>WpfApp1\WpfApp1.dll</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

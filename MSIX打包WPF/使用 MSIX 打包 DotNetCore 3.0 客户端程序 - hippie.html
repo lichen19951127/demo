@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="referrer" content="origin" />
+    <title>使用 MSIX 打包 DotNetCore 3.0 客户端程序 - hippieZhou - 博客园</title>
+<meta property="og:description" content="如何你希望你的 WPF 程序能够以 Windows 的保护机制保护起来，不被轻易反编译的话，那么这篇文章应该能帮到你。 介绍 MSIX 是微软于去年的 Windows 开发者日峰会 上推出的全新应用打" />
+    <link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=svlZeZMvc3He7PqOD4T7SOuQn0_kIfLBYiy3idqd35Y1"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="/skins/Custom/bundle-Custom.css?v=Z683z9azGWin6jOfOyAHK6FgPVxm_nmCnl3EFztc2eE1"/>
+<link type="text/css" rel="stylesheet" href="/blog/customcss/225123.css?v=o2YgX0VQgndAE%2bW0s8ItKa0NPUA%3d"/>
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/Custom/bundle-Custom-mobile.css?v=_msYCBCTPwxsehifP8ZdBI6kxamcIjzp-IKwPnrrPeg1"/>
+    <link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/hippieZhou/rss"/>
+    <link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/hippieZhou/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/hippieZhou/wlwmanifest.xml"/>
+    <script src="//common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script>var currentBlogId=225123;var currentBlogApp='hippieZhou',cb_enable_mathjax=true;var isLogined=false;</script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: { 
+            equationNumbers: { autoNumber: ['AMS'], useLabelIds: true }, 
+            extensions: ['extpfeil.js'],
+            Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script><script src="//mathjax.cnblogs.com/2_7_2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="/bundles/blog-common.js?v=OFBZTzkHKauV7mtIFLF9jlqrX-sesK9-mY9KjurLrq01" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="https://www.cnblogs.com/hippieZhou/"><img id="blogLogo" src="/Skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="https://www.cnblogs.com/hippieZhou/">hippie</a></h1>
+<h2></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/hippieZhou/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/hippieZhou">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/hippieZhou/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="https://www.cnblogs.com/hippieZhou/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 89&nbsp; </span>
+<span id="stats_article_count">文章 - 0&nbsp; </span>
+<span id="stats-comment_count">评论 - 196</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+        <div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class = "post">
+		<h1 class = "postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/hippieZhou/p/10679709.html">使用 MSIX 打包 DotNetCore 3.0 客户端程序</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown"><p><img src="https://img2018.cnblogs.com/blog/749711/201904/749711-20190409211226626-581740196.jpg" /></p>
+<blockquote>
+<p>如何你希望你的 WPF 程序能够以 Windows 的保护机制保护起来，不被轻易反编译的话，那么这篇文章应该能帮到你。</p>
+</blockquote>
+<h2 id="介绍">介绍</h2>
+<p><strong>MSIX</strong> 是微软于去年的 <strong>Windows 开发者日峰会</strong> 上推出的全新应用打包解决方案。其目的是取代旧式的软件打包方式，可用于 Win32、WindowsForm 、 WPF 和 UWP 等应用程序，该打包方式将支持 Windows7 和 Windows8.x。并且让我们的程序不会轻易反编译。</p>
+<p>本文，我们将尝试如何使用 MSIX 来打包我们的 DotNetCore 3.0 WPF 应用程序。</p>
+<h2 id="使用">使用</h2>
+<p>我们打开 VS2019，新建一个基于 <strong>DotNetCore 3.0</strong> 的 WPF 项目。当然，你也可以使用 CLI 来进行创建，命令为 <strong>dotnet new wpf</strong></p>
+<p>接着，我们在当前的解决方案中创建一个 <strong>Windows Application Packaging Project</strong> 项目，如下图所示：</p>
+<p><img src="https://img2018.cnblogs.com/blog/749711/201904/749711-20190409215721373-474208056.png" /></p>
+<p>然后，设置我们的项目名称，如下图所示：</p>
+<p><img src="https://img2018.cnblogs.com/blog/749711/201904/749711-20190409215744076-1367908768.png" /></p>
+<p>最后，点击 <strong>crate</strong> 。此时会弹出一个窗口，让你选择你的程序包运行的目标版本和最低版本，这里我们按需选择即可，我的选择如下图所示：</p>
+<p><img src="https://img2018.cnblogs.com/blog/749711/201904/749711-20190409215922416-943203397.png" /></p>
+<p>项目创建完毕后，项目中会有如下文件：</p>
+<ul>
+<li>xxx.pfx：程序包证书，这个对于每个发布包都是必须的；</li>
+<li>Package.appxmanifest：程序包的一些信息，包括应用程序的设置、系统权限访问的控制等，双击该文件可以进行设置；</li>
+</ul>
+<blockquote>
+<p>熟悉 UWP 开发的朋友应该对这个项目内容都很熟悉了，这里就不做过多解释。</p>
+</blockquote>
+<p>右键当前项目的 <strong>Application</strong> 项，然后会有一个 <strong>Add Reference</strong> 选项卡，点击它，此时会出来一个列表，列出当前解决方案中，我们可进行打包发布的项目，如下图所示：</p>
+<p><img src="https://img2018.cnblogs.com/blog/749711/201904/749711-20190409220426576-1324586328.png" /></p>
+<p>这里，我们就选择我们之前创建的一个 WPF 项目 <em>WPF1</em>，对它进行打包。</p>
+<p>进行上述操作之后，我们可以尝试右键该项目，选择 <strong>Build</strong> 操作，如果不出意外的话，会出现如下图的错误：</p>
+<p><img src="https://img2018.cnblogs.com/blog/749711/201904/749711-20190409221309346-1561768483.png" /></p>
+<p>由于 <strong>MSIX</strong> 目前仅支持 <strong>DotNetCore 3.0 Self-Contained</strong> 的方式进行打包，这意味发布的包不仅包含我们的应用程序，还会包含完整的 .NET Core 运行时。这种方式可能会使我们的包更大，但是更显著的优点是我们可以部署到任何机器上，无论目标机器是否安装了 .NET Core 3.0 的运行时，尤其是当你打算将你的程序通过 Microsoft Store 进行分发。所以我们需要解决上述说的问题。</p>
+<p>右键我们的主程序项目解决方案文件 <strong>XX.csproj</strong>，在 <strong>PropertyGroup</strong> 节点下添加一个 <strong>RuntimeIdentifiers</strong> 节点，如下所示：</p>
+<pre class="bash"><code>&lt;Project Sdk=&quot;Microsoft.NET.Sdk.WindowsDesktop&quot;&gt;
+
+  &lt;PropertyGroup&gt;
+    &lt;OutputType&gt;WinExe&lt;/OutputType&gt;
+    &lt;TargetFramework&gt;netcoreapp3.0&lt;/TargetFramework&gt;
+    &lt;UseWPF&gt;true&lt;/UseWPF&gt;
+    
+    &lt;!--添加如下节点--&gt;
+    &lt;RuntimeIdentifiers&gt;win-x86;win-x64&lt;/RuntimeIdentifiers&gt;
+  &lt;/PropertyGroup&gt;
+
+&lt;/Project&gt;</code></pre>
+<p>修改完毕后，重新编译我们的主程序。然后再选择我们的打包程序，右键执行 <strong>Deploy</strong>，可以成功的将我们的主程序部署到我们的自己机器上。</p>
+<p>此外，我们可以右键打包程序，点击 <strong>Store</strong> 选项卡中的 <strong>Create App Packages</strong>。如下图所示：</p>
+<p><img src="https://img2018.cnblogs.com/blog/749711/201904/749711-20190409224113332-1493768210.png" /></p>
+<p><img src="https://img2018.cnblogs.com/blog/749711/201904/749711-20190409224559815-1941383123.png" /></p>
+<p>这里为我们的应用程序选择 <strong>x64</strong> 架构。然后执行 <strong>Create</strong> 即可。如果一切正常的话，会生成一个发布目录。会出现如下图所示的界面：</p>
+<p><img src="https://img2018.cnblogs.com/blog/749711/201904/749711-20190409224709945-984022695.png" /></p>
+<blockquote>
+<p>注：我们要依据我们的目标平台来选择正确的架构方式。如果执行失败，请确保你的架构方式选择正确，不要选择 <strong>Neutral</strong> 方式。</p>
+</blockquote>
+<p>到时候，我们只需要将我们的这个发布目录发布给目标用户即可，同时，我们也可以将我们应用发布到应用商店。</p>
+<h2 id="总结">总结</h2>
+<p>众所周知，传统 WPF 程序如何直接打包发布时很容易被反编译的。我们希望我们的软件能够被保护起来，不那么被反编译，所以可以使用 <strong>MSIX</strong> 可以尝试一下。</p>
+<p>使用 <strong>MSIX</strong> 是一种更安全有效的发布方式，能够确保我们的应用程序和客户系统更加安全。这种方式的部署能将我们的应用程序以沙箱的方式运行，所以安装和卸载都很干净，不会出现各种反三观的 <strong>流氓行为</strong>，如果我们的应用不走商店分发的话，我们也可以将我们的程序包发给用户，然后通过使用微软在应用商店提供的打包工具 <strong>MSIX Packaging Tool</strong> 来进行安装我们的应用程序，同样合适很方便的。</p>
+<p>此外，我们也可以使用它来更新我们已经发布的应用程序，感兴趣的朋友可以参考文末相关链接，这里就不做介绍了。</p>
+<h2 id="相关参考">相关参考</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/windows/msix/overview">What is MSIX?</a></li>
+<li><a href="https://github.com/Microsoft/msix-packaging">msix-packaging</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-Dev-AppConsult/Packaging-a-NET-Core-3-0-application-with-MSIX/ba-p/386432">Packaging-a-NET-Core-3-0-application-with-MSIX</a></li>
+<li><a href="https://www.microsoft.com/en-us/p/msix-packaging-tool/9n5lw3jbcxkf?activetab=pivot:overviewtab">MSIX Packaging Tool</a></li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-Dev-AppConsult/Handling-application-updates-with-App-Installer-and-MSIX-in/ba-p/355389">Handling application updates with App Installer and MSIX in Windows 10 19H1</a></li>
+</ul>
+</div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+		</div>
+		<div class = "postDesc">posted @ <span id="post-date">2019-04-17 08:02</span> <a href='https://www.cnblogs.com/hippieZhou/'>hippieZhou</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=10679709" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(10679709);return false;">收藏</a></div>
+	</div>
+	<script src="//common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script><script>markdown_highlight();</script><script type="text/javascript">var allowComments=true,cb_blogId=225123,cb_entryId=10679709,cb_blogApp=currentBlogApp,cb_blogUserGuid='53e08cfe-f4ea-e411-b908-9dcfd8948a71',cb_entryCreatedDate='2019/4/17 8:02:00';loadViewCount(cb_entryId);var cb_postType=1;var isMarkdown=true;</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+  googletag.cmd.push(function() {
+        googletag.defineSlot('/1090369/C1', [300, 250], 'div-gpt-ad-1546353474406-0').addService(googletag.pubads());
+        googletag.defineSlot('/1090369/C2', [468, 60], 'div-gpt-ad-1539008685004-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+  });
+</script>
+<div id='cnblogs_c1' class='c_ad_block'>
+    <div id='div-gpt-ad-1546353474406-0' style='height:250px; width:300px;'></div>
+</div>
+<div id='under_post_news'></div>
+<div id='cnblogs_c2' class='c_ad_block'>
+    <div id='div-gpt-ad-1539008685004-0' style='height:60px; width:468px;'></div>
+</div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+ if(enablePostBottom()) {
+    codeHighlight();
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverT2();
+    deliverC1();
+    deliverC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);  
+}
+</script>
+</div>
+
+    
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright &copy;2019 hippieZhou
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+</body>
+</html>

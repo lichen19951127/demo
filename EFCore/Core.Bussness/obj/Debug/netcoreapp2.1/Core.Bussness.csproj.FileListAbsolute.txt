@@ -1,0 +1,32 @@
+F:\Demo\net core\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\Core.Bussness.deps.json
+F:\Demo\net core\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\Core.Bussness.dll
+F:\Demo\net core\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\Core.Bussness.pdb
+F:\Demo\net core\EFCore\Core.Bussness\obj\Debug\netcoreapp2.1\Core.Bussness.csprojAssemblyReference.cache
+F:\Demo\net core\EFCore\Core.Bussness\obj\Debug\netcoreapp2.1\Core.Bussness.csproj.CoreCompileInputs.cache
+F:\Demo\net core\EFCore\Core.Bussness\obj\Debug\netcoreapp2.1\Core.Bussness.AssemblyInfoInputs.cache
+F:\Demo\net core\EFCore\Core.Bussness\obj\Debug\netcoreapp2.1\Core.Bussness.AssemblyInfo.cs
+F:\Demo\net core\EFCore\Core.Bussness\obj\Debug\netcoreapp2.1\Core.Bussness.dll
+F:\Demo\net core\EFCore\Core.Bussness\obj\Debug\netcoreapp2.1\Core.Bussness.pdb
+F:\Demo\net core\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\Core.Entity.dll
+F:\Demo\net core\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\ICore.Bussness.dll
+F:\Demo\net core\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\ICore.DataAccess.dll
+F:\Demo\net core\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\Core.Entity.pdb
+F:\Demo\net core\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\ICore.Bussness.pdb
+F:\Demo\net core\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\ICore.DataAccess.pdb
+F:\Demo\net core\EFCore\Core.Bussness\obj\Debug\netcoreapp2.1\Core.Bussness.csproj.CopyComplete
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\Core.Entity.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\ICore.Bussness.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\ICore.DataAccess.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\Core.Entity.pdb
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\ICore.Bussness.pdb
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\ICore.DataAccess.pdb
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\obj\Debug\netcoreapp2.1\Core.Bussness.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\obj\Debug\netcoreapp2.1\Core.Bussness.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\obj\Debug\netcoreapp2.1\Core.Bussness.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\obj\Debug\netcoreapp2.1\Core.Bussness.AssemblyInfo.cs
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\obj\Debug\netcoreapp2.1\Core.Bussness.csproj.CopyComplete
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\obj\Debug\netcoreapp2.1\Core.Bussness.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\obj\Debug\netcoreapp2.1\Core.Bussness.pdb
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\Core.Bussness.deps.json
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\Core.Bussness.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.Bussness\bin\Debug\netcoreapp2.1\Core.Bussness.pdb

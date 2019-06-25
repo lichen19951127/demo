@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSMQ", "MSMQ\MSMQ.csproj", "{7EF060CE-947B-4D48-BD15-B68865951409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSMQ.Net", "MSMQ.Net\MSMQ.Net.csproj", "{A2C2793E-9236-49A5-A36C-ABB911590C1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EF060CE-947B-4D48-BD15-B68865951409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF060CE-947B-4D48-BD15-B68865951409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF060CE-947B-4D48-BD15-B68865951409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF060CE-947B-4D48-BD15-B68865951409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C2793E-9236-49A5-A36C-ABB911590C1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C2793E-9236-49A5-A36C-ABB911590C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C2793E-9236-49A5-A36C-ABB911590C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C2793E-9236-49A5-A36C-ABB911590C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95A9B75F-CEA5-4929-A1D6-D124134E9728}
+	EndGlobalSection
+EndGlobal

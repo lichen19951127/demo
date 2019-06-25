@@ -1,0 +1,8 @@
+*.suo
+PptxTemplater/obj/
+PptxTemplater/bin/
+_ReSharper.PptxTemplater/
+PptxTemplater.Tests/obj/
+PptxTemplater.Tests/bin/
+PptxTemplater.sln.DotSettings.user
+TestResults/

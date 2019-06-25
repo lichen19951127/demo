@@ -1,0 +1,73 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div id="app">
+        <p>用户名:<input type="text" v-model="model.Name" /></p>
+        <p>密码:<input type="text" v-model="model.Pwd" /></p>
+        <p><input type="button" value="登录" v-on:click="login" /></p>
+
+        <table>
+            <tr>
+                <td>ID</td>
+                <td>用户名</td>
+                <td>密码</td>
+            </tr>
+            
+            <tr v-for="item in model.list">
+                <td>{{item.Id}}</td>
+                <td>{{item.Name}}</td>
+                <td>{{item.Pwd}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+<script src="~/lib/vue.js"></script>
+<script src="~/lib/axios.js"></script>
+<script>
+    var model = {Name:'',Pwd:'',list:[]}
+    var vm = new Vue({
+        el: "#app",
+        data:getdata(),
+        mounted: {
+            login: function () {
+                 axios.get('http://127.0.0.1:8080/api/Userapi/login', { Name:model.Name,Pwd:model.Pwd }).then(
+                        (response) => {
+                            alert("登录成功")
+                          
+                        },
+                        (response) => {
+                            alert(response.status);
+                        }
+                    ).catch(function (response) {
+                        alert(response);
+                    });
+            }
+        }
+
+    });
+
+    function getdata() {
+         axios.get('http://127.0.0.1:8080/api/Userapi/Query').then(
+                        (response) => {
+                            modeld.list = response;
+                          
+                        },
+                        (response) => {
+                            alert(response.status);
+                        }
+                    ).catch(function (response) {
+                        alert(response);
+                    });
+    }
+</script>

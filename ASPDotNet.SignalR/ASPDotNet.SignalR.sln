@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{465FFF09-CFF2-4402-8111-B4D0F63E83EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web2", "Web2\Web2.csproj", "{9F795A3D-D292-4B1B-BC3D-215778B0441A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D2D", "D2D\D2D.csproj", "{8F8D19F2-AF28-4524-B820-A42E3F893D2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{465FFF09-CFF2-4402-8111-B4D0F63E83EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{465FFF09-CFF2-4402-8111-B4D0F63E83EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{465FFF09-CFF2-4402-8111-B4D0F63E83EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{465FFF09-CFF2-4402-8111-B4D0F63E83EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F795A3D-D292-4B1B-BC3D-215778B0441A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F795A3D-D292-4B1B-BC3D-215778B0441A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F795A3D-D292-4B1B-BC3D-215778B0441A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F795A3D-D292-4B1B-BC3D-215778B0441A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F8D19F2-AF28-4524-B820-A42E3F893D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F8D19F2-AF28-4524-B820-A42E3F893D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F8D19F2-AF28-4524-B820-A42E3F893D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F8D19F2-AF28-4524-B820-A42E3F893D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38CBC210-8DD0-4FDA-B7A8-6339E9BF9604}
+	EndGlobalSection
+EndGlobal

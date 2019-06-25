@@ -1,0 +1,4 @@
+D:\WorkSpace\Demo.SSO\Domain.Security\bin\Domain.Security.dll
+D:\WorkSpace\Demo.SSO\Domain.Security\bin\Domain.Security.pdb
+D:\WorkSpace\Demo.SSO\Domain.Security\obj\Debug\Domain.Security.dll
+D:\WorkSpace\Demo.SSO\Domain.Security\obj\Debug\Domain.Security.pdb

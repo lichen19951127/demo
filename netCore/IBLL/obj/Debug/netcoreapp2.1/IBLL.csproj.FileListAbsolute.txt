@@ -1,0 +1,12 @@
+F:\14.大实训\demo\netCore\IBLL\bin\Debug\netcoreapp2.1\IBLL.deps.json
+F:\14.大实训\demo\netCore\IBLL\bin\Debug\netcoreapp2.1\IBLL.dll
+F:\14.大实训\demo\netCore\IBLL\bin\Debug\netcoreapp2.1\IBLL.pdb
+F:\14.大实训\demo\netCore\IBLL\obj\Debug\netcoreapp2.1\IBLL.csprojAssemblyReference.cache
+F:\14.大实训\demo\netCore\IBLL\obj\Debug\netcoreapp2.1\IBLL.csproj.CoreCompileInputs.cache
+F:\14.大实训\demo\netCore\IBLL\obj\Debug\netcoreapp2.1\IBLL.AssemblyInfoInputs.cache
+F:\14.大实训\demo\netCore\IBLL\obj\Debug\netcoreapp2.1\IBLL.AssemblyInfo.cs
+F:\14.大实训\demo\netCore\IBLL\obj\Debug\netcoreapp2.1\IBLL.dll
+F:\14.大实训\demo\netCore\IBLL\obj\Debug\netcoreapp2.1\IBLL.pdb
+F:\14.大实训\demo\netCore\IBLL\bin\Debug\netcoreapp2.1\Entity.dll
+F:\14.大实训\demo\netCore\IBLL\bin\Debug\netcoreapp2.1\Entity.pdb
+F:\14.大实训\demo\netCore\IBLL\obj\Debug\netcoreapp2.1\IBLL.csproj.CopyComplete

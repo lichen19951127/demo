@@ -1,0 +1,12 @@
+F:\资料\demo\log4net.core\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.csproj.CoreCompileInputs.cache
+F:\资料\demo\log4net.core\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.AssemblyInfoInputs.cache
+F:\资料\demo\log4net.core\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.AssemblyInfo.cs
+F:\资料\demo\log4net.core\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.deps.json
+F:\资料\demo\log4net.core\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.runtimeconfig.json
+F:\资料\demo\log4net.core\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.runtimeconfig.dev.json
+F:\资料\demo\log4net.core\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.dll
+F:\资料\demo\log4net.core\ConsoleApp1\bin\Debug\netcoreapp2.2\ConsoleApp1.pdb
+F:\资料\demo\log4net.core\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.dll
+F:\资料\demo\log4net.core\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.pdb
+F:\资料\demo\log4net.core\ConsoleApp1\bin\Debug\netcoreapp2.2\log4net.config
+F:\资料\demo\log4net.core\ConsoleApp1\obj\Debug\netcoreapp2.2\ConsoleApp1.csprojAssemblyReference.cache

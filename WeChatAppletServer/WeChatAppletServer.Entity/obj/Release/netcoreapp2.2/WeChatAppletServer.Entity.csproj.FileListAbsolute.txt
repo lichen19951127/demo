@@ -1,0 +1,9 @@
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.Entity\bin\Release\netcoreapp2.2\WeChatAppletServer.Entity.deps.json
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.Entity\bin\Release\netcoreapp2.2\WeChatAppletServer.Entity.dll
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.Entity\bin\Release\netcoreapp2.2\WeChatAppletServer.Entity.pdb
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.Entity\obj\Release\netcoreapp2.2\WeChatAppletServer.Entity.csprojAssemblyReference.cache
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.Entity\obj\Release\netcoreapp2.2\WeChatAppletServer.Entity.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.Entity\obj\Release\netcoreapp2.2\WeChatAppletServer.Entity.AssemblyInfoInputs.cache
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.Entity\obj\Release\netcoreapp2.2\WeChatAppletServer.Entity.AssemblyInfo.cs
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.Entity\obj\Release\netcoreapp2.2\WeChatAppletServer.Entity.dll
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.Entity\obj\Release\netcoreapp2.2\WeChatAppletServer.Entity.pdb

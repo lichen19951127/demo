@@ -1,0 +1,66 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "ConsoleApp1/1.0.0": {
+        "dependencies": {
+          "Microsoft.International.Converters.PinYinConverter": "1.0.0",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
+          "NPinyin.Core": "2.1.3"
+        },
+        "runtime": {
+          "ConsoleApp1.dll": {}
+        }
+      },
+      "Microsoft.International.Converters.PinYinConverter/1.0.0": {
+        "runtime": {
+          "lib/ChnCharInfo.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/3.0.0-preview5.19224.8": {},
+      "NPinyin.Core/2.1.3": {
+        "runtime": {
+          "lib/netstandard2.0/NPinyin.Core.dll": {
+            "assemblyVersion": "2.1.3.0",
+            "fileVersion": "2.1.3.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleApp1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.International.Converters.PinYinConverter/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hEs/VPwGFeVNLf2Wc6k2bMYF71zE6x+lW4MfebRAjkVbAbaa4DbEmdFRfSBymvGLtdsCUvXo2aa/yFKYSCYmEQ==",
+      "path": "microsoft.international.converters.pinyinconverter/1.0.0",
+      "hashPath": "microsoft.international.converters.pinyinconverter.1.0.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/3.0.0-preview5.19224.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MEt1XzSndofi4WBoGaRcMZdy9rqNtZITVZev2PTtXizcNe4csoN7U638Q73M93I/LxroBAI1IB+6HQOuklkKrw==",
+      "path": "microsoft.netcore.platforms/3.0.0-preview5.19224.8",
+      "hashPath": "microsoft.netcore.platforms.3.0.0-preview5.19224.8.nupkg.sha512"
+    },
+    "NPinyin.Core/2.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jNV6+RlXKRd6DBxUWzTYiwqh1ZvkNaw43bfoh0rK2wPpuor1zV0HQvSsB55+q4tFz7t5G8/FCdVFUjZflrp5Ew==",
+      "path": "npinyin.core/2.1.3",
+      "hashPath": "npinyin.core.2.1.3.nupkg.sha512"
+    }
+  }
+}

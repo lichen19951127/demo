@@ -1,0 +1,10 @@
+F:\资料\demo\进制转换\进制转换.net\bin\Debug\进制转换.net.exe.config
+F:\资料\demo\进制转换\进制转换.net\bin\Debug\进制转换.net.exe
+F:\资料\demo\进制转换\进制转换.net\bin\Debug\进制转换.net.pdb
+F:\资料\demo\进制转换\进制转换.net\obj\Debug\进制转换.net.csprojAssemblyReference.cache
+F:\资料\demo\进制转换\进制转换.net\obj\Debug\进制转换.net.Form1.resources
+F:\资料\demo\进制转换\进制转换.net\obj\Debug\进制转换.net.Properties.Resources.resources
+F:\资料\demo\进制转换\进制转换.net\obj\Debug\进制转换.net.csproj.GenerateResource.cache
+F:\资料\demo\进制转换\进制转换.net\obj\Debug\进制转换.net.csproj.CoreCompileInputs.cache
+F:\资料\demo\进制转换\进制转换.net\obj\Debug\进制转换.net.exe
+F:\资料\demo\进制转换\进制转换.net\obj\Debug\进制转换.net.pdb

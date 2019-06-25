@@ -1,0 +1,12 @@
+F:\资料\资料\demo\jwt认证\Jwt\bin\Debug\netcoreapp3.0\Jwt.deps.json
+F:\资料\资料\demo\jwt认证\Jwt\bin\Debug\netcoreapp3.0\Jwt.dll
+F:\资料\资料\demo\jwt认证\Jwt\obj\Debug\netcoreapp3.0\Jwt.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\jwt认证\Jwt\obj\Debug\netcoreapp3.0\Jwt.AssemblyInfoInputs.cache
+F:\资料\资料\demo\jwt认证\Jwt\obj\Debug\netcoreapp3.0\Jwt.AssemblyInfo.cs
+F:\资料\资料\demo\jwt认证\Jwt\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Abstractions.dll
+F:\资料\资料\demo\jwt认证\Jwt\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Abstractions.xml
+F:\资料\资料\demo\jwt认证\Jwt\obj\Debug\netcoreapp3.0\Jwt.csprojAssemblyReference.cache
+F:\资料\资料\demo\jwt认证\Jwt\obj\Debug\netcoreapp3.0\Jwt.csproj.CopyComplete
+F:\资料\资料\demo\jwt认证\Jwt\bin\Debug\netcoreapp3.0\Jwt.pdb
+F:\资料\资料\demo\jwt认证\Jwt\obj\Debug\netcoreapp3.0\Jwt.dll
+F:\资料\资料\demo\jwt认证\Jwt\obj\Debug\netcoreapp3.0\Jwt.pdb

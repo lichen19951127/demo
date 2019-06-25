@@ -1,0 +1,2 @@
+F:\14.大实训\demo\Elasticsearch\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+F:\14.大实训\demo\Elasticsearch\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache

@@ -1,0 +1,17 @@
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\bin\Debug\BouncyCastle.Crypto.dll
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\bin\Debug\Google.Protobuf.dll
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\bin\Debug\MySql.Data.dll
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\bin\Debug\MySqlBackup.dll
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\bin\Debug\Google.Protobuf.xml
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\bin\Debug\MySql.Data.xml
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+F:\资料\资料\demo\定时器自动备份数据库\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

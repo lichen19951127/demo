@@ -1,0 +1,32 @@
+<!--pages/user/list/index.wxml-->
+<view class="page">
+<view class="page__hd">
+  <view class="page__title">用户管理</view>
+</view><!--页头-->
+<view class="page__bd">
+<button class="weui-btn mini-btn button-hover" bindtap="add"size="mini"type="primary"role="button"aria-label=""aria-disabled="false">新增用户</button>
+
+<view class='table'>
+<view class='tr'>
+<view class='th'>Id</view>
+<view class='th'>姓名</view>
+<view class='th'>性别</view>
+<view class='th'>年龄</view>
+<!-- <view class='th'>操作</view> -->
+</view>
+
+<view class='tr' wx:for-items="{{list}}">
+<view class='td'>{{item.id}}</view>
+<view class='td'>{{item.name}}</view>
+<view class='td'>{{(item.sex==1?"男":"女")}}</view>
+<view class='td'>{{item.age}}</view>
+<!-- <view class='td'>
+<button class="weui-btn mini-btn button-hover" bindtap="update" size="mini"type="primary"role="button"aria-label=""aria-disabled="false" id="{{item.id}}" >编辑</button>
+<button class="weui-btn mini-btn button-hover" bindtap="delete"size="mini"type="primary"role="button"aria-label=""aria-disabled="false" id="{{item.id}}">删除</button>
+
+</view> -->
+</view>
+</view>
+</view><!--主体-->
+<view></view><!--未设置页脚-->
+</view>

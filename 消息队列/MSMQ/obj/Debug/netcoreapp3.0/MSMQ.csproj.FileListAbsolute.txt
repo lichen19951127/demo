@@ -1,0 +1,14 @@
+F:\资料\资料\demo\消息队列\MSMQ\bin\Debug\netcoreapp3.0\MSMQ.exe
+F:\资料\资料\demo\消息队列\MSMQ\obj\Debug\netcoreapp3.0\MSMQ.csprojAssemblyReference.cache
+F:\资料\资料\demo\消息队列\MSMQ\obj\Debug\netcoreapp3.0\MSMQ.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\消息队列\MSMQ\obj\Debug\netcoreapp3.0\MSMQ.AssemblyInfoInputs.cache
+F:\资料\资料\demo\消息队列\MSMQ\obj\Debug\netcoreapp3.0\MSMQ.AssemblyInfo.cs
+F:\资料\资料\demo\消息队列\MSMQ\bin\Debug\netcoreapp3.0\MSMQ.deps.json
+F:\资料\资料\demo\消息队列\MSMQ\bin\Debug\netcoreapp3.0\MSMQ.runtimeconfig.json
+F:\资料\资料\demo\消息队列\MSMQ\bin\Debug\netcoreapp3.0\MSMQ.runtimeconfig.dev.json
+F:\资料\资料\demo\消息队列\MSMQ\bin\Debug\netcoreapp3.0\MSMQ.dll
+F:\资料\资料\demo\消息队列\MSMQ\bin\Debug\netcoreapp3.0\MSMQ.pdb
+F:\资料\资料\demo\消息队列\MSMQ\bin\Debug\netcoreapp3.0\Experimental.System.Messaging.dll
+F:\资料\资料\demo\消息队列\MSMQ\obj\Debug\netcoreapp3.0\MSMQ.csproj.CopyComplete
+F:\资料\资料\demo\消息队列\MSMQ\obj\Debug\netcoreapp3.0\MSMQ.dll
+F:\资料\资料\demo\消息队列\MSMQ\obj\Debug\netcoreapp3.0\MSMQ.pdb

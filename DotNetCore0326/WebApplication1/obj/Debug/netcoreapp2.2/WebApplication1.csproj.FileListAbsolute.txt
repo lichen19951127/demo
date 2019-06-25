@@ -1,0 +1,17 @@
+F:\资料\demo\DotNetCore0326\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.deps.json
+F:\资料\demo\DotNetCore0326\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.runtimeconfig.json
+F:\资料\demo\DotNetCore0326\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.runtimeconfig.dev.json
+F:\资料\demo\DotNetCore0326\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.dll
+F:\资料\demo\DotNetCore0326\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.pdb
+F:\资料\demo\DotNetCore0326\WebApplication1\bin\Debug\netcoreapp2.2\ClassLibrary1.dll
+F:\资料\demo\DotNetCore0326\WebApplication1\bin\Debug\netcoreapp2.2\ClassLibrary1.pdb
+F:\资料\demo\DotNetCore0326\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csprojAssemblyReference.cache
+F:\资料\demo\DotNetCore0326\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csproj.CoreCompileInputs.cache
+F:\资料\demo\DotNetCore0326\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cache
+F:\资料\demo\DotNetCore0326\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cs
+F:\资料\demo\DotNetCore0326\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.AssemblyInfoInputs.cache
+F:\资料\demo\DotNetCore0326\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.AssemblyInfo.cs
+F:\资料\demo\DotNetCore0326\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorTargetAssemblyInfo.cache
+F:\资料\demo\DotNetCore0326\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csproj.CopyComplete
+F:\资料\demo\DotNetCore0326\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.dll
+F:\资料\demo\DotNetCore0326\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.pdb

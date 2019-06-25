@@ -1,0 +1,12 @@
+F:\14.大实训\demo\netCore\IDAL\bin\Debug\netcoreapp2.1\IDAL.deps.json
+F:\14.大实训\demo\netCore\IDAL\bin\Debug\netcoreapp2.1\IDAL.dll
+F:\14.大实训\demo\netCore\IDAL\bin\Debug\netcoreapp2.1\IDAL.pdb
+F:\14.大实训\demo\netCore\IDAL\obj\Debug\netcoreapp2.1\IDAL.csproj.CoreCompileInputs.cache
+F:\14.大实训\demo\netCore\IDAL\obj\Debug\netcoreapp2.1\IDAL.AssemblyInfoInputs.cache
+F:\14.大实训\demo\netCore\IDAL\obj\Debug\netcoreapp2.1\IDAL.AssemblyInfo.cs
+F:\14.大实训\demo\netCore\IDAL\obj\Debug\netcoreapp2.1\IDAL.dll
+F:\14.大实训\demo\netCore\IDAL\obj\Debug\netcoreapp2.1\IDAL.pdb
+F:\14.大实训\demo\netCore\IDAL\bin\Debug\netcoreapp2.1\Entity.dll
+F:\14.大实训\demo\netCore\IDAL\bin\Debug\netcoreapp2.1\Entity.pdb
+F:\14.大实训\demo\netCore\IDAL\obj\Debug\netcoreapp2.1\IDAL.csprojAssemblyReference.cache
+F:\14.大实训\demo\netCore\IDAL\obj\Debug\netcoreapp2.1\IDAL.csproj.CopyComplete

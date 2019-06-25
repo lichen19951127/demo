@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Content/vue.js"></script>
+
+</head>
+<body>
+    <div id="div">
+
+    </div>
+    <h1>
+        <a name="hello-world" href="#hello-world">
+            Hello world!
+        </a>
+    </h1>
+
+    <span v-text="msg"></span>
+    <!-- 和下面的一样 -->
+    <span>{{msg}}</span>
+    <div v-html="html"></div>
+
+</body>
+</html>
+<script>
+    var data = { a: 1 }
+    var vm = new Vue({
+        // 选项
+        el: '#div',
+        data: data
+    })
+</script>

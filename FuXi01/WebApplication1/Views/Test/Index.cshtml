@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Content/jquery-3.1.1.js"></script>
+</head>
+<body>
+    <div> 
+        <video></video>
+
+        <canvas></canvas>
+        
+    </div>
+</body>
+</html>
+<script>
+    ////回调函数
+    //$(function () {
+    //    A(function () {
+    //        B();
+    //    })
+    //})
+    //function A(callback)
+    //{
+    //    alert("方法A");
+    //    callback();
+    //}
+    //function B() {
+    //    alert("方法B");
+    //}
+    function a(callback)
+    {   
+        alert("我是parent函数a！");
+        alert("调用回调函数");
+        callback();
+    }
+    function b(){
+    alert("我是回调函数b");
+  
+    }
+    function c(){
+    alert("我是回调函数c");
+  
+    }
+  
+    function test()
+    {
+        a(b);
+       a(c);
+    }
+    test();
+</script>

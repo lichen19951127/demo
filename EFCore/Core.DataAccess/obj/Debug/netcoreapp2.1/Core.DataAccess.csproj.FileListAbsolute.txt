@@ -1,0 +1,28 @@
+F:\Demo\net core\EFCore\Core.DataAccess\bin\Debug\netcoreapp2.1\Core.DataAccess.deps.json
+F:\Demo\net core\EFCore\Core.DataAccess\bin\Debug\netcoreapp2.1\Core.DataAccess.dll
+F:\Demo\net core\EFCore\Core.DataAccess\obj\Debug\netcoreapp2.1\Core.DataAccess.csprojAssemblyReference.cache
+F:\Demo\net core\EFCore\Core.DataAccess\obj\Debug\netcoreapp2.1\Core.DataAccess.csproj.CoreCompileInputs.cache
+F:\Demo\net core\EFCore\Core.DataAccess\obj\Debug\netcoreapp2.1\Core.DataAccess.AssemblyInfoInputs.cache
+F:\Demo\net core\EFCore\Core.DataAccess\obj\Debug\netcoreapp2.1\Core.DataAccess.AssemblyInfo.cs
+F:\Demo\net core\EFCore\Core.DataAccess\bin\Debug\netcoreapp2.1\Core.DataAccess.pdb
+F:\Demo\net core\EFCore\Core.DataAccess\obj\Debug\netcoreapp2.1\Core.DataAccess.dll
+F:\Demo\net core\EFCore\Core.DataAccess\obj\Debug\netcoreapp2.1\Core.DataAccess.pdb
+F:\Demo\net core\EFCore\Core.DataAccess\bin\Debug\netcoreapp2.1\Core.Entity.dll
+F:\Demo\net core\EFCore\Core.DataAccess\bin\Debug\netcoreapp2.1\ICore.DataAccess.dll
+F:\Demo\net core\EFCore\Core.DataAccess\bin\Debug\netcoreapp2.1\Core.Entity.pdb
+F:\Demo\net core\EFCore\Core.DataAccess\bin\Debug\netcoreapp2.1\ICore.DataAccess.pdb
+F:\Demo\net core\EFCore\Core.DataAccess\obj\Debug\netcoreapp2.1\Core.DataAccess.csproj.CopyComplete
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.DataAccess\bin\Debug\netcoreapp2.1\Core.Entity.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.DataAccess\bin\Debug\netcoreapp2.1\ICore.DataAccess.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.DataAccess\bin\Debug\netcoreapp2.1\Core.Entity.pdb
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.DataAccess\bin\Debug\netcoreapp2.1\ICore.DataAccess.pdb
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.DataAccess\obj\Debug\netcoreapp2.1\Core.DataAccess.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.DataAccess\obj\Debug\netcoreapp2.1\Core.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.DataAccess\obj\Debug\netcoreapp2.1\Core.DataAccess.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.DataAccess\obj\Debug\netcoreapp2.1\Core.DataAccess.AssemblyInfo.cs
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.DataAccess\obj\Debug\netcoreapp2.1\Core.DataAccess.csproj.CopyComplete
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.DataAccess\obj\Debug\netcoreapp2.1\Core.DataAccess.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.DataAccess\obj\Debug\netcoreapp2.1\Core.DataAccess.pdb
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.DataAccess\bin\Debug\netcoreapp2.1\Core.DataAccess.deps.json
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.DataAccess\bin\Debug\netcoreapp2.1\Core.DataAccess.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\Core.DataAccess\bin\Debug\netcoreapp2.1\Core.DataAccess.pdb

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vue.Web", "Vue.Web\Vue.Web.csproj", "{15A9DA8A-F0C7-4187-AA5B-F627E799AD4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vue.Entity", "Vue.Entity\Vue.Entity.csproj", "{55D00AE7-788B-41B0-8C70-91582DCCA8F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vue.Api", "Vue.Api\Vue.Api.csproj", "{9073D383-E052-4156-83EB-91F2A978EAD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15A9DA8A-F0C7-4187-AA5B-F627E799AD4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15A9DA8A-F0C7-4187-AA5B-F627E799AD4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15A9DA8A-F0C7-4187-AA5B-F627E799AD4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15A9DA8A-F0C7-4187-AA5B-F627E799AD4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55D00AE7-788B-41B0-8C70-91582DCCA8F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D00AE7-788B-41B0-8C70-91582DCCA8F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D00AE7-788B-41B0-8C70-91582DCCA8F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D00AE7-788B-41B0-8C70-91582DCCA8F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9073D383-E052-4156-83EB-91F2A978EAD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9073D383-E052-4156-83EB-91F2A978EAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9073D383-E052-4156-83EB-91F2A978EAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9073D383-E052-4156-83EB-91F2A978EAD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA3352B8-2A7E-49F3-961B-CAD1896F48EA}
+	EndGlobalSection
+EndGlobal

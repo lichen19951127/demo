@@ -1,0 +1,14 @@
+F:\资料\demo\DoNetAll\DoNet.Service\bin\Debug\DoNet.Service.dll
+F:\资料\demo\DoNetAll\DoNet.Service\bin\Debug\DoNet.Service.pdb
+F:\资料\demo\DoNetAll\DoNet.Service\bin\Debug\DoNet.Common.dll
+F:\资料\demo\DoNetAll\DoNet.Service\bin\Debug\DoNet.Entity.dll
+F:\资料\demo\DoNetAll\DoNet.Service\bin\Debug\System.Net.Http.Formatting.dll
+F:\资料\demo\DoNetAll\DoNet.Service\bin\Debug\AutoMapper.dll
+F:\资料\demo\DoNetAll\DoNet.Service\bin\Debug\DoNet.Common.pdb
+F:\资料\demo\DoNetAll\DoNet.Service\bin\Debug\DoNet.Entity.pdb
+F:\资料\demo\DoNetAll\DoNet.Service\bin\Debug\System.Net.Http.Formatting.xml
+F:\资料\demo\DoNetAll\DoNet.Service\obj\Debug\DoNet.Service.csprojAssemblyReference.cache
+F:\资料\demo\DoNetAll\DoNet.Service\obj\Debug\DoNet.Service.csproj.CoreCompileInputs.cache
+F:\资料\demo\DoNetAll\DoNet.Service\obj\Debug\DoNet.Service.csproj.CopyComplete
+F:\资料\demo\DoNetAll\DoNet.Service\obj\Debug\DoNet.Service.dll
+F:\资料\demo\DoNetAll\DoNet.Service\obj\Debug\DoNet.Service.pdb

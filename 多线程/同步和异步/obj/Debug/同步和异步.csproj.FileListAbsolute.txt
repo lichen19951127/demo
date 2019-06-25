@@ -1,0 +1,10 @@
+F:\资料\资料\demo\多线程\同步和异步\bin\Debug\同步和异步.exe.config
+F:\资料\资料\demo\多线程\同步和异步\bin\Debug\同步和异步.exe
+F:\资料\资料\demo\多线程\同步和异步\bin\Debug\同步和异步.pdb
+F:\资料\资料\demo\多线程\同步和异步\obj\Debug\同步和异步.Form1.resources
+F:\资料\资料\demo\多线程\同步和异步\obj\Debug\同步和异步.Properties.Resources.resources
+F:\资料\资料\demo\多线程\同步和异步\obj\Debug\同步和异步.csproj.GenerateResource.cache
+F:\资料\资料\demo\多线程\同步和异步\obj\Debug\同步和异步.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\多线程\同步和异步\obj\Debug\同步和异步.exe
+F:\资料\资料\demo\多线程\同步和异步\obj\Debug\同步和异步.pdb
+F:\资料\资料\demo\多线程\同步和异步\obj\Debug\同步和异步.csprojAssemblyReference.cache

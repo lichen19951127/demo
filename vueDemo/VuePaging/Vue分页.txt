@@ -1,0 +1,229 @@
+<style>
+        .page-bar {
+            margin: 40px;
+        }
+
+        ul, li {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li {
+            list-style: none
+        }
+
+        .page-bar li:first-child > a {
+            margin-left: 0px
+        }
+
+        .page-bar a {
+            border: 1px solid #ddd;
+            text-decoration: none;
+            position: relative;
+            float: left;
+            padding: 6px 12px;
+            margin-left: -1px;
+            line-height: 1.42857143;
+            color: #337ab7;
+            cursor: pointer
+        }
+
+            .page-bar a:hover {
+                background-color: #eee;
+            }
+
+            .page-bar a.banclick {
+                cursor: not-allowed;
+            }
+
+        .page-bar .active a {
+            color: #fff;
+            cursor: default;
+            background-color: #337ab7;
+            border-color: #337ab7;
+        }
+
+        .page-bar i {
+            font-style: normal;
+            color: #d44950;
+            margin: 0px 4px;
+            font-size: 12px;
+        }
+    </style>
+
+
+            @*<div class="page-bar">
+                <ul>
+                    <li v-if="cur>1"><a v-on:click="cur--,pageClick()">上一页</a></li>
+                    <li v-if="cur==1"><a class="banclick">上一页</a></li>
+                    <li v-for="index in indexs" v-bind:class="{ 'active': cur == index}">
+                        <a v-on:click="btnClick(index)">{{ index }}</a>
+                    </li>
+                    <li v-if="cur!=all"><a v-on:click="cur++,pageClick()">下一页</a></li>
+                    <li v-if="cur == all"><a class="banclick">下一页</a></li>
+                    <li><a>共<i>{{all}}</i>页</a></li>
+                </ul>
+            </div>*@
+
+
+
+
+<script type="text/javascript">
+    var StaffId = 1
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            //all: 8, //总页数
+            //cur: 1,//当前页码
+            GetCheckingIns: []
+        },
+        //watch: {
+        //    cur: function (oldValue, newValue) {
+        //        console.log(arguments);
+        //    }
+        //},
+        // 创建完成时
+        //created() {
+        //    this.nowTimes();
+        //},
+        // 挂载完成时
+        mounted() {
+            this.getCheckingIn(StaffId);
+            //this.nowTimes();
+        },
+        methods: {
+            //页码点击事件
+            //btnClick: function (data) {
+            //    if (data != this.cur) {
+            //        this.cur = data
+            //        this.getCheckingIn(data);
+            //    }
+            //},
+            //pageClick: function () {
+            //    console.log('现在在' + this.cur + '页');
+            //    this.getCheckingIn(StaffId,this.cur);
+            //},
+            //显示签到记录
+            //getCheckingIn: function (StaffId, id) {
+            //    axios.get("http://localhost:8099/checkingIn/getCheckingIn?StaffId=" + StaffId + "&currentpage=" + id).then(
+            //        (response) => {
+            //            this.UserList = [];
+            //            this.cur = response.data.CurrentPage;
+            //            this.all = response.data.TotlePage;
+            //            for (var i = 0; i < response.data.PageData.length; i++) {
+            //                this.UserList.push(response.data.PageData[i]);
+            //            }
+            //            this.GetCheckingIns = UserList;
+            //        },
+            //        (response) => {
+            //            alert(response.status);
+            //        }
+            //    ).catch(function (response) {
+            //        alert(response);
+            //    });
+            //},
+            getCheckingIn: function (StaffId) {
+                axios.get("http://localhost:8099/checkingIn/getCheckingIn?StaffId=" + StaffId ).then(
+                    (response) => {
+                        console.log(response);
+                        this.GetCheckingIns = response.data;
+                    },
+                    (response) => {
+                        alert(response.status);
+                    }
+                ).catch(function (response) {
+                    alert(response);
+                });
+            },
+            //签到/签退
+            signIn: function () {
+                var aoru = 1;
+                var staffId = 1;
+                var staffName = '张三';
+                axios.post('http://localhost:8099/checkingIn/checkingIn?StaffId=' + staffId + "&StaffName=" + staffName + "&aoru=" + aoru).then(
+                    (response) => {
+                        console.log(response.data);
+                        if (response.data > 0) {
+                            alert("签到成功!");
+                            this.getCheckingIn(staffId);
+                        }
+                        //console.info(this.list);
+                    },
+                    (response) => {
+                        alert(response.status);
+                    }
+                ).catch(function (response) {
+                    alert(response);
+                });
+            },
+            //签退
+            signBack: function () {
+                var aoru = 2;
+                var staffId = 1;
+                var staffName = '张三';
+                axios.post('http://localhost:8099/checkingIn/checkingIn?StaffId=' + staffId + "&StaffName=" + staffName + "&aoru=" + aoru).then(
+                    (response) => {
+                        console.log(response.data);
+                        if (response.data > 0) {
+                            alert("签退成功!");
+                            this.getCheckingIn(staffId);
+                        }
+                        //console.info(this.list);
+                    },
+                    (response) => {
+                        alert(response.status);
+                    }
+                ).catch(function (response) {
+                    alert(response);
+                });
+            }
+            // 获取当前时间函数
+            //timeFormate(timeStamp) {
+            //    let year = new Date(timeStamp).getFullYear();
+            //    let month = new Date(timeStamp).getMonth() + 1 < 10 ? "0" + (new Date(timeStamp).getMonth() + 1) : new Date(timeStamp).getMonth() + 1;
+            //    let date = new Date(timeStamp).getDate() < 10 ? "0" + new Date(timeStamp).getDate() : new Date(timeStamp).getDate();
+            //    let hh = new Date(timeStamp).getHours() < 10 ? "0" + new Date(timeStamp).getHours() : new Date(timeStamp).getHours();
+            //    let mm = new Date(timeStamp).getMinutes() < 10 ? "0" + new Date(timeStamp).getMinutes() : new Date(timeStamp).getMinutes();
+            //     let ss =new Date(timeStamp).getSeconds() < 10? "0" + new Date(timeStamp).getSeconds(): new Date(timeStamp).getSeconds();
+            //    //return year + "年" + month + "月" + date +"日"+" "+hh+":"+mm ;
+            //    this.nowTime = year + "年" + month + "月" + date + "日" + " " + hh + ":" + mm + ":" + ss;
+            //     //console.log(this.nowTime);
+            //},
+            //// 定时器函数
+            //nowTimes() {
+            //    this.timeFormate(new Date());
+            //    setInterval(this.nowTimes, 1 * 1000);
+            //}
+        },
+        //计算属性
+        //computed: {
+        //    indexs: function () {
+        //        var left = 1;
+        //        var right = this.all;
+        //        var ar = [];
+        //        if (this.all >= 5) {
+        //            if (this.cur > 3 && this.cur < this.all - 2) {
+        //                left = this.cur - 2
+        //                right = this.cur + 2
+        //            } else {
+        //                if (this.cur <= 3) {
+        //                    left = 1
+        //                    right = 5
+        //                } else {
+        //                    right = this.all
+        //                    left = this.all - 4
+        //                }
+        //            }
+        //        }
+        //        while (left <= right) {
+        //            ar.push(left)
+        //            left++
+        //        }
+        //        return ar
+        //    }
+        //},
+    })
+
+
+
+</script>

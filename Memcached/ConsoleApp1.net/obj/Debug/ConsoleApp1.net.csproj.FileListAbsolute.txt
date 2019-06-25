@@ -1,0 +1,12 @@
+F:\资料\资料\demo\Memcached\ConsoleApp1.net\bin\Debug\ConsoleApp1.net.exe.config
+F:\资料\资料\demo\Memcached\ConsoleApp1.net\bin\Debug\ConsoleApp1.net.exe
+F:\资料\资料\demo\Memcached\ConsoleApp1.net\bin\Debug\ConsoleApp1.net.pdb
+F:\资料\资料\demo\Memcached\ConsoleApp1.net\bin\Debug\Memcached.ClientLibrary.dll
+F:\资料\资料\demo\Memcached\ConsoleApp1.net\obj\Debug\ConsoleApp1.net.csprojAssemblyReference.cache
+F:\资料\资料\demo\Memcached\ConsoleApp1.net\obj\Debug\ConsoleApp1.net.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\Memcached\ConsoleApp1.net\obj\Debug\ConsoleApp1.net.csproj.CopyComplete
+F:\资料\资料\demo\Memcached\ConsoleApp1.net\obj\Debug\ConsoleApp1.net.exe
+F:\资料\资料\demo\Memcached\ConsoleApp1.net\obj\Debug\ConsoleApp1.net.pdb
+F:\资料\资料\demo\Memcached\ConsoleApp1.net\bin\Debug\log4net.dll
+F:\资料\资料\demo\Memcached\ConsoleApp1.net\bin\Debug\Commons.dll
+F:\资料\资料\demo\Memcached\ConsoleApp1.net\bin\Debug\ICSharpCode.SharpZipLib.dll

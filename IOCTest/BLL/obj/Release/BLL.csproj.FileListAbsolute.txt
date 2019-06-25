@@ -1,0 +1,13 @@
+F:\14.大实训\demo\IOCTest\BLL\bin\Release\BLL.dll
+F:\14.大实训\demo\IOCTest\BLL\bin\Release\BLL.pdb
+F:\14.大实训\demo\IOCTest\BLL\bin\Release\Entity.dll
+F:\14.大实训\demo\IOCTest\BLL\bin\Release\IBLL.dll
+F:\14.大实训\demo\IOCTest\BLL\bin\Release\IDAL.dll
+F:\14.大实训\demo\IOCTest\BLL\bin\Release\Entity.pdb
+F:\14.大实训\demo\IOCTest\BLL\bin\Release\IBLL.pdb
+F:\14.大实训\demo\IOCTest\BLL\bin\Release\IDAL.pdb
+F:\14.大实训\demo\IOCTest\BLL\obj\Release\BLL.csprojAssemblyReference.cache
+F:\14.大实训\demo\IOCTest\BLL\obj\Release\BLL.csproj.CoreCompileInputs.cache
+F:\14.大实训\demo\IOCTest\BLL\obj\Release\BLL.csproj.CopyComplete
+F:\14.大实训\demo\IOCTest\BLL\obj\Release\BLL.dll
+F:\14.大实训\demo\IOCTest\BLL\obj\Release\BLL.pdb

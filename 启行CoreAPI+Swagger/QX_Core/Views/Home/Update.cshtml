@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h1>修改信息</h1>
+<form method="post" action="/Home/UpdateDo">
+    <table>
+        <tr><td>用户名：</td><td><input type="text" id="UserName" name="UserName" value="@Model.UserName" /></td></tr>
+        <tr><td>密  码：</td><td><input type="text" id="Password" name="Password" value="@Model.Password" /></td></tr>
+        <tr><td><input type="hidden" id="ID" name="ID" value="@Model.ID" /></td><td></td><td><input type="submit" value="提交" /></td></tr>
+    </table>
+</form>

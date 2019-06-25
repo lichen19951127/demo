@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <table border="1">
+            <tr>
+                <td>编号</td>
+                <td>账号</td>
+                <td>密码</td>
+                <td>性别</td>
+                <td>爱好</td>
+                <td>地址</td>
+                <td>图片</td>
+                <td>操作</td>
+            </tr>
+
+            @foreach (var item in ViewBag.UserList)
+            {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Pwd</td>
+                <td>@(item.Sex==1?"男":"女")</td>
+                <td>@item.Hobby</td>
+                <td>@item.Address</td>
+                <td>@item.Img</td>
+                <td>@item.Id</td>
+            </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

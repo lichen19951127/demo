@@ -1,0 +1,12 @@
+F:\资料\资料\demo\多线程test0524\ConsoleApp1\bin\Debug\netcoreapp3.0\ConsoleApp1.exe
+F:\资料\资料\demo\多线程test0524\ConsoleApp1\bin\Debug\netcoreapp3.0\ConsoleApp1.deps.json
+F:\资料\资料\demo\多线程test0524\ConsoleApp1\bin\Debug\netcoreapp3.0\ConsoleApp1.runtimeconfig.json
+F:\资料\资料\demo\多线程test0524\ConsoleApp1\bin\Debug\netcoreapp3.0\ConsoleApp1.runtimeconfig.dev.json
+F:\资料\资料\demo\多线程test0524\ConsoleApp1\bin\Debug\netcoreapp3.0\ConsoleApp1.dll
+F:\资料\资料\demo\多线程test0524\ConsoleApp1\bin\Debug\netcoreapp3.0\ConsoleApp1.pdb
+F:\资料\资料\demo\多线程test0524\ConsoleApp1\obj\Debug\netcoreapp3.0\ConsoleApp1.csprojAssemblyReference.cache
+F:\资料\资料\demo\多线程test0524\ConsoleApp1\obj\Debug\netcoreapp3.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\多线程test0524\ConsoleApp1\obj\Debug\netcoreapp3.0\ConsoleApp1.AssemblyInfoInputs.cache
+F:\资料\资料\demo\多线程test0524\ConsoleApp1\obj\Debug\netcoreapp3.0\ConsoleApp1.AssemblyInfo.cs
+F:\资料\资料\demo\多线程test0524\ConsoleApp1\obj\Debug\netcoreapp3.0\ConsoleApp1.dll
+F:\资料\资料\demo\多线程test0524\ConsoleApp1\obj\Debug\netcoreapp3.0\ConsoleApp1.pdb

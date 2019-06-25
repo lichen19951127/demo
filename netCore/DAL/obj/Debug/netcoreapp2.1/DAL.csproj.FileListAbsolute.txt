@@ -1,0 +1,14 @@
+F:\14.大实训\demo\netCore\DAL\bin\Debug\netcoreapp2.1\DAL.deps.json
+F:\14.大实训\demo\netCore\DAL\bin\Debug\netcoreapp2.1\DAL.dll
+F:\14.大实训\demo\netCore\DAL\bin\Debug\netcoreapp2.1\DAL.pdb
+F:\14.大实训\demo\netCore\DAL\bin\Debug\netcoreapp2.1\Entity.dll
+F:\14.大实训\demo\netCore\DAL\bin\Debug\netcoreapp2.1\IDAL.dll
+F:\14.大实训\demo\netCore\DAL\bin\Debug\netcoreapp2.1\Entity.pdb
+F:\14.大实训\demo\netCore\DAL\bin\Debug\netcoreapp2.1\IDAL.pdb
+F:\14.大实训\demo\netCore\DAL\obj\Debug\netcoreapp2.1\DAL.csprojAssemblyReference.cache
+F:\14.大实训\demo\netCore\DAL\obj\Debug\netcoreapp2.1\DAL.csproj.CoreCompileInputs.cache
+F:\14.大实训\demo\netCore\DAL\obj\Debug\netcoreapp2.1\DAL.AssemblyInfoInputs.cache
+F:\14.大实训\demo\netCore\DAL\obj\Debug\netcoreapp2.1\DAL.AssemblyInfo.cs
+F:\14.大实训\demo\netCore\DAL\obj\Debug\netcoreapp2.1\DAL.csproj.CopyComplete
+F:\14.大实训\demo\netCore\DAL\obj\Debug\netcoreapp2.1\DAL.dll
+F:\14.大实训\demo\netCore\DAL\obj\Debug\netcoreapp2.1\DAL.pdb

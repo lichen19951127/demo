@@ -1,0 +1,5 @@
+F:\资料\demo\MyNuget\NuGetServerDemoDLL\bin\Debug\NuGetServerDemoDLL.dll
+F:\资料\demo\MyNuget\NuGetServerDemoDLL\bin\Debug\NuGetServerDemoDLL.pdb
+F:\资料\demo\MyNuget\NuGetServerDemoDLL\obj\Debug\NuGetServerDemoDLL.csproj.CoreCompileInputs.cache
+F:\资料\demo\MyNuget\NuGetServerDemoDLL\obj\Debug\NuGetServerDemoDLL.dll
+F:\资料\demo\MyNuget\NuGetServerDemoDLL\obj\Debug\NuGetServerDemoDLL.pdb

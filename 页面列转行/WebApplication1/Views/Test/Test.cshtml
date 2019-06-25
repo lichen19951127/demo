@@ -1,0 +1,70 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Test</title>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+
+</head>
+<body>
+    <div>
+        <table style="float:left">
+            <tr >
+                <td>Id</td>
+
+            </tr>
+            <tr >
+                <td >Name</td>
+
+            </tr>
+            <tr id="tr3">
+                <td id="Td3"></td>
+
+            </tr>
+        </table>
+        <table style="float:left">
+            <tr id="tr1">
+                @*<td id="Td1">Id</td>*@
+
+            </tr>
+            <tr id="tr2">
+                @*<td id="Td2">Name</td>*@
+
+            </tr>
+            <tr id="tr3">
+                <td id="Td3"></td>
+
+            </tr>
+        </table>
+        <input type="button" onclick="window.location.href='/Test/Down'" value="下载" />
+    </div>
+</body>
+</html>
+<script>
+    show();
+    function show() {
+        $.ajax({
+            url: "/Test/GetData",
+            type: "post",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+
+                for (var i = 0; i < data.length; i++) {
+
+                    var td = ' <td>' + data[i].Id + '</td>'
+                    $("#tr1").not("#Td1").append(td);
+
+                    var td1 = ' <td>' + data[i].Name+ '</td>'
+                    $("#tr2").not("#Td2").append(td1);
+                }
+            }
+        })
+    }
+</script>

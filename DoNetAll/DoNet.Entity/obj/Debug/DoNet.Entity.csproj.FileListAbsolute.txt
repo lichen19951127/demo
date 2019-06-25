@@ -1,0 +1,5 @@
+F:\资料\demo\DoNetAll\DoNet.Entity\bin\Debug\DoNet.Entity.dll
+F:\资料\demo\DoNetAll\DoNet.Entity\bin\Debug\DoNet.Entity.pdb
+F:\资料\demo\DoNetAll\DoNet.Entity\obj\Debug\DoNet.Entity.csproj.CoreCompileInputs.cache
+F:\资料\demo\DoNetAll\DoNet.Entity\obj\Debug\DoNet.Entity.dll
+F:\资料\demo\DoNetAll\DoNet.Entity\obj\Debug\DoNet.Entity.pdb

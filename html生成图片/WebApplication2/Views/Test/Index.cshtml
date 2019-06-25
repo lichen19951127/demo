@@ -1,0 +1,56 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div id="div">
+        @if (ViewBag.type == 0)
+        {
+            <input type="button" value="保存" id="btnD" onclick="down()" />
+        }
+
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>姓名</th>
+                <th>年龄</th>
+            </tr>
+            @foreach (var item in ViewBag.list)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Age</td>
+                </tr>
+            }
+        </table>
+    </div>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script>
+        down();
+    
+        function down() {
+            console.log(Math.ceil($("#div").width()));
+            console.log(Math.ceil($("#div").height()));
+            var width =Math.ceil($("#div").width());
+            var height =Math.ceil($("#div").height());
+            $.ajax({
+                url: "/test/GetfileName?width="+width+"&height="+height,
+                type: "get",
+                success: function (json) {
+                    window.location.href = '/test/DownImg?fileName=' + json;
+                }
+            })
+
+        }
+    </script>
+</body>
+</html>

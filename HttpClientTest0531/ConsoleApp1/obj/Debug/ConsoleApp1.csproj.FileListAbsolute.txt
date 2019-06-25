@@ -1,0 +1,13 @@
+F:\资料\资料\demo\HttpClientTest0531\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+F:\资料\资料\demo\HttpClientTest0531\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+F:\资料\资料\demo\HttpClientTest0531\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+F:\资料\资料\demo\HttpClientTest0531\ConsoleApp1\bin\Debug\System.Net.Http.Formatting.dll
+F:\资料\资料\demo\HttpClientTest0531\ConsoleApp1\bin\Debug\System.Web.Http.dll
+F:\资料\资料\demo\HttpClientTest0531\ConsoleApp1\bin\Debug\Newtonsoft.Json.dll
+F:\资料\资料\demo\HttpClientTest0531\ConsoleApp1\bin\Debug\System.Net.Http.Formatting.xml
+F:\资料\资料\demo\HttpClientTest0531\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
+F:\资料\资料\demo\HttpClientTest0531\ConsoleApp1\obj\Debug\ConsoleApp1.exe.config
+F:\资料\资料\demo\HttpClientTest0531\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\HttpClientTest0531\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
+F:\资料\资料\demo\HttpClientTest0531\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+F:\资料\资料\demo\HttpClientTest0531\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

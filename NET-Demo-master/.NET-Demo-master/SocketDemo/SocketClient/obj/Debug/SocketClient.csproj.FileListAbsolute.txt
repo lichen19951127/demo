@@ -1,0 +1,14 @@
+D:\Work\DEMO\SocketDemo\SocketClient\bin\Debug\SocketClient.exe
+D:\Work\DEMO\SocketDemo\SocketClient\bin\Debug\SocketClient.pdb
+D:\Work\DEMO\SocketDemo\SocketClient\obj\Debug\SocketClient.exe
+D:\Work\DEMO\SocketDemo\SocketClient\obj\Debug\SocketClient.pdb
+D:\c\github\WinForm-Demo\SocketDemo\SocketClient\bin\Debug\SocketClient.exe
+D:\c\github\WinForm-Demo\SocketDemo\SocketClient\bin\Debug\SocketClient.pdb
+D:\c\github\WinForm-Demo\SocketDemo\SocketClient\obj\Debug\SocketClient.exe
+D:\c\github\WinForm-Demo\SocketDemo\SocketClient\obj\Debug\SocketClient.pdb
+C:\Users\59428\Desktop\NET-Demo-master\.NET-Demo-master\SocketDemo\SocketClient\bin\Debug\SocketClient.exe
+C:\Users\59428\Desktop\NET-Demo-master\.NET-Demo-master\SocketDemo\SocketClient\bin\Debug\SocketClient.pdb
+C:\Users\59428\Desktop\NET-Demo-master\.NET-Demo-master\SocketDemo\SocketClient\obj\Debug\SocketClient.csprojAssemblyReference.cache
+C:\Users\59428\Desktop\NET-Demo-master\.NET-Demo-master\SocketDemo\SocketClient\obj\Debug\SocketClient.csproj.CoreCompileInputs.cache
+C:\Users\59428\Desktop\NET-Demo-master\.NET-Demo-master\SocketDemo\SocketClient\obj\Debug\SocketClient.exe
+C:\Users\59428\Desktop\NET-Demo-master\.NET-Demo-master\SocketDemo\SocketClient\obj\Debug\SocketClient.pdb

@@ -1,0 +1,35 @@
+﻿@using Newtonsoft.Json
+@model BestQA.QueryService.DTOs.QuestionDTO
+@{
+    ViewBag.Title = "Details";
+    var pageMode = (string)ViewBag.PageMode;
+}
+<div ng-controller="questionDetailController" ng-init="init(@JsonConvert.SerializeObject(Model), '@pageMode')"
+      class="row question-page">
+    <div class="col-md-9">
+        <!-- 会在post-directive中被替换 -->
+        <post content="question" page-mode="{{pageMode}}"
+              save-callback="save()" scroll-to="scrollTo('question' + question.Id)" class=""></post>
+        <!-- new answer -->
+        <div class="new-answer" ng-repeat="answer in question.Answers">
+            <answer content="answer" post-id="{{question.Id}}" page-mode="update" ></answer>
+        </div>
+
+        <!-- new answer -->
+        <div class="new-answer" ng-if="pageMode == 'update'">
+            <h4>Submit your answer</h4>
+            <answer content="answer" post-id="{{question.Id}}" page-mode="create" ></answer>
+        </div>
+    </div>
+    @Html.Partial("~/Views/Shared/Sidebar.cshtml")
+</div>
+@section Scripts
+{
+    <script type="text/javascript" src="@Url.Content("~/Scripts/app/controllers/questionDetailController.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/app/directives/post-directive.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/app/directives/answer-directive.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/app/directives/angular-pagedown.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/app/services/questionService.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/app/services/answerService.js")"></script>
+}

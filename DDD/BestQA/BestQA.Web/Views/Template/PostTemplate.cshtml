@@ -1,0 +1,60 @@
+﻿@{
+    Layout = null;
+}
+<div ng-init="initPost(post)">
+    <div>
+        <div id="question{{post.Id}}" class="qhead">
+            <a href="/question/details/{{post.Id}}" ng-hide="post.editing" class="title">
+                {{ post.Title }}
+            </a>
+            <input ng-show="post.editing" name="title" ng-model="post.Title"
+                   required="" type="text" class="form-control" id="question-title" 
+                   placeholder="Type your question here" autofocus="autofocus" />
+        </div>
+    </div>
+    <div>
+        <div class="col-md-1 votes-hldr" ng-hide="post.editing">
+            <span class="item up-vote glyphicon glyphicon-circle-arrow-up" ng-click="voteAction('VoteUp',post)"></span>
+            <span class="item vote-count">{{post.SupportCnt - post.OpposeCnt}}</span>
+            <span class="item down-vote glyphicon glyphicon-circle-arrow-down" ng-click="voteAction('VoteDown',post)"></span>
+        </div>
+        <div class="col-md-11">
+            <pagedown-viewer content="post.Content" ng-hide="post.editing" class="body"></pagedown-viewer>
+            <pagedown-editor content="post.Content" ng-show="post.editing" class="body"></pagedown-editor>
+
+            <!--数据验证错误显示-->
+            <div class="validation-errors" ng-show="post.validationErrors && post.validationErrors.length != 0">
+                <p class="text-danger">Please correct the following errors and submit again</p>
+                <ul>
+                    <li ng-repeat="err in post.validationErrors" class="text-danger">{{err.Value[0]}}</li>
+                </ul>
+            </div>
+            <!--end-->
+
+            <div ng-show="serverError" class="text-danger">
+                An error occured while processing your request. Pls try again in sometime.
+            </div>
+
+            <div>
+                <div class="row col-md-12 actions">
+                    <div ng-show="post.editing" class="pull-left">
+                        <button class="btn btn-primary" ng-click="saveChanges(post)">保存</button>
+                        <button class="btn btn-default" ng-click="editCancel(post)">取消</button>
+                    </div>
+                    <div ng-hide="post.editing" class="pull-left">
+                        <button class="btn btn-default" ng-click="enableEdit(post)">编辑</button>
+                        <button class="btn btn-primary">回复</button>
+                    </div>
+                </div>
+
+                <!--执行成功提示-->
+                <div class="row col-md-12 pull-left">
+                    <div class="alert alert-success" ng-show="post.successOnSave">
+                        Question has been saved/updated successfully.
+                    </div>
+                </div>
+                <!--end-->
+            </div>
+        </div>
+    </div>
+</div>

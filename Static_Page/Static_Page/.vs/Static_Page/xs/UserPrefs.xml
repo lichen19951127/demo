@@ -1,0 +1,13 @@
+﻿<Properties StartupConfiguration="{822B3C1F-88AB-46BD-897F-5745AAF0A16F}|Default">
+  <MonoDevelop.Ide.ItemProperties.Static__Page PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.MVC__VUE PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/zhanghaibin/Documents/Visual Studio 2017/Projects/Static_Page/Static_Page/Program.cs" relfile="Program.cs" line="86" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

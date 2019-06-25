@@ -1,0 +1,85 @@
+https://www.cnblogs.com/guwei4037/p/9173928.html（关于c#和vue.js的案例）
+https://cn.vuejs.org/v2/guide/computed.html（vue.js官网--中文版）
+https://www.cnblogs.com/moqiutao/p/6394681.html（分页）
+https://blog.csdn.net/u013910340/article/details/71601554?ABstrategy=codes_snippets_optimize_v3（单选框，复选框，下拉选框）
+
+
+
+<script type="text/javascript">
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                contactsList:[]
+            },
+            mounted() {
+                this.getAllContacts();
+            },
+            methods: {
+                getAllContacts: function () {
+                    axios.get('@Url.Action("Get", "Contact")'
+                    ).then(
+                        (response) => {
+                            this.contactsList = [];
+                            for (var i = 0; i < response.data.length; i++) {
+                                this.contactsList.push(response.data[i]);
+                            }
+                            this.contactsList.push({ Id:"", Name: "", PhoneNo: "", EmailAddress: "" });
+                        },
+                        (response) => {
+                            alert(response.status);
+                        }
+                    ).catch(function (response) {
+                        alert(response);
+                    });
+                },
+                addContact: function (name, phoneno, emailaddress) {
+                    axios.post('@Url.Action("Add", "Contact")', { contact: { Name: name, PhoneNo: phoneno, EmailAddress: emailaddress } }).then(
+                        (response) => {
+                            this.contactsList = [];
+                            for (var i = 0; i < response.data.length; i++) {
+                                this.contactsList.push(response.data[i]);
+                            }
+                            this.contactsList.push({ Id: "", Name: "", PhoneNo: "", EmailAddress: "" });
+                        },
+                        (response) => {
+                            alert(response.status);
+                        }
+                    ).catch(function (response) {
+                        alert(response);
+                    });
+                },
+                updateContact: function (id, name, phoneno, emailaddress) {
+                    axios.post('@Url.Action("Update", "Contact")', { contact: { Id: id, Name: name, PhoneNo: phoneno, EmailAddress: emailaddress} }).then(
+                        (response) => {
+                            this.contactsList = [];
+                            for (var i = 0; i < response.data.length; i++) {
+                                this.contactsList.push(response.data[i]);
+                            }
+                            this.contactsList.push({ Id: "", Name: "", PhoneNo: "", EmailAddress: "" });
+                        },
+                        (response) => {
+                            alert(response.status);
+                        }
+                    ).catch(function (response) {
+                        alert(response);
+                    });
+                },
+                deleteContactById: function (id) {
+                    axios.post('@Url.Action("Delete", "Contact")', { id: id }).then(
+                        (response) => {
+                            this.contactsList = [];
+                            for (var i = 0; i < response.data.length; i++) {
+                                this.contactsList.push(response.data[i]);
+                            }
+                            this.contactsList.push({ Id: "", Name: "", PhoneNo: "", EmailAddress: "" });
+                        },
+                        (response) => {
+                            alert(response.status);
+                        }
+                    ).catch(function (response) {
+                        alert(response);
+                    });
+                }
+            }
+        });
+    </script>

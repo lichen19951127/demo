@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "Service2/1.0.0": {
+        "dependencies": {
+          "IService2": "1.0.0"
+        },
+        "runtime": {
+          "Service2.dll": {}
+        }
+      },
+      "IService2/1.0.0": {
+        "runtime": {
+          "IService2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Service2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IService2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

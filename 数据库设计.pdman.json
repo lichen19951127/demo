@@ -1,0 +1,1574 @@
+{
+  "modules": [
+    {
+      "name": "JinHong",
+      "chnname": "济南锦鸿",
+      "entities": [
+        {
+          "title": "SMFIELD",
+          "fields": [
+            {
+              "name": "ID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "主见ID",
+              "pk": true,
+              "notNull": true,
+              "autoIncrement": true,
+              "defaultValue": "1000"
+            },
+            {
+              "name": "MYTEXTS",
+              "type": "Name",
+              "remark": "NVARCHAR(50)",
+              "chnname": "名称"
+            },
+            {
+              "name": "PARENTID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "父节点"
+            },
+            {
+              "name": "MYTABLES",
+              "type": "Name",
+              "remark": "",
+              "chnname": "表名"
+            },
+            {
+              "name": "MYCOLUMS",
+              "type": "Name",
+              "remark": "",
+              "chnname": "字段名"
+            },
+            {
+              "name": "SORT",
+              "type": "Money",
+              "remark": "DECIMAL(6)",
+              "chnname": "排序"
+            },
+            {
+              "name": "REMARK",
+              "type": "MiddleString",
+              "remark": "",
+              "chnname": "备注"
+            },
+            {
+              "name": "CREATRTIME",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "创建时间"
+            },
+            {
+              "name": "CREATEPERSON",
+              "type": "Name",
+              "remark": "",
+              "chnname": "创建者"
+            },
+            {
+              "name": "UPDATETIME",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "更新时间"
+            },
+            {
+              "name": "UPDATEPERSON",
+              "type": "Name",
+              "remark": "",
+              "chnname": "更新人"
+            },
+            {
+              "name": "MYVALUES",
+              "type": "Name",
+              "remark": "",
+              "chnname": "字段简称"
+            }
+          ],
+          "indexs": [],
+          "headers": [
+            {
+              "fieldName": "chnname",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "name",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "type",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "dataType",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "remark",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "pk",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "notNull",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "autoIncrement",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "defaultValue",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "relationNoShow",
+              "relationNoShow": true
+            }
+          ],
+          "chnname": "字段表",
+          "remark": "字段表"
+        },
+        {
+          "title": "SMFUNCTB",
+          "fields": [
+            {
+              "name": "FUNC_ID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "功能ID，主键",
+              "pk": true,
+              "notNull": true,
+              "autoIncrement": true
+            },
+            {
+              "name": "FUNC_CODE",
+              "type": "Name",
+              "remark": "NVARCHAR(32)",
+              "chnname": "功能编号"
+            },
+            {
+              "name": "FUNC_NAME",
+              "type": "Name",
+              "remark": "NVARCHAR(64)",
+              "chnname": "功能名称"
+            },
+            {
+              "name": "EVENT_NAME",
+              "type": "Name",
+              "remark": "NVARCHAR(256)",
+              "chnname": "事件名"
+            },
+            {
+              "name": "STATUS",
+              "type": "Name",
+              "remark": "NVARCHAR(1)",
+              "chnname": "状态(Y：启用，N：禁用)"
+            },
+            {
+              "name": "PARENTFUNC_CODE",
+              "type": "Name",
+              "remark": "NVARCHAR(32)",
+              "chnname": "父功能编号"
+            },
+            {
+              "name": "CLASS_NAME",
+              "type": "Name",
+              "remark": "NVARCHAR(256)",
+              "chnname": "类名"
+            },
+            {
+              "name": "ORDERCODE",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "显示顺序"
+            },
+            {
+              "name": "SM_SYSTEM",
+              "type": "Name",
+              "remark": "NVARCHAR(10)",
+              "chnname": "系统名"
+            },
+            {
+              "name": "ICONIC",
+              "type": "Name",
+              "remark": "NVARCHAR(50)",
+              "chnname": "图表样式"
+            }
+          ],
+          "indexs": [],
+          "headers": [
+            {
+              "fieldName": "chnname",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "name",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "type",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "dataType",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "remark",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "pk",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "notNull",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "autoIncrement",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "defaultValue",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "relationNoShow",
+              "relationNoShow": true
+            }
+          ],
+          "chnname": "功能表",
+          "remark": "功能表"
+        },
+        {
+          "title": "SMLOG",
+          "fields": [
+            {
+              "name": "LOG_ID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "日志ID",
+              "pk": true,
+              "notNull": true,
+              "autoIncrement": true
+            },
+            {
+              "name": "LOG_DATETIME",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "创建时间"
+            },
+            {
+              "name": "USER_ID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "用户ID"
+            },
+            {
+              "name": "FUNC_CODE",
+              "type": "Name",
+              "remark": "NVARCHAR(32)",
+              "chnname": "功能编码"
+            },
+            {
+              "name": "OPERATION_TYPE",
+              "type": "Name",
+              "remark": "NVARCHAR(1)",
+              "chnname": "操作类型"
+            },
+            {
+              "name": "REMARK",
+              "type": "Name",
+              "remark": "NVARCHAR(2000)",
+              "chnname": "说明"
+            },
+            {
+              "name": "SYSTEMCODE",
+              "type": "Name",
+              "remark": "NVARCHAR(20)",
+              "chnname": "系统编码"
+            },
+            {
+              "name": "CLASSNAME",
+              "type": "Name",
+              "remark": "NVARCHAR(100)",
+              "chnname": "类名"
+            }
+          ],
+          "indexs": [],
+          "headers": [
+            {
+              "fieldName": "chnname",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "name",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "type",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "dataType",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "remark",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "pk",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "notNull",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "autoIncrement",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "defaultValue",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "relationNoShow",
+              "relationNoShow": true
+            }
+          ],
+          "chnname": "日志表",
+          "remark": "日志表"
+        },
+        {
+          "title": "SMMENUFUNCTB",
+          "fields": [
+            {
+              "name": "MENUID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "菜单ID",
+              "pk": false,
+              "notNull": false,
+              "autoIncrement": false
+            },
+            {
+              "name": "FUNC_ID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "功能ID"
+            }
+          ],
+          "indexs": [],
+          "headers": [
+            {
+              "fieldName": "chnname",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "name",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "type",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "dataType",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "remark",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "pk",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "notNull",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "autoIncrement",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "defaultValue",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "relationNoShow",
+              "relationNoShow": true
+            }
+          ],
+          "chnname": "菜单功能表"
+        },
+        {
+          "title": "SMMENURLEFUNCTB",
+          "fields": [
+            {
+              "name": "ID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "主键ID"
+            },
+            {
+              "name": "MENUID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "菜单ID"
+            },
+            {
+              "name": "FUNC_ID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "功能ID"
+            },
+            {
+              "name": "ROLEID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "角色ID"
+            }
+          ],
+          "indexs": [],
+          "headers": [
+            {
+              "fieldName": "chnname",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "name",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "type",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "dataType",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "remark",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "pk",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "notNull",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "autoIncrement",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "defaultValue",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "relationNoShow",
+              "relationNoShow": true
+            }
+          ],
+          "chnname": "菜单角色功能表"
+        },
+        {
+          "title": "SMMENUTB",
+          "fields": [
+            {
+              "name": "ID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "菜单ID",
+              "pk": true,
+              "notNull": true,
+              "autoIncrement": true
+            },
+            {
+              "name": "NAME",
+              "type": "Name",
+              "remark": "NVARCHAR(200)",
+              "chnname": "菜单名称"
+            },
+            {
+              "name": "PARENTID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "父菜单ID"
+            },
+            {
+              "name": "URL",
+              "type": "Name",
+              "remark": "NVARCHAR(200)",
+              "chnname": "菜单地址"
+            },
+            {
+              "name": "ICONIC",
+              "type": "Name",
+              "remark": "NVARCHAR(200)",
+              "chnname": "菜单图标样式"
+            },
+            {
+              "name": "SORT",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "显示顺序"
+            },
+            {
+              "name": "REMARK",
+              "type": "Name",
+              "remark": "NVARCHAR(200)",
+              "chnname": "备注"
+            },
+            {
+              "name": "STATE",
+              "type": "Name",
+              "remark": "NVARCHAR(20)",
+              "chnname": "状态（Y：启用，N：禁用）"
+            },
+            {
+              "name": "CREATEPERSON",
+              "type": "Name",
+              "remark": "NVARCHAR(50)",
+              "chnname": "创建者"
+            },
+            {
+              "name": "CREATETIME",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "创建时间"
+            },
+            {
+              "name": "UPDATETIME",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "更新时间"
+            },
+            {
+              "name": "UPDATEPERSON",
+              "type": "Name",
+              "remark": "NVARCHAR(50)",
+              "chnname": "更新者"
+            },
+            {
+              "name": "ISLEAF",
+              "type": "Name",
+              "remark": "NVARCHAR(20)",
+              "chnname": "是否叶子节点（Y：是，N：否）"
+            },
+            {
+              "name": "MENULEVEL",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "层级"
+            }
+          ],
+          "indexs": [],
+          "headers": [
+            {
+              "fieldName": "chnname",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "name",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "type",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "dataType",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "remark",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "pk",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "notNull",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "autoIncrement",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "defaultValue",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "relationNoShow",
+              "relationNoShow": true
+            }
+          ],
+          "chnname": "菜单表"
+        },
+        {
+          "title": "SMROLETB",
+          "fields": [
+            {
+              "name": "ROLE_ID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "角色ID"
+            },
+            {
+              "name": "ROLE_NAME",
+              "type": "Name",
+              "remark": "NVARCHAR(20)",
+              "chnname": "角色名称"
+            },
+            {
+              "name": "CREATION_TIME",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "创建时间"
+            },
+            {
+              "name": "CREATION_USER",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "创建者"
+            },
+            {
+              "name": "UPDATE_TIME",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "更新时间"
+            },
+            {
+              "name": "UPDATE_USER",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "更新者"
+            },
+            {
+              "name": "REMARK",
+              "type": "Name",
+              "remark": "NVARCHAR(100)",
+              "chnname": "说明"
+            },
+            {
+              "name": "STATUS",
+              "type": "Name",
+              "remark": "NVARCHAR(2)",
+              "chnname": "状态（Y：是，N：否）"
+            }
+          ],
+          "indexs": [],
+          "headers": [
+            {
+              "fieldName": "chnname",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "name",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "type",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "dataType",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "remark",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "pk",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "notNull",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "autoIncrement",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "defaultValue",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "relationNoShow",
+              "relationNoShow": true
+            }
+          ],
+          "chnname": "角色表",
+          "remark": "角色表"
+        },
+        {
+          "title": "SMUSERROLETB",
+          "fields": [
+            {
+              "name": "USER_ID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "用户ID"
+            },
+            {
+              "name": "ROLE_ID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "角色ID"
+            }
+          ],
+          "indexs": [],
+          "headers": [
+            {
+              "fieldName": "chnname",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "name",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "type",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "dataType",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "remark",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "pk",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "notNull",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "autoIncrement",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "defaultValue",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "relationNoShow",
+              "relationNoShow": true
+            }
+          ],
+          "chnname": "用户角色表",
+          "remark": "用户角色表"
+        },
+        {
+          "title": "SMUSERTB",
+          "fields": [
+            {
+              "name": "USER_ID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "用户ID"
+            },
+            {
+              "name": "U_ID",
+              "type": "Name",
+              "remark": "NVARCHAR(20)",
+              "chnname": "登陆用户名"
+            },
+            {
+              "name": "U_PASSWORD",
+              "type": "Name",
+              "remark": "NVARCHAR(50)",
+              "chnname": "登录密码"
+            },
+            {
+              "name": "GENDER",
+              "type": "Name",
+              "remark": "NVARCHAR(1)",
+              "chnname": "性别（W：女，M：男）"
+            },
+            {
+              "name": "USER_NAME",
+              "type": "Name",
+              "remark": "NVARCHAR(20)",
+              "chnname": "用户姓名"
+            },
+            {
+              "name": "CREATION_TIME",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "创建时间"
+            },
+            {
+              "name": "CREATION_USER",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "创建者"
+            },
+            {
+              "name": "UPDATE_TIME",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "更新时间"
+            },
+            {
+              "name": "UPDATE_USER",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "更新者"
+            },
+            {
+              "name": "STATUS",
+              "type": "Name",
+              "remark": "NVARCHAR(1)",
+              "chnname": "状态（Y：启用，N：禁用）"
+            },
+            {
+              "name": "COMPONENT_ID",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "机构ID"
+            },
+            {
+              "name": "ISAUDIT",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "审核通过（预留）"
+            }
+          ],
+          "indexs": [],
+          "headers": [
+            {
+              "fieldName": "chnname",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "name",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "type",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "dataType",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "remark",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "pk",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "notNull",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "autoIncrement",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "defaultValue",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "relationNoShow",
+              "relationNoShow": true
+            }
+          ],
+          "chnname": "用户表",
+          "remark": "用户表"
+        }
+      ],
+      "graphCanvas": {
+        "nodes": [
+          {
+            "shape": "table",
+            "title": "SMFIELD",
+            "moduleName": false,
+            "x": 330,
+            "y": 950,
+            "id": "a445c435"
+          },
+          {
+            "shape": "table",
+            "title": "SMUSERROLETB",
+            "moduleName": false,
+            "x": 310,
+            "y": 520,
+            "id": "36f570c2"
+          },
+          {
+            "shape": "table",
+            "title": "SMUSERTB",
+            "moduleName": false,
+            "x": -280,
+            "y": 750,
+            "id": "d44a52e3"
+          },
+          {
+            "shape": "table",
+            "title": "SMROLETB",
+            "moduleName": false,
+            "x": -300,
+            "y": 250,
+            "id": "33491915"
+          },
+          {
+            "shape": "table",
+            "title": "SMMENUTB",
+            "moduleName": false,
+            "x": 890,
+            "y": 210,
+            "id": "bbbc5b3c"
+          },
+          {
+            "shape": "table",
+            "title": "SMMENURLEFUNCTB",
+            "moduleName": false,
+            "x": 300,
+            "y": -40,
+            "id": "bd0525f4"
+          },
+          {
+            "shape": "table",
+            "title": "SMMENUFUNCTB",
+            "moduleName": false,
+            "x": 840,
+            "y": 530,
+            "id": "8a30e711"
+          },
+          {
+            "shape": "table",
+            "title": "SMLOG",
+            "moduleName": false,
+            "x": 850,
+            "y": 870,
+            "id": "a60e552d"
+          },
+          {
+            "shape": "table",
+            "title": "SMFUNCTB",
+            "moduleName": false,
+            "x": 320,
+            "y": 280,
+            "id": "2daf5562"
+          }
+        ],
+        "edges": [
+          {
+            "shape": "polyLineFlow",
+            "source": "33491915",
+            "target": "d44a52e3",
+            "id": "afb4ce1b",
+            "controlPoints": [
+              {
+                "x": -480.0732421875,
+                "y": 332.9342105263158
+              },
+              {
+                "x": -456.8984375,
+                "y": 652.1388888888889
+              }
+            ],
+            "sourceAnchor": 14
+          },
+          {
+            "shape": "polyLineFlow",
+            "source": "33491915",
+            "target": "d44a52e3",
+            "id": "97f126ea",
+            "controlPoints": [
+              {
+                "x": -119.9267578125,
+                "y": 332.9342105263158
+              },
+              {
+                "x": -103.1015625,
+                "y": 652.1388888888889
+              }
+            ],
+            "sourceAnchor": 15,
+            "targetAnchor": 1
+          },
+          {
+            "shape": "polyLineFlow",
+            "source": "d44a52e3",
+            "target": "d44a52e3",
+            "id": "67f53454",
+            "controlPoints": [
+              {
+                "x": -456.8984375,
+                "y": 872.9537037037037
+              },
+              {
+                "x": -456.8984375,
+                "y": 872.9537037037037
+              },
+              {
+                "x": -456.8984375,
+                "y": 872.9537037037037
+              }
+            ],
+            "sourceAnchor": 22
+          },
+          {
+            "shape": "polyLineFlow",
+            "source": "d44a52e3",
+            "target": "d44a52e3",
+            "id": "5579b865",
+            "controlPoints": [
+              {
+                "x": -456.8984375,
+                "y": 872.9537037037037
+              },
+              {
+                "x": -280,
+                "y": 750
+              }
+            ],
+            "sourceAnchor": 22
+          },
+          {
+            "shape": "polyLineFlow",
+            "source": "d44a52e3",
+            "target": "d44a52e3",
+            "id": "203825ba",
+            "controlPoints": [
+              {
+                "x": -103.1015625,
+                "y": 872.9537037037037
+              },
+              {
+                "x": -280,
+                "y": 750
+              }
+            ],
+            "sourceAnchor": 23
+          },
+          {
+            "shape": "polyLineFlow",
+            "source": "36f570c2",
+            "target": "d44a52e3",
+            "id": "0b793fa4",
+            "controlPoints": [
+              {
+                "x": 210.818359375,
+                "y": 522.5357142857143
+              },
+              {
+                "x": -103.1015625,
+                "y": 672.2129629629629
+              }
+            ],
+            "sourceAnchor": 0,
+            "targetAnchor": 3
+          },
+          {
+            "shape": "polyLineFlow",
+            "source": "36f570c2",
+            "target": "33491915",
+            "id": "65e18a4b",
+            "controlPoints": [
+              {
+                "x": 409.181640625,
+                "y": 522.5357142857143
+              },
+              {
+                "x": -119.9267578125,
+                "y": 212.30263157894737
+              }
+            ],
+            "sourceAnchor": 1,
+            "targetAnchor": 3
+          },
+          {
+            "shape": "polyLineFlow",
+            "source": "a445c435",
+            "target": "a445c435",
+            "id": "9aec046b",
+            "controlPoints": [
+              {
+                "x": 188.0078125,
+                "y": 852.1388888888889
+              },
+              {
+                "x": 330,
+                "y": 950
+              }
+            ],
+            "sourceAnchor": 0
+          },
+          {
+            "shape": "polyLineFlow",
+            "source": "8a30e711",
+            "target": "36f570c2",
+            "id": "6ebda1c8",
+            "controlPoints": [
+              {
+                "x": 740.82421875,
+                "y": 552.8214285714286
+              },
+              {
+                "x": 409.181640625,
+                "y": 542.8214285714286
+              }
+            ],
+            "sourceAnchor": 2,
+            "targetAnchor": 3
+          },
+          {
+            "shape": "polyLineFlow",
+            "source": "8a30e711",
+            "target": "bbbc5b3c",
+            "id": "297950d0",
+            "controlPoints": [
+              {
+                "x": 939.17578125,
+                "y": 532.5357142857143
+              },
+              {
+                "x": 685.6728515625,
+                "y": 352.9596774193549
+              }
+            ],
+            "sourceAnchor": 1
+          },
+          {
+            "shape": "polyLineFlow",
+            "source": "bbbc5b3c",
+            "target": "bbbc5b3c",
+            "id": "817df354",
+            "controlPoints": [
+              {
+                "x": 1094.3271484375,
+                "y": 132.25
+              },
+              {
+                "x": 890,
+                "y": 210
+              }
+            ],
+            "sourceAnchor": 5
+          },
+          {
+            "shape": "polyLineFlow",
+            "source": "bd0525f4",
+            "target": "bbbc5b3c",
+            "id": "31e67c9d",
+            "controlPoints": [
+              {
+                "x": 409.0029296875,
+                "y": -37.47727272727273
+              },
+              {
+                "x": 685.6728515625,
+                "y": 132.25
+              }
+            ],
+            "sourceAnchor": 3
+          },
+          {
+            "shape": "polyLineFlow",
+            "source": "33491915",
+            "target": "33491915",
+            "id": "78b5c414",
+            "controlPoints": [
+              {
+                "x": -119.9267578125,
+                "y": 192.19736842105263
+              },
+              {
+                "x": -300,
+                "y": 250
+              }
+            ],
+            "sourceAnchor": 1
+          },
+          {
+            "shape": "polyLineFlow",
+            "source": "36f570c2",
+            "target": "33491915",
+            "id": "ba6ad3a2",
+            "controlPoints": [
+              {
+                "x": 210.818359375,
+                "y": 542.8214285714286
+              },
+              {
+                "x": -119.9267578125,
+                "y": 272.61842105263156
+              }
+            ],
+            "sourceAnchor": 2,
+            "targetAnchor": 9
+          }
+        ]
+      },
+      "associations": [
+        {
+          "relation": "",
+          "from": {
+            "entity": "SMROLETB",
+            "field": "STATUS"
+          },
+          "to": {
+            "entity": "SMUSERTB",
+            "field": "USER_ID"
+          }
+        },
+        {
+          "relation": "",
+          "from": {
+            "entity": "SMUSERROLETB",
+            "field": "USER_ID"
+          },
+          "to": {
+            "entity": "SMUSERTB",
+            "field": "U_ID"
+          }
+        },
+        {
+          "relation": "",
+          "from": {
+            "entity": "SMUSERROLETB",
+            "field": "USER_ID"
+          },
+          "to": {
+            "entity": "SMROLETB",
+            "field": "ROLE_NAME"
+          }
+        },
+        {
+          "relation": "",
+          "from": {
+            "entity": "SMMENUFUNCTB",
+            "field": "FUNC_ID"
+          },
+          "to": {
+            "entity": "SMUSERROLETB",
+            "field": "ROLE_ID"
+          }
+        },
+        {
+          "relation": "",
+          "from": {
+            "entity": "SMUSERROLETB",
+            "field": "ROLE_ID"
+          },
+          "to": {
+            "entity": "SMROLETB",
+            "field": "UPDATE_TIME"
+          }
+        }
+      ]
+    }
+  ],
+  "dataTypeDomains": {
+    "datatype": [
+      {
+        "name": "默认字串",
+        "code": "DefaultString",
+        "apply": {
+          "MYSQL": {
+            "type": "VARCHAR(32)"
+          },
+          "ORACLE": {
+            "type": "NVARCHAR2(32)"
+          },
+          "JAVA": {
+            "type": "String"
+          }
+        }
+      },
+      {
+        "name": "标识号",
+        "code": "IdOrKey",
+        "apply": {
+          "MYSQL": {
+            "type": "VARCHAR(32)"
+          },
+          "ORACLE": {
+            "type": "VARCHAR2(32)"
+          },
+          "JAVA": {
+            "type": "String"
+          }
+        }
+      },
+      {
+        "name": "名称",
+        "code": "Name",
+        "apply": {
+          "MYSQL": {
+            "type": "VARCHAR(128)"
+          },
+          "ORACLE": {
+            "type": "NVARCHAR2(128)"
+          },
+          "JAVA": {
+            "type": "String"
+          }
+        }
+      },
+      {
+        "name": "备注说明",
+        "code": "Intro",
+        "apply": {
+          "MYSQL": {
+            "type": "VARCHAR(512)"
+          },
+          "ORACLE": {
+            "type": "NVARCHAR2(512)"
+          },
+          "JAVA": {
+            "type": "String"
+          }
+        }
+      },
+      {
+        "name": "字串-短",
+        "code": "ShortString",
+        "apply": {
+          "MYSQL": {
+            "type": "VARCHAR(128)"
+          },
+          "ORACLE": {
+            "type": "NVARCHAR2(128)"
+          },
+          "JAVA": {
+            "type": "String"
+          }
+        }
+      },
+      {
+        "name": "字串-中",
+        "code": "MiddleString",
+        "apply": {
+          "MYSQL": {
+            "type": "VARCHAR(1024)"
+          },
+          "ORACLE": {
+            "type": "NVARCHAR2(1024)"
+          },
+          "JAVA": {
+            "type": "String"
+          }
+        }
+      },
+      {
+        "name": "字串-长",
+        "code": "LongString",
+        "apply": {
+          "MYSQL": {
+            "type": "VARCHAR(3120)"
+          },
+          "ORACLE": {
+            "type": "NVARCHAR2(3120)"
+          },
+          "JAVA": {
+            "type": "String"
+          }
+        }
+      },
+      {
+        "name": "大文本",
+        "code": "LongText",
+        "apply": {
+          "MYSQL": {
+            "type": "TEXT"
+          },
+          "ORACLE": {
+            "type": "CLOB"
+          },
+          "JAVA": {
+            "type": "String"
+          }
+        }
+      },
+      {
+        "name": "小数",
+        "code": "Double",
+        "apply": {
+          "MYSQL": {
+            "type": "DECIMAL(64,16)"
+          },
+          "ORACLE": {
+            "type": "NUMBER(64,16)"
+          },
+          "JAVA": {
+            "type": "Double"
+          }
+        }
+      },
+      {
+        "name": "比例",
+        "code": "Ratio",
+        "apply": {
+          "MYSQL": {
+            "type": "DECIMAL(4,2)"
+          },
+          "ORACLE": {
+            "type": "NUMBER(4,2)"
+          },
+          "JAVA": {
+            "type": "Double"
+          }
+        }
+      },
+      {
+        "name": "整数",
+        "code": "Integer",
+        "apply": {
+          "MYSQL": {
+            "type": "INT"
+          },
+          "ORACLE": {
+            "type": "INT"
+          },
+          "JAVA": {
+            "type": "Integer"
+          }
+        }
+      },
+      {
+        "name": "金额",
+        "code": "Money",
+        "apply": {
+          "MYSQL": {
+            "type": "DECIMAL(32,8)"
+          },
+          "ORACLE": {
+            "type": "NUMBER(32,8)"
+          },
+          "JAVA": {
+            "type": "Double"
+          }
+        }
+      },
+      {
+        "name": "是否",
+        "code": "YesNo",
+        "apply": {
+          "MYSQL": {
+            "type": "VARCHAR(1)"
+          },
+          "ORACLE": {
+            "type": "VARCHAR2(1)"
+          },
+          "JAVA": {
+            "type": "String"
+          }
+        }
+      },
+      {
+        "name": "数据字典",
+        "code": "Dict",
+        "apply": {
+          "MYSQL": {
+            "type": "VARCHAR(32)"
+          },
+          "ORACLE": {
+            "type": "VARCHAR2(32)"
+          },
+          "JAVA": {
+            "type": "String"
+          }
+        }
+      },
+      {
+        "name": "日期",
+        "code": "Date",
+        "apply": {
+          "MYSQL": {
+            "type": "DATE"
+          },
+          "ORACLE": {
+            "type": "DATE"
+          },
+          "JAVA": {
+            "type": "Date"
+          }
+        }
+      },
+      {
+        "name": "日期时间",
+        "code": "DateTime",
+        "apply": {
+          "MYSQL": {
+            "type": "DATETIME"
+          },
+          "ORACLE": {
+            "type": "DATE"
+          },
+          "JAVA": {
+            "type": "Date"
+          }
+        }
+      }
+    ],
+    "database": [
+      {
+        "code": "MYSQL",
+        "template": "DROP TABLE {{=it.entity.title}};\n$blankline\nCREATE TABLE {{=it.entity.title}}(\n{{ pkList = [] ; }}\n{{~it.entity.fields:field:index}}\n    {{? field.pk }}{{ pkList.push(field.name) }}{{?}}\n    {{=field.name}} {{=field.type}} {{= field.pk ? 'NOT NULL' : '' }} COMMENT '{{=it.func.join(field.chnname,field.remark,';')}}' {{= index < it.entity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }}\n{{~}}\n{{? pkList.length >0 }}\n    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}})\n{{?}}\n) COMMENT = '{{=it.func.join(it.entity.chnname,it.entity.remark,';') }}'",
+        "fileShow": true,
+        "defaultDatabase": true,
+        "createTableTemplate": "CREATE TABLE {{=it.entity.title}}(\n{{ pkList = [] ; }}\n{{~it.entity.fields:field:index}}\n    {{? field.pk }}{{ pkList.push(field.name) }}{{?}}\n    {{=field.name}} {{=field.type}} {{= field.notNull ? 'NOT NULL' : '' }} {{= field.autoIncrement ? 'AUTO_INCREMENT' : '' }} {{= field.defaultValue ? it.func.join('DEFAULT',field.defaultValue,' ') : '' }} COMMENT '{{=it.func.join(field.chnname,field.remark,' ')}}' {{= index < it.entity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }}\n{{~}}\n{{? pkList.length >0 }}\n    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}})\n{{?}}\n) COMMENT = '{{=it.func.join(it.entity.chnname,it.entity.remark,' ') }}';",
+        "deleteTableTemplate": "DROP TABLE {{=it.entity.title}};/*SkipError*/",
+        "rebuildTableTemplate": "create table PDMAN_UP_{{=it.oldEntity.title}}\nas select * from {{=it.oldEntity.title}};{{=it.separator}}\n$blankline\n\ndrop table {{=it.oldEntity.title}};{{=it.separator}}\n$blankline\n\nCREATE TABLE {{=it.newEntity.title}}(\n{{ pkList = [] ; }}\n{{~it.newEntity.fields:field:index}}\n    {{? field.pk }}{{ pkList.push(field.name) }}{{?}}\n    {{=field.name}} {{=field.type}} {{= field.notNull ? 'NOT NULL' : '' }} COMMENT '{{=it.func.join(field.chnname,field.remark,';')}}' {{= index < it.newEntity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }}\n{{~}}\n{{? pkList.length >0 }}\n    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}})\n{{?}}\n) COMMENT = '{{=it.func.join(it.newEntity.chnname,it.newEntity.remark,';') }}';{{=it.separator}}\n$blankline\n\n{{ sameCols = it.func.intersect(it.newEntity.fields,it.newEntity.fields) ;}}\ninsert into {{=it.newEntity.title}}(\n{{~sameCols:field:index}}\n    {{=field.name}}{{? index<it.newEntity.fields.length-1}},{{?}}\n{{~}}\n) \nvalues\nselect \n{{~sameCols:field:index}}\n    {{=field.name}}{{? index<it.oldEntity.fields.length-1}},{{?}}\n{{~}}\nfrom PDMAN_UP_{{=it.oldEntity.title}};{{=it.separator}}\n$blankline\n\ndrop table PDMAN_UP_{{=it.oldEntity.title}};{{=it.separator}}",
+        "createFieldTemplate": "ALTER TABLE {{=it.entity.title}} ADD COLUMN {{=it.field.name}} {{=it.field.type}} {{? it.field.notNull}}NOT NULL{{?}} {{? ''!=it.field.defaultValue}}DEFAULT {{? null==it.field.defaultValue}}NULL{{??}}'{{=it.field.defaultValue}}'{{?}}{{?}} {{? it.field.autoIncrement}}AUTO_INCREMENT{{?}} {{? it.field.pk}}PRIMARY KEY{{?}} {{? it.field.chnname}}COMMENT '{{=it.field.chnname}}'{{?}} {{? it.field.addAfter}}AFTER {{=it.field.addAfter}}{{?}};",
+        "updateFieldTemplate": "ALTER TABLE {{=it.entity.title}} MODIFY COLUMN {{=it.field.name}} {{=it.field.type}} {{? it.field.notNull}}NOT NULL{{?}} {{? ''!=it.field.defaultValue}}DEFAULT {{? null==it.field.defaultValue}}NULL{{??}}'{{=it.field.defaultValue}}'{{?}}{{?}} {{? it.field.autoIncrement}}AUTO_INCREMENT{{?}} {{? it.field.chnname}}COMMENT '{{=it.field.chnname}}'{{?}};",
+        "deleteFieldTemplate": "ALTER TABLE {{=it.entity.title}} DROP {{=it.field.name}};",
+        "deleteIndexTemplate": "ALTER TABLE {{=it.entity.title}} DROP INDEX {{=it.index.name}};",
+        "createIndexTemplate": "ALTER TABLE {{=it.entity.title}} ADD {{? it.index.isUnique}}UNIQUE{{?}} {{=it.index.name}}({{=it.func.join(...it.index.fields,',')}});",
+        "updateTableComment": "ALTER TABLE {{=it.entity.title}} COMMENT '{{=it.entity.chnname}}';"
+      },
+      {
+        "code": "ORACLE",
+        "template": "DROP TABLE {{=it.entity.title}};\n$blankline\nCREATE TABLE {{=it.entity.title}}(\n{{ pkList = [] ; }}\n{{~it.entity.fields:field:index}}\n    {{? field.pk }}{{ pkList.push(field.name) }}{{?}}\n    {{=field.name}} {{=field.type}}  {{= field.pk ? 'NOT NULL' : '' }} {{= index < it.entity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }}\n{{~}}\n{{? pkList.length >0 }}\n    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}})\n{{?}}\n);\n$blankline\nCOMMENT ON TABLE {{=it.entity.title}} IS '{{=it.func.join(it.entity.chnname,it.entity.remark,';') }}';\n{{~it.entity.fields:field:index}}\nCOMMENT ON COLUMN {{=it.entity.title}}.{{=field.name}} IS '{{=it.func.join(field.chnname,field.remark,';')}}';\n{{~}}",
+        "createTableTemplate": "CREATE TABLE {{=it.entity.title}}(\n{{ pkList = [] ; }}\n{{~it.entity.fields:field:index}}\n    {{? field.pk }}{{ pkList.push(field.name) }}{{?}}\n    {{=field.name}} {{=field.type}}{{? field.defaultValue}} DEFAULT {{=field.defaultValue}}{{?}}{{= field.notNull ? ' NOT NULL' : '' }}{{= index < it.entity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }}\n{{~}}\n{{? pkList.length >0 }}\n    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}})\n{{?}}\n);\n$blankline\n{{? it.entity.chnname || it.entity.remark}}COMMENT ON TABLE {{=it.entity.title}} IS {{? it.entity.remark}}'{{=it.entity.remark}}'{{??}}'{{=it.entity.chnname}}'{{?}};{{?}}\n{{~it.entity.fields:field:index}}\n{{? field.chnname || field.remark}}COMMENT ON COLUMN {{=it.entity.title}}.{{=field.name}} IS {{? field.remark}}'{{=field.remark}}'{{??}}'{{=field.chnname}}'{{?}};{{?}}\n{{~}}",
+        "deleteTableTemplate": "DROP TABLE {{=it.entity.title}};/*SkipError*/\r\n$blankline",
+        "rebuildTableTemplate": "CREATE TABLE PDMAN_UP_{{=it.oldEntity.title}}\nAS SELECT * FROM {{=it.oldEntity.title}};{{=it.separator}}\n$blankline\nDROP TABLE {{=it.oldEntity.title}};{{=it.separator}}\n$blankline\nCREATE TABLE {{=it.newEntity.title}}(\n{{ pkList = [] ; }}{{~it.newEntity.fields:field:index}}{{? field.pk }}{{ pkList.push(field.name) }}{{?}}    {{=field.name}} {{=field.type}}{{? field.defaultValue}} DEFAULT {{=field.defaultValue}}{{?}}{{= field.notNull ? ' NOT NULL' : '' }}{{= index < it.newEntity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }}\n{{~}}{{? pkList.length >0 }}    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}}){{?}}\n);{{=it.separator}}\n$blankline\n{{? it.newEntity.chnname || it.newEntity.remark}}COMMENT ON TABLE {{=it.newEntity.title}} IS {{? it.newEntity.remark}}'{{=it.entity.remark}}'{{??}}'{{=it.newEntity.chnname}}'{{?}};{{?}}{{=it.separator}}\n{{~it.newEntity.fields:field:index}}\n{{? field.chnname || field.remark}}COMMENT ON COLUMN {{=it.newEntity.title}}.{{=field.name}} IS {{? field.remark}}'{{=field.remark}}'{{??}}'{{=field.chnname}}'{{?}};{{?}}{{=it.separator}}\n{{~}}\n{{ sameCols = it.func.intersect(it.newEntity.fields,it.newEntity.fields) ;}}\n$blankline\nINSERT INTO {{=it.newEntity.title}}(\n{{~sameCols:field:index}}   {{=field.name}}{{? index<it.newEntity.fields.length-1}},{{?}}\n{{~}}) \nVALUES\nSELECT\n{{~sameCols:field:index}}   {{=field.name}}{{? index<it.oldEntity.fields.length-1}},{{?}}\n{{~}}FROM PDMAN_UP_{{=it.oldEntity.title}};{{=it.separator}}\n\nDROP TABLE PDMAN_UP_{{=it.oldEntity.title}};{{=it.separator}}",
+        "createFieldTemplate": "ALTER TABLE {{=it.entity.title}} ADD({{=it.field.name}} {{=it.field.type}}{{? it.field.defaultValue}} DEFAULT {{=it.field.defaultValue}}{{?}}{{? it.field.notNull}} NOT NULL{{?}});\r\n{{? it.field.chnname || it.field.remark}}COMMENT ON COLUMN {{=it.entity.title}}.{{=it.field.name}} IS {{? it.field.remark}}'{{=it.field.remark}}'{{??}}'{{=it.field.chnname}}'{{?}};{{?}}\r\n$blankline",
+        "updateFieldTemplate": "ALTER TABLE {{=it.entity.title}} MODIFY({{=it.field.name}} {{=it.field.type}}{{? it.field.defaultValue}} DEFAULT {{=it.field.defaultValue}}{{?}}{{? it.field.notNull}} NOT NULL{{?}});\r\n{{? it.field.chnname || it.field.remark}}COMMENT ON COLUMN {{=it.entity.title}}.{{=it.field.name}} IS {{? it.field.remark}}'{{=it.field.remark}}'{{??}}'{{=it.field.chnname}}'{{?}};{{?}}\r\n$blankline",
+        "deleteFieldTemplate": "ALTER TABLE {{=it.entity.title}} DROP({{=it.field.name}});\r\n$blankline",
+        "deleteIndexTemplate": "DROP INDEX {{=it.entity.title}}.{{=it.index.name}};\r\n$blankline",
+        "createIndexTemplate": "CREATE{{? it.index.isUnique}} UNIQUE{{?}} INDEX {{=it.index.name}} ON {{=it.entity.title}}({{=it.func.join(it.index.fields,',')}});\r\n$blankline",
+        "updateTableComment": "{{? it.entity.chnname || it.entity.remark}}COMMENT ON TABLE {{=it.entity.title}} IS {{? it.entity.remark}}'{{=it.entity.remark}}'{{??}}'{{=it.entity.chnname}}'{{?}};{{?}}\r\n$blankline"
+      },
+      {
+        "code": "JAVA",
+        "template": "package group.rober.pdman.{{=it.module.name}}.entity;\n$blankline\nimport javax.persistence.*;\nimport java.io.Serializable;\nimport java.util.Date;\n$blankline\n$blankline\n\n/** {{=it.entity.chnname}} */\n@Table(name=\"{{=it.entity.title}}\")\npublic class {{=it.func.camel(it.entity.title,true) }} implements Serializable,Cloneable{\n{{~it.entity.fields:field:index}}\n    /** {{=it.func.join(field.chnname,field.remark,';')}} */\n    {{? field.pk }}\n    @Id\n    @GeneratedValue\n    {{?}}\n    private {{=field.type}} {{=it.func.camel(field.name,false)}} ;\n{{~}}\n$blankline\n{{~it.entity.fields:field:index}}\n    /** {{=it.func.join(field.chnname,field.remark,';')}} */\n    public {{=field.type}} get{{=it.func.camel(field.name,true)}}(){\n        return this.{{=it.func.camel(field.name,false)}};\n    }\n    /** {{=it.func.join(field.chnname,field.remark,';')}} */\n    public void set{{=it.func.camel(field.name,true)}}({{=field.type}} {{= it.func.camel(field.name,false) }}){\n        this.{{=it.func.camel(field.name,false)}} = {{= it.func.camel(field.name,false) }};\n    }\n{{~}}\n}",
+        "createTableTemplate": "package group.rober.pdman.{{=it.module.name}}.entity;\n$blankline\nimport javax.persistence.*;\nimport java.io.Serializable;\nimport java.util.Date;\n$blankline\n$blankline\n@Table(name=\"{{=it.entity.title}}\")\npublic class {{=it.func.camel(it.entity.title,true) }} implements Serializable,Cloneable{\n{{~it.entity.fields:field:index}}\n    /** {{=it.func.join(field.chnname,field.remark,';')}} */\n    {{? field.pk }}\n    @Id\n    @GeneratedValue\n    {{?}}\n    private {{=field.type}} {{=it.func.camel(field.name,false)}} ;\n{{~}}\n$blankline\n{{~it.entity.fields:field:index}}\n    /** {{=it.func.join(field.chnname,field.remark,';')}} */\n    public {{=field.type}} get{{=it.func.camel(field.name,true)}}(){\n        return this.{{=it.func.camel(field.name,false)}};\n    }\n    /** {{=it.func.join(field.chnname,field.remark,';')}} */\n    public void set{{=it.func.camel(field.name,true)}}({{=field.type}} {{= it.func.camel(field.name,false) }}){\n        this.{{=it.func.camel(field.name,false)}} = {{= it.func.camel(field.name,false) }};\n    }\n{{~}}\n}",
+        "deleteTableTemplate": "",
+        "rebuildTableTemplate": "",
+        "createFieldTemplate": "",
+        "updateFieldTemplate": "",
+        "deleteFieldTemplate": "",
+        "deleteIndexTemplate": "",
+        "createIndexTemplate": "",
+        "updateTableComment": ""
+      }
+    ]
+  }
+}

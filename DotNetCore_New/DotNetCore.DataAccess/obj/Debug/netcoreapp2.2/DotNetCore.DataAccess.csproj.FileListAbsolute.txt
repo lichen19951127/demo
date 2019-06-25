@@ -1,0 +1,5 @@
+F:\资料\demo\DotNetCore_New\DotNetCore.DataAccess\bin\Debug\netcoreapp2.2\DotNetCore.DataAccess.deps.json
+F:\资料\demo\DotNetCore_New\DotNetCore.DataAccess\bin\Debug\netcoreapp2.2\DotNetCore.DataAccess.dll
+F:\资料\demo\DotNetCore_New\DotNetCore.DataAccess\obj\Debug\netcoreapp2.2\DotNetCore.DataAccess.csproj.CoreCompileInputs.cache
+F:\资料\demo\DotNetCore_New\DotNetCore.DataAccess\obj\Debug\netcoreapp2.2\DotNetCore.DataAccess.AssemblyInfoInputs.cache
+F:\资料\demo\DotNetCore_New\DotNetCore.DataAccess\obj\Debug\netcoreapp2.2\DotNetCore.DataAccess.AssemblyInfo.cs

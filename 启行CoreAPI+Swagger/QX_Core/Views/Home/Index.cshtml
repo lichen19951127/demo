@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    function AjaxGetAPI() {
+        $.ajax({
+            url: "https://localhost:44367/api/values",
+            type: "get",
+            success: function (res) {
+
+                alert(res);
+            }
+        })
+    }
+    $(function () {
+        alert(111);
+        AjaxGetAPI();
+    })
+</script>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <A href="/Home/Add">添加</A>
+    <form method="post" action="/Home/index">
+        用户名:@Html.TextBox("txtUserName")
+        密  码:@Html.TextBox("txtPassword")
+        <input type="submit" value="提交" />
+    </form>
+    <table>
+        <tr>
+            <td>编号</td>
+            <td>用户名</td>
+            <td>密码</td>
+            <td>操作</td>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.UserName</td>
+                <td>@item.Password</td>
+                <td><A href="/Home/Update/@item.ID">修改</A> | <A href="/Home/DeleteDo/@item.ID" onclick="return confirm('您确定要删除当前数据吗？');">删除</A></td>
+            </tr>
+        }
+
+
+    </table>
+
+
+</div>

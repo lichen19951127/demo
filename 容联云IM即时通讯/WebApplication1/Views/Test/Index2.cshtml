@@ -1,0 +1,153 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+</head>
+<body>
+    <div>
+        <div id="showMes" style="border:1px solid #ccc;width:500px;height:500px;"></div>
+        <div style="border:1px solid #ccc;width:500px;height:200px;">
+            <input type="text" name="Context" style="width:500px;height:200px;" />
+            <input type="button" id="send" value="发送" />
+        </div>
+    </div>
+</body>
+</html>
+<script src="~/Content/jquery-3.1.1.js"></script>
+<script src="~/Content/ytx-web-im-min-new-5.4.0.js"></script>
+<script>
+    var appid = "8a48b5515418ae2d015426e8c0c11af3";
+    var token = "033757f2e745c10f71e42c6dd30d6f9f";
+    var userid = 2;
+    var username = "xiaobai";
+    $(function () {
+        //初始化SDK
+        var resp = RL_YTX.init(appid);
+        if (170002 == resp.code) {
+            //缺少必要参数，详情见msg参数
+            //用户逻辑处理
+        } else if (174001 == resp.code) {
+            //不支持HTML5，关闭页面//用户逻辑处理
+        }
+        else if (200 == resp.code) {
+            //初始化成功
+            //用户逻辑处理
+            //判断不支持的功能，屏蔽页面展示
+            var unsupport = resp.unsupport;
+        }
+
+
+        //账号登录参数设置
+        var loginBuilder = new RL_YTX.LoginBuilder();
+        //登录类型 1账号登录，3voip账号密码登录
+        loginBuilder.setType(1);
+        //设置用户名
+        loginBuilder.setUserName(username);
+        //type值为1时，密码可以不赋值
+        loginBuilder.setPwd();
+        //设置sig
+        var timestamp = getTimeStamp();
+        var sig = getSig(timestamp);
+        loginBuilder.setSig(sig);
+        //设置时间戳
+        loginBuilder.setTimestamp(timestamp);
+        //执行用户登录
+        RL_YTX.login(loginBuilder, function (obj) {
+            //登录成功回调
+            console.log("登录成功"+obj);
+            //注册接收消息事件监听
+            RL_YTX.onMsgReceiveListener(function (obj) {
+                //收到push消息或者离线消息或判断输入状态//如果obj.msgType==12  判断obj.msgDomainn的值//obj.msgDomain 0 无输入状态  1 正在输入  2 正在录音
+                GetMes(obj)
+            });
+            //注册群组通知事件监听
+            RL_YTX.onNoticeReceiveListener(function (obj) {
+                //收到群组通知
+            });
+        }), function (obj) {
+            //登录失败方法回调
+            }
+
+
+
+
+        $("#send").click(function () {
+               //新建消息体对象
+                var obj = new RL_YTX.MsgBuilder();
+                //设置自定义消息id
+                obj.setId(1);
+                //设置发送的文本内容
+                obj.setText($("[name=Context]").val());
+                //设置发送的消息类型1:文本消息 4:图片消息 6:压缩文件 7:非压缩文件
+                //发送非文本消息时，text字段将被忽略，发送文本消息时 file字段将被忽略
+                obj.setType(1);
+                //设置接收者
+                var id = 1;
+                obj.setReceiver(id);
+                RL_YTX.sendMsg(obj, function () {
+                    //发送消息成功
+                    $("#showMes").append("<p>" + $("[name=Context]").val() + "</p>");
+                    //处理用户逻辑，通知页面
+                }, function (obj) {//失败
+                        //发送消息失败
+                        console.log(obj);
+                    //处理用户逻辑，通知页面刷新，展现重发按钮
+
+                })
+
+        })
+    })
+
+
+    function getTimeStamp() {
+        var now = new Date();
+        var timestamp = now.getFullYear() + '' + ((now.getMonth() + 1) >= 10 ? "" + (now.getMonth() + 1) : "0" + (now.getMonth() + 1)) + (now.getDate() >= 10 ? now.getDate() : "0" + now.getDate()) + (now.getHours() >= 10 ? now.getHours() : "0" + now.getHours()) + (now.getMinutes() >= 10 ? now.getMinutes() : "0" + now.getMinutes()) + (now.getSeconds() >= 10 ? now.getSeconds() : "0" + now.getSeconds());
+        return timestamp;
+    }
+    function getSig(timestamp) {
+        return hex_md5(appid + userid + timestamp + token);
+        }
+       function GetMes(obj) {
+        //获取发送者为 
+        var sender = obj.msgSender;
+        //获取发送者昵称，如果不存在，使用账号代替
+        var you_senderNickName = obj.senderNickName;
+        var name = obj.msgSender;
+        if(!!you_senderNickName){
+         name = you_senderNickName;
+        }
+        var content_type = null;
+        //获取消息版本号（是服务器的版本号）
+        var version = obj.version;
+        //获取消息发送时间
+        var time = obj.msgDateCreated;
+        //获取消息类型 
+        //1:文本消息 2:语音消息4:图片消息6:文件
+        var msgType = obj.msgType;
+        if(1 == msgType || 0 == msgType){
+         //文本消息，获取消息内容
+            var you_msgContent = obj.msgContent;
+            console.log(you_msgContent);
+        }else if(2 == msgType){
+         //语音消息，获取语音文件url
+         var url = obj.msgFileUrl;
+        }else if(3 == msgType){
+        //3：视频消息，获取视频url
+         //语音消息，获取语音文件url
+         var url = obj.msgFileUrl;
+        }else if(4 == msgType){
+         //图片消息 获取图片url
+         var url = obj.msgFileUrl;
+        }else{
+         //后续还会支持(地理位置，视频，以及自定义消息等)
+        }
+        //通知前端更新页面
+    }
+</script>

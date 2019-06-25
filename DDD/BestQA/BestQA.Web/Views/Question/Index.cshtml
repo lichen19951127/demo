@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "问题列表";
+}
+
+<div ng-controller="questionController" ng-init="init()" class="qMain row">
+    <div class="col-md-9">
+        <p ng-show="loadError" class="alert alert-danger">Oops! Something went wrong. Refresh this page to try again.</p>
+        <div class="btn-group" role="group" aria-label="...">
+            <a href="/?tab=recent" type="button" class="@(ViewBag.ActiveTab == "recent" ? "active btn btn-default" : "btn btn-default")">全部问题</a>
+            <a href="/?tab=unanswered" type="button" class="@(ViewBag.ActiveTab == "unanswered" ? "active btn btn-default" : "btn btn-default")">未结问题</a>
+        </div>
+        <div class="list">
+            <p ng-show="noQuestionsFound" class="alert alert-warning">No questions found.</p>
+            <div ng-table="tableParams" class="singleq" ng-repeat="q in questions">
+                <div class="summary pull-left">
+                    <span class="item pull-left votes">
+                        <span class="count text-center">{{q.SupportCnt}}</span>
+                        <label class="text-center">支持</label>
+                    </span>
+                    <span class="item pull-left answers">
+                        <span class="count text-center">{{q.OpposeCnt}}</span>
+                        <label class="text-center">反对</label>
+                    </span>
+                </div>
+                <div class="detail pull-left">
+                    <span class="title"><a href="/Question/Details/{{q.Id}}">{{q.Title}}</a></span>
+                    <p>
+                        <span class="user pull-right other"><a href="/">-{{q.UserId}}</a></span>
+                        <span class="date pull-right other">
+                            asked <abbr class="timeago" title="{{q.CreatedTime | jsonDate | date: 'MMM d, y h:mm a'}}">
+                                {{q.CreatedTime | jsonDate | date: 'MMM d, y h:mm a'}}
+                            </abbr>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Html.Partial("~/Views/Shared/Sidebar.cshtml")
+</div>
+
+@section Scripts
+{
+    <script type="text/javascript" src="@Url.Content("~/Scripts/app/filters/json-date-filters.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/app/directives/angular-pagedown.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/app/services/questionService.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/app/controllers/questionController.js")"></script>
+}

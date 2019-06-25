@@ -1,0 +1,13 @@
+F:\资料\资料\demo\AutoMapper\ConsoleApp6\bin\Debug\netcoreapp3.0\ConsoleApp6.exe
+F:\资料\资料\demo\AutoMapper\ConsoleApp6\bin\Debug\netcoreapp3.0\ConsoleApp6.deps.json
+F:\资料\资料\demo\AutoMapper\ConsoleApp6\bin\Debug\netcoreapp3.0\ConsoleApp6.runtimeconfig.json
+F:\资料\资料\demo\AutoMapper\ConsoleApp6\bin\Debug\netcoreapp3.0\ConsoleApp6.runtimeconfig.dev.json
+F:\资料\资料\demo\AutoMapper\ConsoleApp6\bin\Debug\netcoreapp3.0\ConsoleApp6.dll
+F:\资料\资料\demo\AutoMapper\ConsoleApp6\bin\Debug\netcoreapp3.0\ConsoleApp6.pdb
+F:\资料\资料\demo\AutoMapper\ConsoleApp6\obj\Debug\netcoreapp3.0\ConsoleApp6.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\AutoMapper\ConsoleApp6\obj\Debug\netcoreapp3.0\ConsoleApp6.AssemblyInfoInputs.cache
+F:\资料\资料\demo\AutoMapper\ConsoleApp6\obj\Debug\netcoreapp3.0\ConsoleApp6.AssemblyInfo.cs
+F:\资料\资料\demo\AutoMapper\ConsoleApp6\obj\Debug\netcoreapp3.0\ConsoleApp6.dll
+F:\资料\资料\demo\AutoMapper\ConsoleApp6\obj\Debug\netcoreapp3.0\ConsoleApp6.pdb
+F:\资料\资料\demo\AutoMapper\ConsoleApp6\bin\Debug\netcoreapp3.0\AutoMapper.dll
+F:\资料\资料\demo\AutoMapper\ConsoleApp6\obj\Debug\netcoreapp3.0\ConsoleApp6.csproj.CopyComplete

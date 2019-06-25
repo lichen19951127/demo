@@ -1,0 +1,24 @@
+F:\Demo\net core\EFCore\ICore.DataAccess\bin\Debug\netcoreapp2.1\ICore.DataAccess.deps.json
+F:\Demo\net core\EFCore\ICore.DataAccess\bin\Debug\netcoreapp2.1\ICore.DataAccess.dll
+F:\Demo\net core\EFCore\ICore.DataAccess\bin\Debug\netcoreapp2.1\ICore.DataAccess.pdb
+F:\Demo\net core\EFCore\ICore.DataAccess\obj\Debug\netcoreapp2.1\ICore.DataAccess.csprojAssemblyReference.cache
+F:\Demo\net core\EFCore\ICore.DataAccess\obj\Debug\netcoreapp2.1\ICore.DataAccess.csproj.CoreCompileInputs.cache
+F:\Demo\net core\EFCore\ICore.DataAccess\obj\Debug\netcoreapp2.1\ICore.DataAccess.AssemblyInfoInputs.cache
+F:\Demo\net core\EFCore\ICore.DataAccess\obj\Debug\netcoreapp2.1\ICore.DataAccess.AssemblyInfo.cs
+F:\Demo\net core\EFCore\ICore.DataAccess\obj\Debug\netcoreapp2.1\ICore.DataAccess.dll
+F:\Demo\net core\EFCore\ICore.DataAccess\obj\Debug\netcoreapp2.1\ICore.DataAccess.pdb
+F:\Demo\net core\EFCore\ICore.DataAccess\bin\Debug\netcoreapp2.1\Core.Entity.dll
+F:\Demo\net core\EFCore\ICore.DataAccess\bin\Debug\netcoreapp2.1\Core.Entity.pdb
+F:\Demo\net core\EFCore\ICore.DataAccess\obj\Debug\netcoreapp2.1\ICore.DataAccess.csproj.CopyComplete
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.DataAccess\bin\Debug\netcoreapp2.1\Core.Entity.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.DataAccess\bin\Debug\netcoreapp2.1\Core.Entity.pdb
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.DataAccess\obj\Debug\netcoreapp2.1\ICore.DataAccess.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.DataAccess\obj\Debug\netcoreapp2.1\ICore.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.DataAccess\obj\Debug\netcoreapp2.1\ICore.DataAccess.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.DataAccess\obj\Debug\netcoreapp2.1\ICore.DataAccess.AssemblyInfo.cs
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.DataAccess\obj\Debug\netcoreapp2.1\ICore.DataAccess.csproj.CopyComplete
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.DataAccess\obj\Debug\netcoreapp2.1\ICore.DataAccess.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.DataAccess\obj\Debug\netcoreapp2.1\ICore.DataAccess.pdb
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.DataAccess\bin\Debug\netcoreapp2.1\ICore.DataAccess.deps.json
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.DataAccess\bin\Debug\netcoreapp2.1\ICore.DataAccess.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.DataAccess\bin\Debug\netcoreapp2.1\ICore.DataAccess.pdb

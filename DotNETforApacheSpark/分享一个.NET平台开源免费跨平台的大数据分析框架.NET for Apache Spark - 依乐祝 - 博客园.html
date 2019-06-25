@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="referrer" content="origin" />
+    <title>分享一个.NET平台开源免费跨平台的大数据分析框架.NET for Apache Spark - 依乐祝 - 博客园</title>
+<meta property="og:description" content="今天早上六点半左右微信群里就看到张队发的关于.NET Spark大数据的链接https://devblogs.microsoft.com/dotnet/introducing net for apac" />
+    <link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=svlZeZMvc3He7PqOD4T7SOuQn0_kIfLBYiy3idqd35Y1"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory.css?v=EanP3quXYv9G0oFCmz4BNBHvmK7M_Si1iD1EpUHL_441"/>
+<link type="text/css" rel="stylesheet" href="/blog/customcss/435194.css?v=PA2HE7OGl41WOmtaVBV3D3Ro%2bXM%3d"/>
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.css?v=C8rNZMN1xUcogg2mnN6C_ci7S2vGnJTt9TmfmncHzEA1"/>
+    <link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/yilezhu/rss"/>
+    <link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/yilezhu/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/yilezhu/wlwmanifest.xml"/>
+    <script src="//common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script>var currentBlogId=435194;var currentBlogApp='yilezhu',cb_enable_mathjax=false;var isLogined=false;</script>
+    <script src="/bundles/blog-common.js?v=OFBZTzkHKauV7mtIFLF9jlqrX-sesK9-mY9KjurLrq01" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<!--PageBeginHtml Block Begin-->
+<div class="c-portrait">
+  <img src="https://pic.cnblogs.com/avatar/1377250/20180629145832.png" alt="依乐祝" />
+
+  <h1><a href="https://www.cnblogs.com/yilezhu/">依乐祝</a></h1>
+  <h2>    授之以鱼，不如授之以渔！右侧微信扫描二维码关注我们“DotNetCore实战”吧。另附.NET Core实战项目交流群：637326624 欢迎大家加群相互交流！</h2>
+  <div class="c-social">
+    <a href="https://github.com/yilezhu" target="_blank">
+      <svg height="28" width="28" style="fill: currentColor;" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+    </a>
+  </div>
+</div>
+<!--PageBeginHtml Block End-->
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="https://www.cnblogs.com/yilezhu/"><img id="blogLogo" src="/Skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="https://www.cnblogs.com/yilezhu/">依乐祝（祝雷）</a></h1>
+<h2>授之以鱼，不如授之以渔！右侧微信扫描二维码关注我们“DotNetCore实战”吧。另附.NET Core实战项目交流群：637326624 欢迎大家加群相互交流！</h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/yilezhu/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E4%BE%9D%E4%B9%90%E7%A5%9D">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/yilezhu/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="https://www.cnblogs.com/yilezhu/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 70&nbsp; </span>
+<span id="stats_article_count">文章 - 0&nbsp; </span>
+<span id="stats-comment_count">评论 - 1210</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+        <div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class = "post">
+		<h1 class = "postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/yilezhu/p/10767910.html">分享一个.NET平台开源免费跨平台的大数据分析框架.NET for Apache Spark</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown"><p><img src="https://img2018.cnblogs.com/blog/1377250/201904/1377250-20190425132747880-693486052.png" alt=".NET for Apache Spark" /></p>
+<p>今天早上六点半左右微信群里就看到张队发的关于.NET Spark大数据的链接https://devblogs.microsoft.com/dotnet/introducing-net-for-apache-spark/ ，正印证了“微软在不断通过.NET Core补齐各领域开发，真正实现一种语言的跨平台”这句话。那么我们今天就来看看这个 .NET for Apache Spark到底是个什么鬼？</p>
+<blockquote>
+<p>作者：依乐祝<br />
+原文链接：<a href="https://www.cnblogs.com/yilezhu/p/10767910.html" class="uri">https://www.cnblogs.com/yilezhu/p/10767910.html</a></p>
+</blockquote>
+<h2 id="什么是.net-for-apache-spark">什么是.NET for Apache Spark？</h2>
+<p>我们都知道Spark是一种流行的开源分布式处理引擎，适用于大型数据集(通常是TB级别)的分析。Spark可用于处理批量数据，实时流，机器学习和即时查询。处理任务分布在一个节点集群上，数据被缓存在内存中，以减少计算时间。到目前为止，Spark已经可以通过Scala，Java，Python和R访问，却不能通过.NET进行访问。</p>
+<p>而.NET for Apache Spark就是旨在使.NET开发人员可以跨所有Spark API访问Apache®Spark™。</p>
+<p>.NET for Apache Spark为C#和F#提供了高性能的API来操作Spark。使用这个.NET API，您可以访问Apache Spark的所有功能，包括SparkSQL、DataFrames、流、MLLib等等。.NET for Apache Spark允许您重用作为.NET开发人员已经拥有的所有知识、技能、代码和库。</p>
+<p>C#/F#语言绑定到Spark将被写入一个新的Spark交互层，这提供了更容易的扩展性。这一新的Spark交互层的编写考虑了语言扩展的最佳实践，并针对交互和性能进行了优化。长期来看，这种扩展性可以用于在Spark中添加对其他语言的支持。</p>
+<p><img src="https://img2018.cnblogs.com/blog/1377250/201904/1377250-20190425132747542-1718316008.png" /></p>
+<p>.NET for Apache Spark符合.NET Standard 2.0标准，可以在Linux、MacOS和Windows上使用。</p>
+<p>官网地址:<a href="https://dotnet.microsoft.com/apps/data/spark" class="uri">https://dotnet.microsoft.com/apps/data/spark</a></p>
+<h2 id="快速开始.net-for-apache-spark">快速开始.NET for Apache Spark</h2>
+<p>在本节中，我们将展示如何在Windows上使用.NET Core运行.NET for Apache SPark应用程序。</p>
+<p>在开始使用.NET for Apache Spark之前，确实需要安装一些东西,如： .NET Core 2.1 SDK | Visual Studio 2019 | Java 1.8 | Apache Spark 2.4.x。具体步骤可以参考<a href="https://github.com/dotnet/spark#get-started">这些步骤</a>开始<a href="https://dotnet.microsoft.com/apps/data/spark">.net for Apache SPark</a>。</p>
+<p>一旦安装完毕，您就可以用三个简单的步骤开始在.NET中编写Spark应用程序。</p>
+<p>在我们的第一个.NET Spark应用程序中，我们将编写一个基本的Spark pipeline，它将统计文本段中每个单词的出现次数。</p>
+<pre class="c#"><code>// 1. Create a Spark session
+var spark = SparkSession
+    .Builder()
+    .AppName(&quot;word_count_sample&quot;)
+    .GetOrCreate();
+ 
+// 2. Create a DataFrame
+DataFrame dataFrame = spark.Read().Text(&quot;input.txt&quot;);
+ 
+// 3. Manipulate and view data
+var words = dataFrame.Select(Split(dataFrame[&quot;value&quot;], &quot; &quot;).Alias(&quot;words&quot;));
+ 
+words.Select(Explode(words[&quot;words&quot;])
+    .Alias(&quot;word&quot;))
+    .GroupBy(&quot;word&quot;)
+    .Count()
+    .Show();</code></pre>
+<h2 id="net-for-apache-spark的特点">.NET For Apache Spark的特点</h2>
+<h3 id="可以用c或者f-进行apache-spark开发">可以用C#或者F# 进行Apache Spark开发</h3>
+<p>.NET for Apache Spark 为您提供了使用 C# 和F# 来操作Apache Spark的APIs。使用这些.NET API，您可以访问Apache Spark的所有功能，包括Spark SQL，用于处理结构化数据和Spark流。</p>
+<h3 id="高性能">高性能</h3>
+<p>第一版的.NET for Apache Spark在流行的TPC-H基准性能测试中的表现就很优异。TPC-H基准性能测试由一组面向业务的查询组成。下图展示了.NET Core与Python和Scala在TPC-H查询集上的性能比较。<br />
+<img src="https://img2018.cnblogs.com/blog/1377250/201904/1377250-20190425132746975-1842652079.png" /></p>
+<p>上面的图表显示了相对于Python和Scala，.NET对于Apache Spark的每个查询性能对比。NET for Apache Spark在Python和Scala上表现良好。此外，在UDF性能至关重要的情况下，比如查询1，JVM和CLR.NET之间传递3B行非字符串数据的速度比Python快2倍。</p>
+<p>同样重要的是，这是.NET for Apache Spark的第一个预览版，我们的目标是进一步投资于改进和基准测试性能(例如，Arrow优化)。您可以按照我们的指示在我们的GitHub仓储上对此进行基准测试。</p>
+<h3 id="利用.net生态系统">利用.NET生态系统</h3>
+<p>.NET For Apache Spark允许您重用作为.NET开发人员已经拥有的所有知识、技能、代码和库。</p>
+<p>您的数据处理代码还可以利用.NET开发人员可以使用的大型库生态系统，如Newtonsoft.Json，ML.NET、MathNet.NDigics、NodaTime等。</p>
+<h3 id="跨平台">跨平台</h3>
+<p>.NET for Apache Spark可以在Linux、MacOS和Windows上使用，就像.NET的其他部分一样。</p>
+<p>.NET for Apache Spark在Azure HDInsight中默认可用，可以安装在Azure Databricks、Azure Kubernetes服务、AWS数据库、AWS EMR等中。</p>
+<h3 id="开源免费">开源免费</h3>
+<p>.NET for Apache Spark是一个拥有来自3,700多家企业的60，000多名代码贡献者的强大开源社区的一部分。</p>
+<p>.NET是免费的，其中包括用于 .NET for Apache Spark。没有任何费用或许可证费用，包括用于商业用途的费用。</p>
+<h2 id="net-for-apache-spark的下一步计划">.NET For Apache Spark的下一步计划</h2>
+<p>今天是我们旅程的第一步。以下是我们近期路线图的一些特点。</p>
+<ul>
+<li>简化入门经验、文档和示例</li>
+<li>原生集成到开发人员工具中，如VisualStudio、VisualStudio Code、木星笔记本</li>
+<li>.net对用户定义的聚合函数的支持</li>
+<li>NET的C#和F#的惯用API(例如，使用LINQ编写查询)</li>
+<li>用Azure数据库、Kubernetes等提供的开箱即用的支持。</li>
+<li>使.NET for Apache Spark成为Spark Core的一部分。</li>
+</ul>
+<h2 id="总结">总结</h2>
+<p>.NET for Apache Spark是微软使.NET成为构建大数据应用程序的伟大技术栈的第一步。<br />
+想了解更多信息的可以访问.NET for Apache Spark的github仓储：<a href="https://github.com/dotnet/spark" class="uri">https://github.com/dotnet/spark</a> 。<br />
+最后，感谢您的阅读。<br />
+本文内容，部分参考自：<a href="https://devblogs.microsoft.com/dotnet/introducing-net-for-apache-spark/" class="uri">https://devblogs.microsoft.com/dotnet/introducing-net-for-apache-spark/</a></p>
+</div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+		</div>
+		<div class = "postDesc">posted @ <span id="post-date">2019-04-25 13:33</span> <a href='https://www.cnblogs.com/yilezhu/'>依乐祝</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=10767910" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(10767910);return false;">收藏</a></div>
+	</div>
+	<script src="//common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script><script>markdown_highlight();</script><script type="text/javascript">var allowComments=true,cb_blogId=435194,cb_entryId=10767910,cb_blogApp=currentBlogApp,cb_blogUserGuid='ea3b6c73-32fd-485b-d04c-08d5866282ce',cb_entryCreatedDate='2019/4/25 13:33:00';loadViewCount(cb_entryId);var cb_postType=1;var isMarkdown=true;</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+  googletag.cmd.push(function() {
+        googletag.defineSlot('/1090369/C1', [300, 250], 'div-gpt-ad-1546353474406-0').addService(googletag.pubads());
+        googletag.defineSlot('/1090369/C2', [468, 60], 'div-gpt-ad-1539008685004-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+  });
+</script>
+<div id='cnblogs_c1' class='c_ad_block'>
+    <div id='div-gpt-ad-1546353474406-0' style='height:250px; width:300px;'></div>
+</div>
+<div id='under_post_news'></div>
+<div id='cnblogs_c2' class='c_ad_block'>
+    <div id='div-gpt-ad-1539008685004-0' style='height:60px; width:468px;'></div>
+</div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+ if(enablePostBottom()) {
+    codeHighlight();
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverT2();
+    deliverC1();
+    deliverC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);  
+}
+</script>
+</div>
+
+    
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright &copy;2019 依乐祝
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+</body>
+</html>

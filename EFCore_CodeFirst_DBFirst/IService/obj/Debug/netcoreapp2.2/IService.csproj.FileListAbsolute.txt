@@ -1,0 +1,9 @@
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\IService\bin\Debug\netcoreapp2.2\IService.deps.json
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\IService\bin\Debug\netcoreapp2.2\IService.dll
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\IService\bin\Debug\netcoreapp2.2\IService.pdb
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\IService\obj\Debug\netcoreapp2.2\IService.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\IService\obj\Debug\netcoreapp2.2\IService.AssemblyInfoInputs.cache
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\IService\obj\Debug\netcoreapp2.2\IService.AssemblyInfo.cs
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\IService\obj\Debug\netcoreapp2.2\IService.dll
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\IService\obj\Debug\netcoreapp2.2\IService.pdb
+F:\资料\资料\demo\EFCore_CodeFirst_DBFirst\IService\obj\Debug\netcoreapp2.2\IService.csprojAssemblyReference.cache

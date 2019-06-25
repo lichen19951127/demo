@@ -1,0 +1,17 @@
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\bin\Debug\netcoreapp2.2\WebApi.deps.json
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\bin\Debug\netcoreapp2.2\WebApi.runtimeconfig.json
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\bin\Debug\netcoreapp2.2\WebApi.runtimeconfig.dev.json
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\bin\Debug\netcoreapp2.2\WebApi.dll
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\bin\Debug\netcoreapp2.2\Service.dll
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\bin\Debug\netcoreapp2.2\Service.pdb
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\obj\Debug\netcoreapp2.2\WebApi.csprojAssemblyReference.cache
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\obj\Debug\netcoreapp2.2\WebApi.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\obj\Debug\netcoreapp2.2\WebApi.RazorAssemblyInfo.cache
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\obj\Debug\netcoreapp2.2\WebApi.RazorAssemblyInfo.cs
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\obj\Debug\netcoreapp2.2\WebApi.AssemblyInfoInputs.cache
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\obj\Debug\netcoreapp2.2\WebApi.AssemblyInfo.cs
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\obj\Debug\netcoreapp2.2\WebApi.RazorTargetAssemblyInfo.cache
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\obj\Debug\netcoreapp2.2\WebApi.csproj.CopyComplete
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\bin\Debug\netcoreapp2.2\WebApi.pdb
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\obj\Debug\netcoreapp2.2\WebApi.dll
+F:\资料\资料\demo\DotNetCore_Test0428\WebApi\obj\Debug\netcoreapp2.2\WebApi.pdb

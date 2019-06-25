@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{27F8ECB1-FE49-4C17-B650-6AE07C2E2D52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{8C57F79F-5CE6-4F13-A5AB-E929FA13686A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iis预加载", "iis预加载\iis预加载.csproj", "{26696AE5-11A2-40AF-B6A8-38D2C6E042BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "通过代码实现预加载", "通过代码实现预加载\通过代码实现预加载.csproj", "{E3850D02-4297-416E-8118-42005E39E43D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27F8ECB1-FE49-4C17-B650-6AE07C2E2D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F8ECB1-FE49-4C17-B650-6AE07C2E2D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F8ECB1-FE49-4C17-B650-6AE07C2E2D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27F8ECB1-FE49-4C17-B650-6AE07C2E2D52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C57F79F-5CE6-4F13-A5AB-E929FA13686A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C57F79F-5CE6-4F13-A5AB-E929FA13686A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C57F79F-5CE6-4F13-A5AB-E929FA13686A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C57F79F-5CE6-4F13-A5AB-E929FA13686A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26696AE5-11A2-40AF-B6A8-38D2C6E042BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26696AE5-11A2-40AF-B6A8-38D2C6E042BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26696AE5-11A2-40AF-B6A8-38D2C6E042BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26696AE5-11A2-40AF-B6A8-38D2C6E042BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3850D02-4297-416E-8118-42005E39E43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3850D02-4297-416E-8118-42005E39E43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3850D02-4297-416E-8118-42005E39E43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3850D02-4297-416E-8118-42005E39E43D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C77AF33-E908-488F-B0CF-36EC4389A78B}
+	EndGlobalSection
+EndGlobal

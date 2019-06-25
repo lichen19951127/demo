@@ -1,0 +1,9 @@
+F:\资料\资料\demo\Quartz.NetCore\Job\bin\Debug\netcoreapp3.0\Job.deps.json
+F:\资料\资料\demo\Quartz.NetCore\Job\bin\Debug\netcoreapp3.0\Job.dll
+F:\资料\资料\demo\Quartz.NetCore\Job\obj\Debug\netcoreapp3.0\Job.csprojAssemblyReference.cache
+F:\资料\资料\demo\Quartz.NetCore\Job\obj\Debug\netcoreapp3.0\Job.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\Quartz.NetCore\Job\obj\Debug\netcoreapp3.0\Job.AssemblyInfoInputs.cache
+F:\资料\资料\demo\Quartz.NetCore\Job\obj\Debug\netcoreapp3.0\Job.AssemblyInfo.cs
+F:\资料\资料\demo\Quartz.NetCore\Job\bin\Debug\netcoreapp3.0\Job.pdb
+F:\资料\资料\demo\Quartz.NetCore\Job\obj\Debug\netcoreapp3.0\Job.dll
+F:\资料\资料\demo\Quartz.NetCore\Job\obj\Debug\netcoreapp3.0\Job.pdb

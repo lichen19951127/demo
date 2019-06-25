@@ -1,0 +1,26 @@
+用户IP:System.Security.Claims.ClaimsPrincipal
+异常时间：2019/3/5 10:00:57
+异常信息：Attempted to divide by zero.
+错误源：logs
+运行类型：System.DivideByZeroException
+异常函数：Microsoft.AspNetCore.Mvc.IActionResult Index()
+堆栈信息：   at logs.Controllers.TestController.Index() in F:\资料\demo\log4net.core\logs\Controllers\TestController.cs:line 16
+********************************************************************************************
+用户IP:::1
+异常时间：2019/3/5 10:05:31
+异常地址：http://localhost:58504/test/index
+异常信息：Attempted to divide by zero.
+错误源：logs
+运行类型：System.DivideByZeroException
+异常函数：Microsoft.AspNetCore.Mvc.IActionResult Index()
+堆栈信息：   at logs.Controllers.TestController.Index() in F:\资料\demo\log4net.core\logs\Controllers\TestController.cs:line 16
+********************************************************************************************
+用户IP:::1
+异常时间：2019/3/5 10:17:56
+异常地址：http://localhost:58504/test/index
+异常信息：Attempted to divide by zero.
+错误源：logs
+运行类型：System.DivideByZeroException
+异常函数：Microsoft.AspNetCore.Mvc.IActionResult Index()
+堆栈信息：   at logs.Controllers.TestController.Index() in F:\资料\demo\log4net.core\logs\Controllers\TestController.cs:line 16
+********************************************************************************************

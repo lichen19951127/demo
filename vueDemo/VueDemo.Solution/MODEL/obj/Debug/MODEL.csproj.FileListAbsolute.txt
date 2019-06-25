@@ -1,0 +1,11 @@
+E:\大实训\3.课堂练习\vueDemo\VueDemo.Solution\MODEL\bin\Debug\MODEL.dll
+E:\大实训\3.课堂练习\vueDemo\VueDemo.Solution\MODEL\bin\Debug\MODEL.pdb
+E:\大实训\3.课堂练习\vueDemo\VueDemo.Solution\MODEL\obj\Debug\MODEL.csproj.CoreCompileInputs.cache
+E:\大实训\3.课堂练习\vueDemo\VueDemo.Solution\MODEL\obj\Debug\MODEL.dll
+E:\大实训\3.课堂练习\vueDemo\VueDemo.Solution\MODEL\obj\Debug\MODEL.pdb
+E:\大实训\3.课堂练习\vueDemo\VueDemo.Solution\MODEL\obj\Debug\MODEL.csprojAssemblyReference.cache
+E:\案例111\demo\vueDemo\VueDemo.Solution\MODEL\bin\Debug\MODEL.dll
+E:\案例111\demo\vueDemo\VueDemo.Solution\MODEL\bin\Debug\MODEL.pdb
+E:\案例111\demo\vueDemo\VueDemo.Solution\MODEL\obj\Debug\MODEL.csproj.CoreCompileInputs.cache
+E:\案例111\demo\vueDemo\VueDemo.Solution\MODEL\obj\Debug\MODEL.dll
+E:\案例111\demo\vueDemo\VueDemo.Solution\MODEL\obj\Debug\MODEL.pdb

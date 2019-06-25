@@ -1,0 +1,117 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Text;
+using System.Threading.Tasks;
+using ZFS.Library;
+using ZFS.Library.Helper;
+using ZFS.Model;
+using ZFSData;
+
+namespace ZFS.ServerLibrary
+{
+    public partial class BaseService : IBaseService
+    {
+
+        /// <summary>
+        /// 获取菜单树
+        /// </summary>
+        /// <returns></returns>
+        public async Task<byte[]> GetMenuTrees()
+        {
+            var MenuList = await Factory.GetMenuManager().GetMenuTrees();
+            return ZipTools.CompressionObject(MenuList);
+        }
+
+        /// <summary>
+        /// 批量更新
+        /// </summary>
+        /// <param name="MenusBytes"></param>
+        /// <returns></returns>
+        public async Task<byte[]> UpdateMenus(byte[] MenusBytes)
+        {
+            var MenuList = ZipTools.DecompressionObject(MenusBytes) as List<tb_Menu>;
+            var result = await Factory.GetMenuManager().UpdateMenus(MenuList);
+            return ZipTools.CompressionObject(result);
+        }
+
+        /// <summary>
+        /// 查询菜单列表
+        /// </summary>
+        /// <param name="search"></param>
+        /// <returns></returns>
+        public async Task<byte[]> GetModelsByMenu(byte[] search)
+        {
+            var MenuSearch = ZipTools.DecompressionObject(search) as tb_Menu;
+            var MenuList = await Factory.GetMenuManager().GetModels(MenuSearch);
+            byte[] bytes = ZipTools.CompressionObject(MenuList);
+            return bytes;
+        }
+
+        /// <summary>
+        /// 查询菜单列表-分页
+        /// </summary>
+        /// <param name="pageIndex"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="search"></param>
+        /// <param name="Asc"></param>
+        /// <returns></returns>
+        public async Task<byte[]> GetPagingModelsByMenu(int pageIndex, int pageSize, byte[] search,
+            bool Asc = false)
+        {
+            var MenuSearch = ZipTools.DecompressionObject(search) as tb_Menu;
+            var MenuList = await Factory.GetMenuManager().GetPagingModels(pageIndex, pageSize, MenuSearch, Asc);
+            byte[] bytes = ZipTools.CompressionObject(MenuList);
+            return bytes;
+        }
+
+        /// <summary>
+        /// 删除菜单
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        public async Task<byte[]> DeleteEntityByMenu(byte[] entity)
+        {
+            var Menu = ZipTools.DecompressionObject(entity) as tb_Menu;
+            var result = await Factory.GetMenuManager().DeleteEntity(Menu);
+            return ZipTools.CompressionObject(result);
+        }
+
+        /// <summary>
+        /// 更新菜单
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        public async Task<byte[]> UpdateEntityByMenu(byte[] entity)
+        {
+            var Menu = ZipTools.DecompressionObject(entity) as tb_Menu;
+            var result = await Factory.GetMenuManager().UpdateEntity(Menu);
+            return ZipTools.CompressionObject(result);
+        }
+
+        /// <summary>
+        /// 新增菜单
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        public async Task<byte[]> AddEntityByMenu(byte[] entity)
+        {
+            var Menu = ZipTools.DecompressionObject(entity) as tb_Menu;
+            var NewMenu = await Factory.GetMenuManager().UpdateEntity(Menu);
+            return ZipTools.CompressionObject(NewMenu);
+        }
+
+        /// <summary>
+        /// 检查菜单是否存在
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        public async Task<byte[]> ExistEntityByMenu(byte[] entity)
+        {
+            var Menu = ZipTools.DecompressionObject(entity) as tb_Menu;
+            var result = await Factory.GetMenuManager().ExistEntity(Menu);
+            return ZipTools.CompressionObject(result);
+        }
+    }
+}

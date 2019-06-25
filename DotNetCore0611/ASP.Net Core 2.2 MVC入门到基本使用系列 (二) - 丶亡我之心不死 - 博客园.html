@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="origin" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>ASP.Net Core 2.2 MVC入门到基本使用系列 (二) - 丶亡我之心不死 - 博客园</title>
+    <meta property="og:description" content="本教程会对基本的.Net Core 进行一个大概的且不会太深入的讲解, 在您看完本系列之后, 能基本甚至熟练的使用.Net Core进行Web开发, 感受到.Net Core的魅力. 本教程知识点大体" />
+    <link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=KOZafwuaDasEedEenI5aTy8aXH0epbm6VUJ0v3vsT_Q1"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="/skins/sea/bundle-sea.css?v=PPe3jt1rcXPno6kucw0iQU2MWF3DbrvubQHRM0FEMas1"/>
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/sea/bundle-sea-mobile.css?v=yFtgEd5VFXGr9Lo4adjD_iDDW9y0pVJjEZ2io36-rWw1"/>
+    <link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/klwen/rss"/>
+    <link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/klwen/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/klwen/wlwmanifest.xml"/>
+    <script src="//common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script>var currentBlogId=488950;var currentBlogApp='klwen',cb_enable_mathjax=false;var isLogined=true;</script>
+    <script src="/bundles/blog-common.js?v=smtcUT5dhdu_5eEO8CKHYoVc7DPLgEBGzp6zKkstlzg1" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+
+<!--done-->
+<div id="header">
+	
+<!--done-->
+<div class="header">
+	<div class="headerText">
+		<a id="Header1_HeaderTitle" class="headermaintitle" href="https://www.cnblogs.com/klwen/">丶亡我之心不死</a><br>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="mytopmenu" >
+	
+		<div id="mylinks"><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">博客园</a> &nbsp;
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/klwen/">首页</a> &nbsp;
+<a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a> &nbsp;
+<a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E4%B8%B6%E4%BA%A1%E6%88%91%E4%B9%8B%E5%BF%83%E4%B8%8D%E6%AD%BB">联系</a> &nbsp;
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/klwen/rss">订阅</a><a id="blog_nav_rss_image" href="https://www.cnblogs.com/klwen/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>&nbsp;
+<a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a>
+</div>
+		<DIV id="mystats"><div id="blog_stats">
+随笔-4&nbsp;
+评论-17&nbsp;
+文章-0&nbsp;
+<!--trackbacks-0-->
+</div></DIV>
+	
+</div>
+<div id="centercontent" >
+	
+        <div id="post_detail">
+<div class = "post">
+	<h1 class = "postTitle"><a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/klwen/p/10289069.html">ASP.Net Core 2.2 MVC入门到基本使用系列 (二)</a></h1>
+	<div id="cnblogs_post_body" class="blogpost-body"><p><strong>本教程会对基本的.Net Core 进行一个大概的且不会太深入的讲解, 在您看完本系列之后, 能基本甚至熟练的使用.Net Core进行Web开发, 感受到.Net Core的魅力.</strong></p>
+<p><strong>本教程知识点大体分为以下几个阶段</strong></p>
+<ul>
+<li><strong>ASP.Net Core MVC基础知识</strong></li>
+</ul>
+<ol>
+<li><strong>Startup基本配置和理解</strong></li>
+<li><strong>Controller使用</strong></li>
+<li><strong>Razor视图</strong></li>
+<li><strong>传统视图</strong></li>
+<li><strong>Model Validation (基本用法)</strong></li>
+<li><strong>一点点的Vue (教程使用Vue配合)</strong></li>
+</ol>
+<ul>
+<li><strong>SqlSugar ORM (进行数据库交互)</strong></li>
+<li><strong>Entity Framework&nbsp; Core(基本介绍使用)</strong></li>
+<li><strong>授权和身份验证(MVC的, WebApi的不进行介绍)</strong></li>
+<li><strong>安全性</strong></li>
+<li><strong>测试 / 单元测试</strong></li>
+<li><strong>性能基本优化</strong></li>
+<li><strong>日志功能</strong></li>
+<li><strong>CI/CD</strong></li>
+<li><strong>Windows部署</strong></li>
+<li><strong>Linux部署</strong></li>
+</ul>
+<p><span style="font-size: 14pt;"><strong>这一节, 我们来讲解.Net Core 是怎么获取配置信息的.&nbsp;</strong></span></p>
+<p><span style="font-size: 14pt;"><strong>.Net Core配置信息来源主要有以下几种</strong></span></p>
+<p><span style="font-size: 14pt;"><strong>　　1.&nbsp;appsettings.json文件</strong></span></p>
+<p><span style="font-size: 14pt;"><strong>　　2. User Secrets</strong></span></p>
+<p><span style="font-size: 14pt;"><strong>　　3. 环境变量</strong></span></p>
+<p><span style="font-size: 14pt;"><strong>　　4. 命令行参数</strong></span></p>
+<p><span style="font-size: 14pt;"><strong>　　5. 自定义XML等等</strong></span></p>
+<p><span style="font-size: 14px;">在我们上一节新建的项目中, 已经默认有appsettings.json文件了, 并且appsettings.json默认会加载到项目中来, 至于为什么会默认加载, 我们可以通过源码进行分析, VS2017反编译不好用, F12看不到完整的代码, 这里我使用ILSpy反编译了.</span></p>
+<p><span style="font-size: 14px;">我们找到WebHost.CreateDefaultBuilder(args), 也就是CreateDefaultBuilder方法, 看到源码如下图</span></p>
+<p><span style="font-size: 14px;"><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190118172340104-1629089737.png" alt="" /></span></p>
+<p>&nbsp;</p>
+<p>红框部分就是默认的加载appsettings.json文件, 细心的博友可能发现了后面还有个get_EnvironmentName, 这个就是获取当前环境变量, 加载不同的appsettings.json文件, 其实在项目新建好之后, 默认是有appsettings.json和appsettings.Development.json两个json文件的, 那么这样子, .Net Core默认就会把这个两个json配置都进行加载, 如果两个json文件有两个一样的配置, 后面加载的会覆盖前面加载的. 也可以理解为appsettings.json是全局配置,&nbsp;appsettings.Development.json是开发配置. 我们可以做个试验</p>
+<p>我们新建的空MVC项目, 运行默认访问只会输出一句&nbsp;Hello World! , 这是代码默认的, 如图</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190118172837710-1147454322.png" alt="" /></p>
+<p>现在我们把这个字符串配置到 json 文件中试试</p>
+<p>打开appsettings.json, 添加一个配置, 如图</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190118173456227-1125596447.png" alt="" /></p>
+<p>我配置了一个新的欢迎语, 然后去取这个值, 取值需要注入一个IConfiguration接口对象, 才能去获取配置信息, 我们在Startup类里面的Configure方法的参数进行注入, 注入之后进行取值, 修改默认输出的Hello World!, 代码如图</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190118173613345-1526478879.png" alt="" /></p>
+<p>然后F5运行, 可以看到网页上输出Hello .Net Core, 没有问题. 那么接下来我们在appsettings.Development.json里面配置一个相同的配置项, 把值改一下, 如图</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190118173757519-447078378.png" alt="" /></p>
+<p>然后再F5运行项目, 网页就输出Hello .Net Core Development, 可见, .Net Core会根据当前项目环境, 进行加载json文件, 如果有一样的, 会覆盖appsettings.json里面的配置, 也可以理解为优先级的不同, 但是他并不是优先级的不同, 而是进行覆盖</p>
+<p>我们还可以举个例子, 从控制台进行参数配置, 我们进入到项目目录, 运行 dotnet run&nbsp;WelcomeMsg="AAA",&nbsp; 然后访问http://localhost:5000/,&nbsp; 输出的就是AAA, 所以可以说, 命令行参数优先级是最高的</p>
+<p>讲到这里, 相信对IConfiguration接口和配置信息获取使用已经掌握很大一部分了</p>
+<p><strong>好咯, 这一节都写到这里, 下一节讲服务注册和管道</strong></p>
+<p><strong>如果在使用.Net Core遇到任何问题, 都加群进行讨论, 群号: 1群:&nbsp;225982985. 2群:&nbsp;726648662. 3群:&nbsp;654015377</strong></p>
+<p><strong>上一篇:&nbsp;<a id="homepage1_HomePageDays_ctl00_DayList_TitleUrl_1" class="postTitle2" href="https://www.cnblogs.com/klwen/p/10288691.html">ASP.Net Core 2.2 MVC入门到基本使用系列 (一)</a></strong></p>
+<p><strong>下一篇:&nbsp;</strong><a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/klwen/p/10303059.html">ASP.Net Core 2.2 MVC入门到基本使用系列 (三)</a></p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+	<div class = "postDesc">posted on <span id="post-date">2019-01-18 17:56</span> <a href='https://www.cnblogs.com/klwen/'>丶亡我之心不死</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=10289069" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(10289069);return false;">收藏</a></div>
+</div>
+<script type="text/javascript">var allowComments=true,cb_blogId=488950,cb_entryId=10289069,cb_blogApp=currentBlogApp,cb_blogUserGuid='1795614f-09f3-4196-00f8-08d67c7ebe24',cb_entryCreatedDate='2019/1/18 17:56:00';loadViewCount(cb_entryId);var cb_postType=1;var isMarkdown=false;</script>
+
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+  googletag.cmd.push(function() {
+        googletag.defineSlot('/1090369/C1', [300, 250], 'div-gpt-ad-1546353474406-0').addService(googletag.pubads());
+        googletag.defineSlot('/1090369/C2', [468, 60], 'div-gpt-ad-1539008685004-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+  });
+</script>
+<div id='cnblogs_c1' class='c_ad_block'>
+    <div id='div-gpt-ad-1546353474406-0' style='height:250px; width:300px;'></div>
+</div>
+<div id='under_post_news'></div>
+<div id='cnblogs_c2' class='c_ad_block'>
+    <div id='div-gpt-ad-1539008685004-0' style='height:60px; width:468px;'></div>
+</div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+ if(enablePostBottom()) {
+    codeHighlight();
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverT2();
+    deliverC1();
+    deliverC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);  
+}
+</script>
+</div>
+
+    
+</div>
+<div id="leftcontent">
+	
+		<DIV id="leftcontentcontainer">
+			
+<!--done-->
+<div class="newsItem">
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script><br>
+			<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script></DIV>
+	
+</div>
+
+<!--done-->
+<div class="footer">
+	Powered by: <a href="http://www.cnblogs.com">博客园</a>	模板提供：<a href="http://blog.hjenglish.com">沪江博客</a>
+	Copyright &copy;2019 丶亡我之心不死
+</div>
+
+
+
+
+</body>
+</html>

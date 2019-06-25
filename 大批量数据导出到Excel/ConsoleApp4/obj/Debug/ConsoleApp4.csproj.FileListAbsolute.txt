@@ -1,0 +1,7 @@
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp4\obj\Debug\ConsoleApp4.csprojAssemblyReference.cache
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp4\obj\Debug\ConsoleApp4.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp4\bin\Debug\ConsoleApp4.exe.config
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp4\bin\Debug\ConsoleApp4.exe
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp4\bin\Debug\ConsoleApp4.pdb
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp4\obj\Debug\ConsoleApp4.exe
+F:\资料\资料\demo\大批量数据导出到Excel\ConsoleApp4\obj\Debug\ConsoleApp4.pdb

@@ -1,0 +1,17 @@
+E:\案例111\demo\test0118\sqlite\bin\Debug\sqlite.exe.config
+E:\案例111\demo\test0118\sqlite\bin\Debug\sqlite.exe
+E:\案例111\demo\test0118\sqlite\bin\Debug\sqlite.pdb
+E:\案例111\demo\test0118\sqlite\bin\Debug\EntityFramework.dll
+E:\案例111\demo\test0118\sqlite\bin\Debug\EntityFramework.SqlServer.dll
+E:\案例111\demo\test0118\sqlite\bin\Debug\System.Data.SQLite.dll
+E:\案例111\demo\test0118\sqlite\bin\Debug\System.Data.SQLite.EF6.dll
+E:\案例111\demo\test0118\sqlite\bin\Debug\System.Data.SQLite.Linq.dll
+E:\案例111\demo\test0118\sqlite\bin\Debug\EntityFramework.xml
+E:\案例111\demo\test0118\sqlite\bin\Debug\EntityFramework.SqlServer.xml
+E:\案例111\demo\test0118\sqlite\bin\Debug\System.Data.SQLite.xml
+E:\案例111\demo\test0118\sqlite\bin\Debug\System.Data.SQLite.dll.config
+E:\案例111\demo\test0118\sqlite\obj\Debug\sqlite.csprojAssemblyReference.cache
+E:\案例111\demo\test0118\sqlite\obj\Debug\sqlite.csproj.CoreCompileInputs.cache
+E:\案例111\demo\test0118\sqlite\obj\Debug\sqlite.csproj.CopyComplete
+E:\案例111\demo\test0118\sqlite\obj\Debug\sqlite.exe
+E:\案例111\demo\test0118\sqlite\obj\Debug\sqlite.pdb

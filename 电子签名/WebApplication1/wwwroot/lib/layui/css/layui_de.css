@@ -1,0 +1,17 @@
+﻿.layui-form-pane .layui-form-radio {
+    margin-top: 6px;
+    margin-left: 2px;
+}
+.layui-layer layui-layer-page {
+    z-index: 19891015;
+    width: 650px;
+    height: auto;
+    top: 58px;
+    left: 257px;
+}
+
+.layui-unselect layui-form-radio layui-form-radioed {
+    margin-top: 6px;
+    margin-left: 3px;
+    font-size: 12px;
+}

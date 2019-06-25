@@ -1,0 +1,12 @@
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service2\bin\Debug\netcoreapp2.2\Service2.deps.json
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service2\bin\Debug\netcoreapp2.2\Service2.dll
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service2\bin\Debug\netcoreapp2.2\Service2.pdb
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service2\obj\Debug\netcoreapp2.2\Service2.csprojAssemblyReference.cache
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service2\obj\Debug\netcoreapp2.2\Service2.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service2\obj\Debug\netcoreapp2.2\Service2.AssemblyInfoInputs.cache
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service2\obj\Debug\netcoreapp2.2\Service2.AssemblyInfo.cs
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service2\obj\Debug\netcoreapp2.2\Service2.dll
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service2\obj\Debug\netcoreapp2.2\Service2.pdb
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service2\bin\Debug\netcoreapp2.2\IService2.dll
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service2\bin\Debug\netcoreapp2.2\IService2.pdb
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\Service2\obj\Debug\netcoreapp2.2\Service2.csproj.CopyComplete

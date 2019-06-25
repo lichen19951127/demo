@@ -1,0 +1,12 @@
+F:\资料\资料\demo\多线程Test\Test01\bin\Debug\netcoreapp3.0\Test01.exe
+F:\资料\资料\demo\多线程Test\Test01\bin\Debug\netcoreapp3.0\Test01.deps.json
+F:\资料\资料\demo\多线程Test\Test01\bin\Debug\netcoreapp3.0\Test01.runtimeconfig.json
+F:\资料\资料\demo\多线程Test\Test01\bin\Debug\netcoreapp3.0\Test01.runtimeconfig.dev.json
+F:\资料\资料\demo\多线程Test\Test01\bin\Debug\netcoreapp3.0\Test01.dll
+F:\资料\资料\demo\多线程Test\Test01\bin\Debug\netcoreapp3.0\Test01.pdb
+F:\资料\资料\demo\多线程Test\Test01\obj\Debug\netcoreapp3.0\Test01.csprojAssemblyReference.cache
+F:\资料\资料\demo\多线程Test\Test01\obj\Debug\netcoreapp3.0\Test01.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\多线程Test\Test01\obj\Debug\netcoreapp3.0\Test01.AssemblyInfoInputs.cache
+F:\资料\资料\demo\多线程Test\Test01\obj\Debug\netcoreapp3.0\Test01.AssemblyInfo.cs
+F:\资料\资料\demo\多线程Test\Test01\obj\Debug\netcoreapp3.0\Test01.dll
+F:\资料\资料\demo\多线程Test\Test01\obj\Debug\netcoreapp3.0\Test01.pdb

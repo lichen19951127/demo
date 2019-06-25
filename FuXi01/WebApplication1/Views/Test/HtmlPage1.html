@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <video></video>
+    <audio></audio>
+    <canvas></canvas>
+    
+</body>
+</html>
+<script>
+    //WebSql
+    //数据库名称 版本号 描述文本 数据库大小 创建回调
+    var db = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024);
+    var msg;
+
+    db.transaction(function (tx) {
+        tx.executeSql('CREATE TABLE IF NOT EXISTS LOGS (id unique, log)');
+        tx.executeSql('INSERT INTO LOGS (id, log) VALUES (1, "菜鸟教程")');
+        tx.executeSql('INSERT INTO LOGS (id, log) VALUES (2, "www.runoob.com")');
+        msg = '<p>数据表已创建，且插入了两条数据。</p>';
+        document.querySelector('#status').innerHTML = msg;
+    });
+
+    db.transaction(function (tx) {
+        tx.executeSql('SELECT * FROM LOGS', [], function (tx, results) {
+            var len = results.rows.length, i;
+            msg = "<p>查询记录条数: " + len + "</p>";
+            document.querySelector('#status').innerHTML += msg;
+
+            for (i = 0; i < len; i++) {
+                msg = "<p><b>" + results.rows.item(i).log + "</b></p>";
+                document.querySelector('#status').innerHTML += msg;
+            }
+        }, null);
+    });
+
+    //客户端存储数据的两个对象为：
+
+    //localStorage - 用于长久保存整个网站的数据，保存的数据没有过期时间，直到手动去除。
+    //sessionStorage - 用于临时保存同一窗口(或标签页)的数据，在关闭窗口或标签页之后将会删除这些数据。
+</script>

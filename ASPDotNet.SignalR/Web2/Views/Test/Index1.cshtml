@@ -1,0 +1,105 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>聊天室</title>
+    <script src="~/Scripts/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.signalR-2.4.1.min.js" type="text/javascript"></script>
+    <style type="text/css">
+        #chatbox {
+            width: 100%;
+            height: 500px;
+            border: 2px solid blue;
+            padding: 5px;
+            margin: 5px 0px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .linfo {
+        }
+
+        .rinfo {
+            text-align: right;
+        }
+    </style>
+    <script type="text/javascript">
+
+        var clientName = $("#clientname").val();
+        var eChatBox = $("#chatbox");
+        var eUsers = $("#users");
+
+        var KId = '';
+        $(function () {
+
+            var conn = $.connection("/MyConnection", { "Monitoring": "Y" });
+            console.log(conn);
+            conn.start().done(function () {
+                $("#btnSend").click(function () {
+                    var toUserId = eUsers.val();
+
+                    var clsName = "linfo";
+                    if (toUserId != "") {
+                        var myDate = new Date();
+                        var dt = myDate.toLocaleString();        //获取日期与时间
+                        var msg = $("#message").val();
+                        //if (cn == clientName || cn.indexOf("您对") >= 0)
+                        clsName = "rinfo";
+                        var dt =
+                            eChatBox.append("<p class='" + clsName + "'>" + dt + " <strong>你</strong> 说：<br/>" + msg + "</p>");
+                        //eChatBox.scrollTop(eChatBox[0].scrollHeight);
+                        console.log(toUserId);
+                        conn.send(toUserId, {receiveId:toUserId,msg:dt});
+                            //.done(function () {
+                            //    //alert("发送成功！");
+                            //    $("#message").val("").focus();
+                            //})
+                            //.fail(function (e) {
+                            //    alert(e);
+                            //    $("#message").focus();
+                            //});
+                    }
+                    else {
+                        //conn.send(rid);
+                        conn.send($("#message").val())
+                            .done(function () {
+                                //alert("发送成功！");
+                                $("#message").val("").focus();
+                            })
+                            .fail(function (e) {
+                                alert(e);
+                                $("#message").focus();
+                            });
+                    }
+                });
+
+            }).fail(function (msg) {
+                alert(msg);
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <h3>大众聊天室</h3>
+    <div id="chatbox">
+    </div>
+    <div>
+        <span>聊天名称：</span>
+        @Html.TextBox("clientname", ViewBag.ClientName as string, new { @readonly = "readonly", style = "width:300px;" })
+        <span>聊天对象：</span>客服
+        @*@Html.DropDownList("users", ViewBag.OnLineUsers as IEnumerable<SelectListItem>)*@
+        @Html.TextBox("users", ViewBag.UId as string, new { @readonly = "readonly", style = "width:300px;" })
+    </div>
+    <div>
+        @Html.TextArea("message", new { rows = 5, style = "width:500px;" })
+        <input type="button" value="发送消息" id="btnSend" />
+    </div>
+</body>
+</html>

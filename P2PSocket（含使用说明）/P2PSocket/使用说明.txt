@@ -1,0 +1,20 @@
+客户端：
+	依赖dll：P2PSocket.Core.dll
+	配置文件：Client.ini
+	客户端dll：P2PSocket.Client.dll
+
+服务端：
+	依赖dll：P2PSocket.Core.dll
+	配置文件：Server.ini
+	客户端dll：P2PSocket.Server.dll
+	
+使用说明：（服务端：linux-x64，客户端：win-x86）
+	启动服务端：
+		1.将P2PSocket目录下的Server.ini、P2PSocket.Server.dll、P2PSocket.Core.dll拷贝到linux-x64/P2PSocket目录下
+		2.运行linux-x64/P2PSocket.StartUp.dll即可
+	启动客户端：
+		1.将P2PSocket目录下的Client.ini、P2PSocket.Client.dll、P2PSocket.Core.dll拷贝到linux-x64/P2PSocket目录下
+		2.运行linux-x64/P2PSocket.StartUp.exe即可
+
+
+		

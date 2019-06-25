@@ -1,0 +1,13 @@
+bin\Debug\Lucky.exe
+bin\Debug\Lucky.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Lucky.Properties.Resources.resources
+obj\Debug\Lucky.csproj.GenerateResource.Cache
+obj\Debug\Lucky.exe
+obj\Debug\Lucky.pdb
+obj\Debug\Lucky.LoginForm.resources
+obj\Debug\Lucky.ResultForm.resources
+obj\Debug\Lucky.LuckyForm.resources
+obj\Debug\Lucky.SetForm.resources
+obj\Debug\Lucky.ShowForm.resources
+obj\Debug\Lucky.WinnerForm.resources

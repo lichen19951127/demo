@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="origin" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>ASP.Net Core 2.2 MVC入门到基本使用系列 (四) - 丶亡我之心不死 - 博客园</title>
+    <meta property="og:description" content="本教程会对基本的.Net Core 进行一个大概的且不会太深入的讲解, 在您看完本系列之后, 能基本甚至熟练的使用.Net Core进行Web开发, 感受到.Net Core的魅力. 本教程知识点大体" />
+    <link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=KOZafwuaDasEedEenI5aTy8aXH0epbm6VUJ0v3vsT_Q1"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="/skins/sea/bundle-sea.css?v=PPe3jt1rcXPno6kucw0iQU2MWF3DbrvubQHRM0FEMas1"/>
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/sea/bundle-sea-mobile.css?v=yFtgEd5VFXGr9Lo4adjD_iDDW9y0pVJjEZ2io36-rWw1"/>
+    <link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/klwen/rss"/>
+    <link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/klwen/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/klwen/wlwmanifest.xml"/>
+    <script src="//common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script>var currentBlogId=488950;var currentBlogApp='klwen',cb_enable_mathjax=false;var isLogined=true;</script>
+    <script src="/bundles/blog-common.js?v=smtcUT5dhdu_5eEO8CKHYoVc7DPLgEBGzp6zKkstlzg1" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+
+<!--done-->
+<div id="header">
+	
+<!--done-->
+<div class="header">
+	<div class="headerText">
+		<a id="Header1_HeaderTitle" class="headermaintitle" href="https://www.cnblogs.com/klwen/">丶亡我之心不死</a><br>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="mytopmenu" >
+	
+		<div id="mylinks"><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">博客园</a> &nbsp;
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/klwen/">首页</a> &nbsp;
+<a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a> &nbsp;
+<a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E4%B8%B6%E4%BA%A1%E6%88%91%E4%B9%8B%E5%BF%83%E4%B8%8D%E6%AD%BB">联系</a> &nbsp;
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/klwen/rss">订阅</a><a id="blog_nav_rss_image" href="https://www.cnblogs.com/klwen/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>&nbsp;
+<a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a>
+</div>
+		<DIV id="mystats"><div id="blog_stats">
+随笔-4&nbsp;
+评论-17&nbsp;
+文章-0&nbsp;
+<!--trackbacks-0-->
+</div></DIV>
+	
+</div>
+<div id="centercontent" >
+	
+        <div id="post_detail">
+<div class = "post">
+	<h1 class = "postTitle"><a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/klwen/p/10303273.html">ASP.Net Core 2.2 MVC入门到基本使用系列 (四)</a></h1>
+	<div id="cnblogs_post_body" class="blogpost-body"><p><strong>本教程会对基本的.Net Core 进行一个大概的且不会太深入的讲解, 在您看完本系列之后, 能基本甚至熟练的使用.Net Core进行Web开发, 感受到.Net Core的魅力.</strong></p>
+<p><strong>本教程知识点大体分为以下几个阶段</strong></p>
+<ul>
+<li><strong>ASP.Net Core MVC基础知识</strong></li>
+</ul>
+<ol>
+<li><strong>Startup基本配置和理解</strong></li>
+<li><strong>Controller使用</strong></li>
+<li><strong>Razor视图</strong></li>
+<li><strong>传统视图</strong></li>
+<li><strong>Model Validation (基本用法)</strong></li>
+<li><strong>一点点的Vue (教程使用Vue配合)</strong></li>
+</ol>
+<ul>
+<li><strong>SqlSugar ORM (进行数据库交互)</strong></li>
+<li><strong>Entity Framework&nbsp; Core(基本介绍使用)</strong></li>
+<li><strong>授权和身份验证(MVC的, WebApi的不进行介绍)</strong></li>
+<li><strong>安全性</strong></li>
+<li><strong>测试 / 单元测试</strong></li>
+<li><strong>性能基本优化</strong></li>
+<li><strong>日志功能</strong></li>
+<li><strong>CI/CD</strong></li>
+<li><strong>Windows部署</strong></li>
+<li><strong>Linux部署</strong></li>
+</ul>
+<p><span style="font-size: 14pt;"><strong>上一节我们介绍了服务注册和基本的管道执行流程, 并且讲到了中间件, 这一节我们就来详细谈谈中间件这个东西</strong></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14px;">讲中间件, 其实就是讲Startup类里面的&nbsp;ConfigureServices 和&nbsp;Configure 这两个方法</span></p>
+<p><span style="font-size: 14px;">在程序启动类&nbsp;Program 中, 我们在&nbsp;CreateWebHostBuilder 方法中调用了UseStartup方法, 里面用泛型注入了 Startup 类, 那程序就会自动实例化这个类, 并且去执行它里面的&nbsp;ConfigureServices 和&nbsp;Configure 这两个方法. 我们就可以做很多配置操作</span></p>
+<p><span style="font-size: 14px;">首先调用的第一个方法当然就是构造函数, 这里没有没有, 我们不说, 然后就是&nbsp;ConfigureServices 方法. 这个方法上一节已经使用过了, 在这个方法里面, 我们可以注册一些服务或者我们叫自定义服务. 注册完服务, 我们就可以通过依奈注入的方式在其它地方使用这些服务.</span></p>
+<p>&nbsp;</p>
+<p>然后再执行的方法就是&nbsp;Configure 这个方法. 我们能看到&nbsp;Configure 方法默认的第一个参数是&nbsp;IApplicationBuilder 接口, 可以理解为整个程序的根, 我们通过这个接口对象, 可以精确的配置获取启用我们的中间件, 使我们的各种中间件组合起来, 形成一个完美的Web应用程序, 去处理我们的HTTP请求并且做出对应的响应等等.</p>
+<p>&nbsp;</p>
+<p>讲之前, 我们先把</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:csharp;gutter:true;">if (env.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+</pre>
+</div>
+<p>　这几行代码注释掉, 待会再用, 再去解释这个是干嘛用的, 为什么要加个if, 这里先注释掉</p>
+<p>我们看这个代码</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:csharp;gutter:true;">app.Run(async (context) =&gt;
+{
+    var msg = welcome.GetWelcomMsg();
+    await context.Response.WriteAsync(msg);
+});
+</pre>
+</div>
+<p>　　这个app.Run方法, 可以理解为我们自己写的一个中间件, 它什么都不干, 就是为响应输出一个字符串. 其实这是新建项目默认生成的.&nbsp;</p>
+<p>在真实的项目中, 我们基本上不会使用app.Run这个方法去处理我们的请求, 因为我做的事情远远比输出一个字符串复杂很多.</p>
+<p>在实际开发中, 我们通常使用的中间件都是app.Usexxxx开头的, 才能组成一个完成的Web项目, 比如 app.UseMvc / app.UseStaticFiles等等这些方法去启用系统自带的中间件获取别的第三方中间件.</p>
+<p>我们这里启用个ASP.Net Core MVC自带的彩蛋中间件吧, 代码为:&nbsp;app.UseWelcomePage(); 启用默认的MVC欢迎页面. 我们F5执行.&nbsp;</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190122122035711-1586797557.png" alt="" /></p>
+<p>我们能够正常看到出现了一个页面, 而不是简单的一个字符串的输出了</p>
+<p>然后我们尝试改变一下地址栏, 随便写个什么, 可以发现, 我们随便怎么输入地址, 都是进入到欢迎页, 如图 :</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190122122305509-2044131338.png" alt="" /></p>
+<p>到这里, 我们就可以发现, 这个"彩蛋"中间件的"优先级"还是很高的, 在ASP.Net Core MVC发现你使用了这个中间件的时候, 他就不会执行后面的东西了, 或者说不会执行后面的中间件了.</p>
+<p>&nbsp;</p>
+<p>还有呢, 在我们使用中间件的时候, 或者说是在调用app.Usexxxx方法的时候, 一般来说, 这个方法都会接受一个对象参数, 这个参数可以对这个中间件进行一些配置, 下面我们尝试配置一下"彩蛋"中间件, 告诉大家中间件是怎么配置的. 代码是这样的</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:csharp;gutter:true;">app.UseWelcomePage(new WelcomePageOptions
+{
+    Path = "/welcome"
+});
+</pre>
+</div>
+<p>　都能看到, 这里是为"彩蛋"配置了一个地址(路径), 现在我们F5看看效果</p>
+<p>会发现网页输出是个字符串, 那我们在地址后面加上 /welcome 再看看, 可以发现能正常出现"彩蛋"了, 说明这个配置是有效的.</p>
+<p>当然我的目的不是讲这个"彩蛋"怎么使用, 而是给大家介绍中间件怎么使用, 怎么去配置中间件, 基本上所有的中间件都是这个使用方式和配置方式.</p>
+<p>&nbsp;</p>
+<p>既然说到了这里, 那我们来说说 app.Use 这个方法. 这个方法怎么说呢, 就是它比较"底层", 因为app.Use里面的参数类型是&nbsp;RequestDelegate , 也就是当前请求对象的委托, 相对比较"底层", 可以说是当前请求管道的"原型". 我们来写一些代码试试吧.</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:csharp;gutter:true;">app.Use(next =&gt;
+{
+    return async context =&gt; 
+    {
+        if (context.Request.Path.StartsWithSegments("/first"))
+        {
+             await context.Response.WriteAsync("First");
+        }
+        else
+        {
+            await next(context);
+        }
+    };
+});
+</pre>
+</div>
+<p>　我们写的代码如上, 它的意思就是: 当前地址是&nbsp;/first 的时候, 输出 First 这个字符串, 否则就不管, 继续往下执行, 去执行别的中间件, 我们运行看看效果. 可以发现, 默认输出的是 你好, .Net Core 2.2, 当我们把地址后面加上&nbsp;/first 的时候, 输出的就是&nbsp;First, 如图:&nbsp;</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190122124159542-1263237713.png" alt="" /></p>
+<p>我们再输入地址 /welcome 的是, 可以看到"彩蛋"正常出现了, 可以看到, 我们的Use方法是正常的</p>
+<p>在实际开发过程中, 我们很少直接使用app.Use方法去处理我们的底层请求的, 这里只是简单介绍了这个方法, 以及它能干什么.&nbsp;</p>
+<p>知道app.Use是干什么的, 那就把上面的app.Use方法删掉吧, 或者注释掉, 我们下面的教程不会用的.</p>
+<p>接下来, 我们干点坏事, 我们在 app.Run 方法里面手动报个异常出来, 代码如下:&nbsp;</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:csharp;gutter:true;">app.Run(async (context) =&gt;
+{
+    throw new Exception();
+    var msg = welcome.GetWelcomMsg();
+    await context.Response.WriteAsync(msg);
+});
+</pre>
+</div>
+<p>　我们执行项目, 会看到出现了500错误, Chrome浏览器是这样的, 其它浏览器可能不一样</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190122130315581-1847180627.png" alt="" /></p>
+<p>但是我们不希望这样, 我们希望我们能看到异常的详细信息, 这时候, 我们就需要启用一个异常中间件, 就是我们上面注释掉的那个 iif (env.IsDevelopment()) 的代码, 我们把它启用起来, 那么我们的&nbsp;Configure 方法里面代码就是这样的, 如图:</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190122130532272-1012218729.png" alt="" /></p>
+<p>然后我们再F5运行项目, 就是这样的了, 如图:&nbsp;</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190122130619145-385663155.png" alt="" /></p>
+<p>我们的异常就很明显了, 很好排查错误</p>
+<p>至于为什么加个if (env.IsDevelopment()), 这个代码一看就知道意思了吧, 就是当前环境是开发环境的时候, 才启用这个异常显示中间件</p>
+<p>因为我们只希望在开发或者调试的时候, 才显示异常的详细信息, 别的环境不显示, 这样安全一些, 如果不加这个 if , 会在任何环境都会显示详细的错误信息, 这样可能会给我们的Web应用带来安全隐患.</p>
+<p>所以, 我们再加个else , 在else里面启用一个别的中间件, 代码如下:</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:csharp;gutter:true;">if (env.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+else
+{
+    app.UseExceptionHandler();
+}
+</pre>
+</div>
+<p>　这样我们不是在开发环境的时候, 发送异常就是这样的:&nbsp;</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190122131454705-1596222030.png" alt="" /></p>
+<p>不至于暴露一些敏感的信息</p>
+<p>&nbsp;</p>
+<p>我们发现这个启动异常页面中间件的代码写在最上面, 那我们把它移动到&nbsp;Configure 方法的最后面, 会怎么样呢 ? 我们试试, 代码如图:&nbsp;</p>
+<p><img src="https://img2018.cnblogs.com/blog/1590212/201901/1590212-20190122131713080-945699396.png" alt="" /></p>
+<p>可以看到, 我把异常页面中间件移动到最后面启用了, 我们F5运行项目, 会发现, 浏览器不出先异常页面了, 而是直接 500 错误.</p>
+<p>可以知道, 中间件的启用顺序是有依奈关系和顺序的, 不能随便启用的, 需要在正确的位置启用对应的中间件, 如果顺序错了, 可能会导致中间件失效, 如果你在开发过程中, 启用了某个中间件, 但是它却没效果, 可以使用该思路进行排查.</p>
+<p>&nbsp;</p>
+<p><strong>到这里, 这一节就结束了, 到目前为止, 我们的Web应用功能很简单, 就是输出一个字符串和启用了一个"彩蛋".&nbsp;</strong></p>
+<p><strong>我们还讲到了"环境", 比如上面的&nbsp;if (env.IsDevelopment()) 判断是不是开发环境, 那么怎么改变这个环境, 让我们在开发或者试运行和运营环境切换, 加载不同的配置和启用不同的中间件</strong></p>
+<p><strong>我们再下一节讲ASP.Net Core MVC的环境设置</strong></p>
+<p>&nbsp;</p>
+<p><strong><strong><strong>如果在使用.Net Core遇到任何问题, 都加群进行讨论, 群号: 1群:&nbsp;225982985. 2群:&nbsp;726648662. 3群:&nbsp;654015377</strong></strong></strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>上一篇:&nbsp;<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/klwen/p/10303059.html">ASP.Net Core 2.2 MVC入门到基本使用系列 (三)</a></p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+	<div class = "postDesc">posted on <span id="post-date">2019-01-22 13:20</span> <a href='https://www.cnblogs.com/klwen/'>丶亡我之心不死</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=10303273" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(10303273);return false;">收藏</a></div>
+</div>
+<script type="text/javascript">var allowComments=true,cb_blogId=488950,cb_entryId=10303273,cb_blogApp=currentBlogApp,cb_blogUserGuid='1795614f-09f3-4196-00f8-08d67c7ebe24',cb_entryCreatedDate='2019/1/22 13:20:00';loadViewCount(cb_entryId);var cb_postType=1;var isMarkdown=false;</script>
+
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+  googletag.cmd.push(function() {
+        googletag.defineSlot('/1090369/C1', [300, 250], 'div-gpt-ad-1546353474406-0').addService(googletag.pubads());
+        googletag.defineSlot('/1090369/C2', [468, 60], 'div-gpt-ad-1539008685004-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+  });
+</script>
+<div id='cnblogs_c1' class='c_ad_block'>
+    <div id='div-gpt-ad-1546353474406-0' style='height:250px; width:300px;'></div>
+</div>
+<div id='under_post_news'></div>
+<div id='cnblogs_c2' class='c_ad_block'>
+    <div id='div-gpt-ad-1539008685004-0' style='height:60px; width:468px;'></div>
+</div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+ if(enablePostBottom()) {
+    codeHighlight();
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverT2();
+    deliverC1();
+    deliverC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);  
+}
+</script>
+</div>
+
+    
+</div>
+<div id="leftcontent">
+	
+		<DIV id="leftcontentcontainer">
+			
+<!--done-->
+<div class="newsItem">
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script><br>
+			<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script></DIV>
+	
+</div>
+
+<!--done-->
+<div class="footer">
+	Powered by: <a href="http://www.cnblogs.com">博客园</a>	模板提供：<a href="http://blog.hjenglish.com">沪江博客</a>
+	Copyright &copy;2019 丶亡我之心不死
+</div>
+
+
+
+
+</body>
+</html>

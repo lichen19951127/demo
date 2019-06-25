@@ -1,0 +1,5 @@
+F:\14.大实训\demo\UnityTest\IDAL\bin\Debug\IDAL.dll
+F:\14.大实训\demo\UnityTest\IDAL\bin\Debug\IDAL.pdb
+F:\14.大实训\demo\UnityTest\IDAL\obj\Debug\IDAL.csproj.CoreCompileInputs.cache
+F:\14.大实训\demo\UnityTest\IDAL\obj\Debug\IDAL.dll
+F:\14.大实训\demo\UnityTest\IDAL\obj\Debug\IDAL.pdb

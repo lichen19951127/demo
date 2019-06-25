@@ -1,0 +1,13 @@
+F:\资料\资料\demo\AutoMapper\ConsoleApp5\bin\Debug\netcoreapp3.0\ConsoleApp5.exe
+F:\资料\资料\demo\AutoMapper\ConsoleApp5\obj\Debug\netcoreapp3.0\ConsoleApp5.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\AutoMapper\ConsoleApp5\obj\Debug\netcoreapp3.0\ConsoleApp5.AssemblyInfoInputs.cache
+F:\资料\资料\demo\AutoMapper\ConsoleApp5\obj\Debug\netcoreapp3.0\ConsoleApp5.AssemblyInfo.cs
+F:\资料\资料\demo\AutoMapper\ConsoleApp5\bin\Debug\netcoreapp3.0\ConsoleApp5.deps.json
+F:\资料\资料\demo\AutoMapper\ConsoleApp5\bin\Debug\netcoreapp3.0\ConsoleApp5.runtimeconfig.json
+F:\资料\资料\demo\AutoMapper\ConsoleApp5\bin\Debug\netcoreapp3.0\ConsoleApp5.runtimeconfig.dev.json
+F:\资料\资料\demo\AutoMapper\ConsoleApp5\bin\Debug\netcoreapp3.0\ConsoleApp5.dll
+F:\资料\资料\demo\AutoMapper\ConsoleApp5\bin\Debug\netcoreapp3.0\ConsoleApp5.pdb
+F:\资料\资料\demo\AutoMapper\ConsoleApp5\bin\Debug\netcoreapp3.0\AutoMapper.dll
+F:\资料\资料\demo\AutoMapper\ConsoleApp5\obj\Debug\netcoreapp3.0\ConsoleApp5.csproj.CopyComplete
+F:\资料\资料\demo\AutoMapper\ConsoleApp5\obj\Debug\netcoreapp3.0\ConsoleApp5.dll
+F:\资料\资料\demo\AutoMapper\ConsoleApp5\obj\Debug\netcoreapp3.0\ConsoleApp5.pdb

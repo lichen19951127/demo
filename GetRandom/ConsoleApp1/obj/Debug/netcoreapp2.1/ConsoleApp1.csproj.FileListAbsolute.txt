@@ -1,0 +1,11 @@
+F:\14.大实训\demo\GetRandom\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.deps.json
+F:\14.大实训\demo\GetRandom\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.runtimeconfig.json
+F:\14.大实训\demo\GetRandom\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.runtimeconfig.dev.json
+F:\14.大实训\demo\GetRandom\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.dll
+F:\14.大实训\demo\GetRandom\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.pdb
+F:\14.大实训\demo\GetRandom\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csprojAssemblyReference.cache
+F:\14.大实训\demo\GetRandom\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csproj.CoreCompileInputs.cache
+F:\14.大实训\demo\GetRandom\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.AssemblyInfoInputs.cache
+F:\14.大实训\demo\GetRandom\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.AssemblyInfo.cs
+F:\14.大实训\demo\GetRandom\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.dll
+F:\14.大实训\demo\GetRandom\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.pdb

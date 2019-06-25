@@ -1,0 +1,21 @@
+C:/WorkSpace/授课项目/委托Example/Static_Page/bin/Debug/Static_Page.exe.config
+C:/WorkSpace/授课项目/委托Example/Static_Page/bin/Debug/Static_Page.exe
+C:/WorkSpace/授课项目/委托Example/Static_Page/bin/Debug/Static_Page.pdb
+C:/WorkSpace/授课项目/委托Example/Static_Page/obj/Debug/Static_Page.csprojResolveAssemblyReference.cache
+C:/WorkSpace/授课项目/委托Example/Static_Page/obj/Debug/Static_Page.csproj.CoreCompileInputs.cache
+C:/WorkSpace/授课项目/委托Example/Static_Page/obj/Debug/Static_Page.exe
+C:/WorkSpace/授课项目/委托Example/Static_Page/obj/Debug/Static_Page.pdb
+C:/Project/Static_Page/Static_Page/bin/Debug/Static_Page.exe.config
+C:/Project/Static_Page/Static_Page/bin/Debug/Static_Page.exe
+C:/Project/Static_Page/Static_Page/bin/Debug/Static_Page.pdb
+C:/Project/Static_Page/Static_Page/obj/Debug/Static_Page.csprojAssemblyReference.cache
+C:/Project/Static_Page/Static_Page/obj/Debug/Static_Page.csproj.CoreCompileInputs.cache
+C:/Project/Static_Page/Static_Page/obj/Debug/Static_Page.exe
+C:/Project/Static_Page/Static_Page/obj/Debug/Static_Page.pdb
+/Users/zhanghaibin/Documents/Visual Studio 2017/Projects/Static_Page/Static_Page/bin/Debug/Static_Page.exe.config
+/Users/zhanghaibin/Documents/Visual Studio 2017/Projects/Static_Page/Static_Page/bin/Debug/Static_Page.exe
+/Users/zhanghaibin/Documents/Visual Studio 2017/Projects/Static_Page/Static_Page/bin/Debug/Static_Page.pdb
+/Users/zhanghaibin/Documents/Visual Studio 2017/Projects/Static_Page/Static_Page/obj/Debug/Static_Page.csproj.CoreCompileInputs.cache
+/Users/zhanghaibin/Documents/Visual Studio 2017/Projects/Static_Page/Static_Page/obj/Debug/Static_Page.exe
+/Users/zhanghaibin/Documents/Visual Studio 2017/Projects/Static_Page/Static_Page/obj/Debug/Static_Page.pdb
+/Users/zhanghaibin/Documents/Visual Studio 2017/Projects/Static_Page/Static_Page/obj/Debug/Static_Page.csprojAssemblyReference.cache

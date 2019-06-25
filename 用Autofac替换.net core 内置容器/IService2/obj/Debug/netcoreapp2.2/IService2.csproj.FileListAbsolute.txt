@@ -1,0 +1,8 @@
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\IService2\bin\Debug\netcoreapp2.2\IService2.deps.json
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\IService2\bin\Debug\netcoreapp2.2\IService2.dll
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\IService2\bin\Debug\netcoreapp2.2\IService2.pdb
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\IService2\obj\Debug\netcoreapp2.2\IService2.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\IService2\obj\Debug\netcoreapp2.2\IService2.AssemblyInfoInputs.cache
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\IService2\obj\Debug\netcoreapp2.2\IService2.AssemblyInfo.cs
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\IService2\obj\Debug\netcoreapp2.2\IService2.dll
+F:\资料\资料\demo\用Autofac替换.net core 内置容器\IService2\obj\Debug\netcoreapp2.2\IService2.pdb

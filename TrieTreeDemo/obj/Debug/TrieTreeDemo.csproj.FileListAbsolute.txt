@@ -1,0 +1,11 @@
+D:\research\nlp\TrieTreeDemo\obj\Debug\ResolveAssemblyReference.cache
+D:\research\nlp\TrieTreeDemo\bin\Debug\TrieTreeDemo.exe
+D:\research\nlp\TrieTreeDemo\bin\Debug\TrieTreeDemo.pdb
+D:\research\nlp\TrieTreeDemo\obj\Debug\TrieTreeDemo.exe
+D:\research\nlp\TrieTreeDemo\obj\Debug\TrieTreeDemo.pdb
+C:\Users\59428\Desktop\TrieTreeDemo\bin\Debug\TrieTreeDemo.exe
+C:\Users\59428\Desktop\TrieTreeDemo\bin\Debug\TrieTreeDemo.pdb
+C:\Users\59428\Desktop\TrieTreeDemo\obj\Debug\TrieTreeDemo.csprojAssemblyReference.cache
+C:\Users\59428\Desktop\TrieTreeDemo\obj\Debug\TrieTreeDemo.csproj.CoreCompileInputs.cache
+C:\Users\59428\Desktop\TrieTreeDemo\obj\Debug\TrieTreeDemo.exe
+C:\Users\59428\Desktop\TrieTreeDemo\obj\Debug\TrieTreeDemo.pdb

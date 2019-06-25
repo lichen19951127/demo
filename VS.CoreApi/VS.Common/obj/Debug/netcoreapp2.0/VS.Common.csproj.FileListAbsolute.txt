@@ -1,0 +1,9 @@
+D:\BPDM\VS.CoreApi\VS.Common\bin\Debug\netcoreapp2.0\VS.Common.deps.json
+D:\BPDM\VS.CoreApi\VS.Common\bin\Debug\netcoreapp2.0\VS.Common.dll
+D:\BPDM\VS.CoreApi\VS.Common\obj\Debug\netcoreapp2.0\VS.Common.csproj.CoreCompileInputs.cache
+D:\BPDM\VS.CoreApi\VS.Common\obj\Debug\netcoreapp2.0\VS.Common.AssemblyInfoInputs.cache
+D:\BPDM\VS.CoreApi\VS.Common\obj\Debug\netcoreapp2.0\VS.Common.AssemblyInfo.cs
+D:\BPDM\VS.CoreApi\VS.Common\bin\Debug\netcoreapp2.0\VS.Common.pdb
+D:\BPDM\VS.CoreApi\VS.Common\obj\Debug\netcoreapp2.0\VS.Common.dll
+D:\BPDM\VS.CoreApi\VS.Common\obj\Debug\netcoreapp2.0\VS.Common.pdb
+D:\BPDM\VS.CoreApi\VS.Common\obj\Debug\netcoreapp2.0\VS.Common.csprojAssemblyReference.cache

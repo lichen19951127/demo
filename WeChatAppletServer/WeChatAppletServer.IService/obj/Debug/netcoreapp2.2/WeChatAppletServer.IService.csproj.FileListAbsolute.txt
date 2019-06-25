@@ -1,0 +1,12 @@
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.IService\bin\Debug\netcoreapp2.2\WeChatAppletServer.IService.deps.json
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.IService\bin\Debug\netcoreapp2.2\WeChatAppletServer.IService.dll
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.IService\bin\Debug\netcoreapp2.2\WeChatAppletServer.IService.pdb
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.IService\bin\Debug\netcoreapp2.2\WeChatAppletServer.Entity.dll
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.IService\bin\Debug\netcoreapp2.2\WeChatAppletServer.Entity.pdb
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.IService\obj\Debug\netcoreapp2.2\WeChatAppletServer.IService.csprojAssemblyReference.cache
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.IService\obj\Debug\netcoreapp2.2\WeChatAppletServer.IService.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.IService\obj\Debug\netcoreapp2.2\WeChatAppletServer.IService.AssemblyInfoInputs.cache
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.IService\obj\Debug\netcoreapp2.2\WeChatAppletServer.IService.AssemblyInfo.cs
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.IService\obj\Debug\netcoreapp2.2\WeChatAppletServer.IService.csproj.CopyComplete
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.IService\obj\Debug\netcoreapp2.2\WeChatAppletServer.IService.dll
+F:\资料\资料\demo\WeChatAppletServer\WeChatAppletServer.IService\obj\Debug\netcoreapp2.2\WeChatAppletServer.IService.pdb

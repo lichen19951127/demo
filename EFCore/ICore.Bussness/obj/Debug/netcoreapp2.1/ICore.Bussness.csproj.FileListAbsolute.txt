@@ -1,0 +1,24 @@
+F:\Demo\net core\EFCore\ICore.Bussness\bin\Debug\netcoreapp2.1\ICore.Bussness.deps.json
+F:\Demo\net core\EFCore\ICore.Bussness\bin\Debug\netcoreapp2.1\ICore.Bussness.dll
+F:\Demo\net core\EFCore\ICore.Bussness\bin\Debug\netcoreapp2.1\ICore.Bussness.pdb
+F:\Demo\net core\EFCore\ICore.Bussness\obj\Debug\netcoreapp2.1\ICore.Bussness.csprojAssemblyReference.cache
+F:\Demo\net core\EFCore\ICore.Bussness\obj\Debug\netcoreapp2.1\ICore.Bussness.csproj.CoreCompileInputs.cache
+F:\Demo\net core\EFCore\ICore.Bussness\obj\Debug\netcoreapp2.1\ICore.Bussness.AssemblyInfoInputs.cache
+F:\Demo\net core\EFCore\ICore.Bussness\obj\Debug\netcoreapp2.1\ICore.Bussness.AssemblyInfo.cs
+F:\Demo\net core\EFCore\ICore.Bussness\obj\Debug\netcoreapp2.1\ICore.Bussness.dll
+F:\Demo\net core\EFCore\ICore.Bussness\obj\Debug\netcoreapp2.1\ICore.Bussness.pdb
+F:\Demo\net core\EFCore\ICore.Bussness\bin\Debug\netcoreapp2.1\Core.Entity.dll
+F:\Demo\net core\EFCore\ICore.Bussness\bin\Debug\netcoreapp2.1\Core.Entity.pdb
+F:\Demo\net core\EFCore\ICore.Bussness\obj\Debug\netcoreapp2.1\ICore.Bussness.csproj.CopyComplete
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.Bussness\bin\Debug\netcoreapp2.1\Core.Entity.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.Bussness\bin\Debug\netcoreapp2.1\Core.Entity.pdb
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.Bussness\obj\Debug\netcoreapp2.1\ICore.Bussness.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.Bussness\obj\Debug\netcoreapp2.1\ICore.Bussness.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.Bussness\obj\Debug\netcoreapp2.1\ICore.Bussness.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.Bussness\obj\Debug\netcoreapp2.1\ICore.Bussness.AssemblyInfo.cs
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.Bussness\obj\Debug\netcoreapp2.1\ICore.Bussness.csproj.CopyComplete
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.Bussness\obj\Debug\netcoreapp2.1\ICore.Bussness.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.Bussness\obj\Debug\netcoreapp2.1\ICore.Bussness.pdb
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.Bussness\bin\Debug\netcoreapp2.1\ICore.Bussness.deps.json
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.Bussness\bin\Debug\netcoreapp2.1\ICore.Bussness.dll
+C:\Users\admin\Desktop\原型图(1)\EFCore\ICore.Bussness\bin\Debug\netcoreapp2.1\ICore.Bussness.pdb

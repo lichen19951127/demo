@@ -1,0 +1,14 @@
+F:\资料\资料\demo\ASPDotNetCore_WindsorCastle_通用注册\Service\bin\Debug\netcoreapp2.2\Service.deps.json
+F:\资料\资料\demo\ASPDotNetCore_WindsorCastle_通用注册\Service\bin\Debug\netcoreapp2.2\Service.dll
+F:\资料\资料\demo\ASPDotNetCore_WindsorCastle_通用注册\Service\bin\Debug\netcoreapp2.2\Service.pdb
+F:\资料\资料\demo\ASPDotNetCore_WindsorCastle_通用注册\Service\bin\Debug\netcoreapp2.2\Entity.dll
+F:\资料\资料\demo\ASPDotNetCore_WindsorCastle_通用注册\Service\bin\Debug\netcoreapp2.2\IService.dll
+F:\资料\资料\demo\ASPDotNetCore_WindsorCastle_通用注册\Service\bin\Debug\netcoreapp2.2\Entity.pdb
+F:\资料\资料\demo\ASPDotNetCore_WindsorCastle_通用注册\Service\bin\Debug\netcoreapp2.2\IService.pdb
+F:\资料\资料\demo\ASPDotNetCore_WindsorCastle_通用注册\Service\obj\Debug\netcoreapp2.2\Service.csprojAssemblyReference.cache
+F:\资料\资料\demo\ASPDotNetCore_WindsorCastle_通用注册\Service\obj\Debug\netcoreapp2.2\Service.csproj.CoreCompileInputs.cache
+F:\资料\资料\demo\ASPDotNetCore_WindsorCastle_通用注册\Service\obj\Debug\netcoreapp2.2\Service.AssemblyInfoInputs.cache
+F:\资料\资料\demo\ASPDotNetCore_WindsorCastle_通用注册\Service\obj\Debug\netcoreapp2.2\Service.AssemblyInfo.cs
+F:\资料\资料\demo\ASPDotNetCore_WindsorCastle_通用注册\Service\obj\Debug\netcoreapp2.2\Service.csproj.CopyComplete
+F:\资料\资料\demo\ASPDotNetCore_WindsorCastle_通用注册\Service\obj\Debug\netcoreapp2.2\Service.dll
+F:\资料\资料\demo\ASPDotNetCore_WindsorCastle_通用注册\Service\obj\Debug\netcoreapp2.2\Service.pdb

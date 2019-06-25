@@ -1,0 +1,16 @@
+F:\14.大实训\demo\netCore\BLL\bin\Debug\netcoreapp2.1\BLL.deps.json
+F:\14.大实训\demo\netCore\BLL\bin\Debug\netcoreapp2.1\BLL.dll
+F:\14.大实训\demo\netCore\BLL\bin\Debug\netcoreapp2.1\BLL.pdb
+F:\14.大实训\demo\netCore\BLL\bin\Debug\netcoreapp2.1\Entity.dll
+F:\14.大实训\demo\netCore\BLL\bin\Debug\netcoreapp2.1\IBLL.dll
+F:\14.大实训\demo\netCore\BLL\bin\Debug\netcoreapp2.1\IDAL.dll
+F:\14.大实训\demo\netCore\BLL\bin\Debug\netcoreapp2.1\Entity.pdb
+F:\14.大实训\demo\netCore\BLL\bin\Debug\netcoreapp2.1\IBLL.pdb
+F:\14.大实训\demo\netCore\BLL\bin\Debug\netcoreapp2.1\IDAL.pdb
+F:\14.大实训\demo\netCore\BLL\obj\Debug\netcoreapp2.1\BLL.csprojAssemblyReference.cache
+F:\14.大实训\demo\netCore\BLL\obj\Debug\netcoreapp2.1\BLL.csproj.CoreCompileInputs.cache
+F:\14.大实训\demo\netCore\BLL\obj\Debug\netcoreapp2.1\BLL.AssemblyInfoInputs.cache
+F:\14.大实训\demo\netCore\BLL\obj\Debug\netcoreapp2.1\BLL.AssemblyInfo.cs
+F:\14.大实训\demo\netCore\BLL\obj\Debug\netcoreapp2.1\BLL.csproj.CopyComplete
+F:\14.大实训\demo\netCore\BLL\obj\Debug\netcoreapp2.1\BLL.dll
+F:\14.大实训\demo\netCore\BLL\obj\Debug\netcoreapp2.1\BLL.pdb

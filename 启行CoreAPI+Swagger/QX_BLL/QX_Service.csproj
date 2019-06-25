@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+    <ProjectReference Include="..\QX_IBLL\QX_IService.csproj" />
+    <ProjectReference Include="..\QX_Models\QX_Models.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,233 @@
+﻿@{
+    ViewBag.Title = "瀑布流";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section header{
+    <script src="~/Scripts/jquery-ui-1.8.24.min.js"></script>
+    <style type="text/css">
+        .* {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .ClearBoth {
+            clear: both;
+        }
+
+        #bodyContent {
+            width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #head {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        #LefMenue {
+            width: 20%;
+            height: 500px;
+            float: left;
+        }
+
+        #RightContent {
+            width: 75%;
+            float: right;
+            border: thin solid #333;
+        }
+
+        #Footer {
+            margin-top: 10px;
+            width: 100%;
+            height: 40px;
+        }
+
+        .GreyBlock {
+            border: thin solid #333;
+            background-color: #CCC;
+            width: 100%;
+        }
+
+        .Item {
+            float: left;
+            width: 230px;
+            margin: 5px;
+            border: 1px solid #CCC;
+        }
+    </style>
+}
+    <section>
+        <div id="bodyContent" class="container body-content">
+            <div id="head" class="GreyBlock">
+                <h1>Head</h1>
+            </div>
+            <div>
+                <!--Left-->
+                <div id="LefMenue" class="GreyBlock">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+                <!----right-->
+                <div id="RightContent">
+                    <div id="ProductList">
+                        <div class="Item">
+                            <dl>
+                                <dt>
+                                    <img src="~/Content/Shose.jpg" />
+                                </dt>
+                                <dd>What's up with you</dd>
+                            </dl>
+                        </div>
+                        <div class="Item">
+                            <dl>
+                                <dt>
+                                    <img src="~/Content/Shose.jpg" />
+                                </dt>
+                                <dd>What's up with you</dd>
+                            </dl>
+                        </div>
+                        <div class="Item">
+                            <dl>
+                                <dt>
+                                    <img src="~/Content/Shose.jpg" />
+                                </dt>
+                                <dd>What's up with you</dd>
+                            </dl>
+                        </div>
+                        <div class="Item">
+                            <dl>
+                                <dt>
+                                    <img src="~/Content/Shose.jpg" />
+                                </dt>
+                                <dd>What's up with you</dd>
+                            </dl>
+                        </div>
+                        <div class="Item">
+                            <dl>
+                                <dt>
+                                    <img src="~/Content/Shose.jpg" />
+                                </dt>
+                                <dd>What's up with you</dd>
+                            </dl>
+                        </div>
+                        <div class="Item">
+                            <dl>
+                                <dt>
+                                    <img src="~/Content/Shose.jpg" />
+                                </dt>
+                                <dd>What's up with you</dd>
+                            </dl>
+                        </div>
+                        <div class="Item">
+                            <dl>
+                                <dt>
+                                    <img src="~/Content/Shose.jpg" />
+                                </dt>
+                                <dd>What's up with you</dd>
+                            </dl>
+                        </div>
+                        <div class="Item">
+                            <dl>
+                                <dt>
+                                    <img src="~/Content/Shose.jpg" />
+                                </dt>
+                                <dd>What's up with you</dd>
+                            </dl>
+                        </div>
+                        <div class="Item">
+                            <dl>
+                                <dt>
+                                    <img src="~/Content/Shose.jpg" />
+                                </dt>
+                                <dd>What's up with you</dd>
+                            </dl>
+                        </div>
+                        <div class="Item">
+                            <dl>
+                                <dt>
+                                    <img src="~/Content/Shose.jpg" />
+                                </dt>
+                                <dd>What's up with you</dd>
+                            </dl>
+                        </div>
+                        <div class="Item">
+                            <dl>
+                                <dt>
+                                    <img src="~/Content/Shose.jpg" />
+                                </dt>
+                                <dd>What's up with you</dd>
+                            </dl>
+                        </div>
+                        <div class="Item">
+                            <dl>
+                                <dt>
+                                    <img src="~/Content/Shose.jpg" />
+                                </dt>
+                                <dd>What's up with you</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="ClearBoth"></div>
+            </div>
+            <div id="loading" class="loading-wrap">
+                <span class="loading">加载中，请稍后...</span>
+            </div>
+            <div class="ClearBoth"></div>
+            <div id="Footer" class="GreyBlock"></div>
+        </div>
+    </section>
+@section scripts{
+    <script type="text/javascript">
+        var myContainer = $("#ProductList");
+        //用户拖动滚动条，达到底部时ajax加载一次数据
+        var loading = $("#loading").data("on", false);//通过给loading这个div增加属性on，来判断执行一次ajax请求
+        $(window).scroll(function () {
+            if ($("#loading").data("on"))//
+            {
+                return;
+            }
+            var isButtom = $(document).scrollTop() > ($(document).height() - $(window).height() - $("#Footer").height());
+            if (isButtom) {//页面拖到底部了
+                //加载更多数据
+                loading.data("on",true).fadeIn();
+                $.get("@Url.Action("GetData","Product")", function (data) {
+                    var html = CreateHtml(data);
+                    var $newElems = $(html).css({ opacity: 0 }).appendTo(myContainer);
+                    $newElems.animate({ opacity: 1 },3000);
+                    loading.data("on", false);
+                    loading.fadeOut();
+                },"json");
+            }
+        });
+        function CreateHtml(data) {
+            var html = "";
+            if ($.isArray(data)) {
+                for (var i in data) {
+                    //html += "<div class=\"Item\" style=\"height:"+data[i]+"px\">";
+                    html += "<div class=\"Item\">";
+                    html += "<dl>";
+                    html += "<dt>";
+                    html += "<img src=\"../Content/Shose.jpg\" />";
+                    html += "</dt>";
+                    html += "<dd>";
+                    html += "What's up with you " + data[i];
+                    html += "</dd>"
+                    html += "</dl>"
+                    html += "</div>"
+                }
+            }
+            return html;
+        }
+    </script>
+}

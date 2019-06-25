@@ -1,0 +1,15 @@
+﻿.layui-from select {
+    cursor: pointer;
+    display: block;
+    border: 1px solid #DDD;
+    height: 38px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 0px 0px 0px 10px;
+    appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    color:#555;
+}

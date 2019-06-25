@@ -1,0 +1,23 @@
+﻿<script src="~/Scripts/vue.min.js"></script>
+
+
+<div id="vue_det">
+    <h1>site : {{site}}</h1>
+    <h1>url : {{url}}</h1>
+    <h1>{{details()}}</h1>
+</div>
+
+<script type="text/javascript">
+    var data={site:"菜鸟教程",url:"www.runoob.com",alexa:"10000"}
+    var vm = new Vue({
+        el: '#vue_det',
+        data:data,
+        methods: {
+            details: function() {
+                return  this.site + " - 学的不仅是技术，更是梦想！";
+            }
+        }
+    })
+    vm.site="顶你个肺";
+     document.write(vm.site);
+</script>

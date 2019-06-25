@@ -1,0 +1,4 @@
+2019-03-05 11:27:34,285 [1] INFO  NETCorelog4net [(null)] - NETCorelog4net log
+2019-03-05 11:27:34,360 [1] INFO  NETCorelog4net [(null)] - test log
+2019-03-05 11:27:34,360 [1] ERROR NETCorelog4net [(null)] - error
+2019-03-05 11:27:34,361 [1] INFO  NETCorelog4net [(null)] - linezero

@@ -1,0 +1,90 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/axios.js"></script>
+    <script src="~/Contents/BootstrapSouce/js/bootstrap.min.js"></script>
+    <link href="~/Contents/BootstrapSouce/css/bootstrap.css" rel="stylesheet" />
+  
+
+</head>
+<body >
+    <div>
+        <h3>vue.js 无刷新的增删改查</h3>
+    </div>
+    <div id="app">
+        <table class="table table-bordered">
+            <tr>
+                <td>姓名</td>
+                <td>
+                <input type="text"  v-model="Name"/>
+                </td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td>
+                    <input id="Radio1" type="radio" value="男"  v-model="Sex"/><span>男</span>
+                    <input id="Radio1" type="radio" value="女"   v-model="Sex"/><span>女</span>
+                </td>
+            </tr>
+            <tr>
+                <td>角色</td>
+                <td>
+                    <select id="Select1" v-model="Role">
+                        <option value="请选择">--请选择--</option>
+                        <option v-for="role in RoleList" v-bind:value="role">
+                            {{role}}
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   
+                </td>
+                <td>
+                    <a href="#" v-on:click="addUser(Name,Sex,Role)">添加</a>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <script type="text/javascript">
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                RoleList: ['董事', '部门主管', '部门经理', '部门主管'],
+                Sex: "",
+                Role:"请选择"
+            },
+            methods: {
+                addUser: function (name, sex, role) {
+                    axios.post('@Url.Action("Add", "User")', { user: { Name: name, Sex: sex, Role: role} }).then(
+                        (response) => {
+                            alert("添加成功")
+                          
+                         
+                        },
+                        (response) => {
+                            alert(response.status);
+                        }
+                    ).catch(function (response) {
+                        alert(response);
+                    });
+                },
+          
+           
+            },
+         
+        });
+    </script>
+</body>
+</html>

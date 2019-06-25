@@ -1,0 +1,45 @@
+﻿@page
+@model CRUD.Pages.Users.IndexModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <a asp-page="./Add">新增</a>
+
+    <form method="post">
+        <table class="table">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>操作</th>
+            </tr>
+            @foreach (var user in Model.Users)
+            {
+        <tr>
+            <td>@user.Id</td>
+            <td>@user.Name</td>
+            <td>
+                <a class="btn btn-primary" asp-page="./Update" asp-route-id="@user.Id">编辑</a>&nbsp;
+                <button class="btn btn-warning"
+                        type="submit"
+                        asp-page-handler="delete"
+                        asp-route-id="@user.Id">
+                    Delete
+                </button>
+
+            </td>
+        </tr>
+            }
+
+        </table>
+    </form>
+</body>
+</html>

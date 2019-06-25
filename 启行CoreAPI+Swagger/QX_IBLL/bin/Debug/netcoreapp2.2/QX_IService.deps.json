@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "QX_IService/1.0.0": {
+        "dependencies": {
+          "QX_Models": "1.0.0"
+        },
+        "runtime": {
+          "QX_IService.dll": {}
+        }
+      },
+      "QX_Models/1.0.0": {
+        "runtime": {
+          "QX_Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "QX_IService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "QX_Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

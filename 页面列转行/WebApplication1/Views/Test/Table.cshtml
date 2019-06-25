@@ -1,0 +1,201 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Table</title>
+
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+
+
+    <style>
+
+        tr > :first-child {
+            width: 66px;
+            position: relative;
+            border: solid #A4D3EE 1px;
+        }
+    </style>
+</head>
+<body>
+      <div id="freezing" style="overflow:scroll" onscroll="javascript:freezing()">
+        <table id="timetable">
+            <thead>
+                <tr id="tablehead">
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script type="text/javascript">
+        //固定表格首列
+        function freezing() {
+            $("#freezing").find("tr>:first-child").css("left", $("#freezing").scrollLeft() - 1);
+            var thWidth = $("#tablehead>:first").width();
+            var step = thWidth / 5;//分5次过渡，每step像素过渡一次
+            var scroLeft = $("#freezing").scrollLeft(); //向左滚动的距离
+            var tol = Math.ceil(scroLeft / step);
+            if (scroLeft == 0) {
+                $("tr>:first-child").removeClass("isScrolling").css("opacity", 11);
+            } else if (scroLeft > 0 && scroLeft < thWidth) {
+                $("tr>:first-child").addClass("isScrolling").css("opacity", 11);
+            } else {
+                $("tr>:first-child").addClass("isScrolling").css("opacity", 11);
+            }
+        }
+    </script>
+</body>
+        </html>

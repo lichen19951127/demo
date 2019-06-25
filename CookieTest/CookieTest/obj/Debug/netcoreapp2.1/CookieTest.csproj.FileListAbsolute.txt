@@ -1,0 +1,8 @@
+F:\14.大实训\demo\CookieTest\CookieTest\bin\Debug\netcoreapp2.1\CookieTest.deps.json
+F:\14.大实训\demo\CookieTest\CookieTest\bin\Debug\netcoreapp2.1\CookieTest.runtimeconfig.json
+F:\14.大实训\demo\CookieTest\CookieTest\bin\Debug\netcoreapp2.1\CookieTest.runtimeconfig.dev.json
+F:\14.大实训\demo\CookieTest\CookieTest\bin\Debug\netcoreapp2.1\CookieTest.dll
+F:\14.大实训\demo\CookieTest\CookieTest\obj\Debug\netcoreapp2.1\CookieTest.csprojAssemblyReference.cache
+F:\14.大实训\demo\CookieTest\CookieTest\obj\Debug\netcoreapp2.1\CookieTest.csproj.CoreCompileInputs.cache
+F:\14.大实训\demo\CookieTest\CookieTest\obj\Debug\netcoreapp2.1\CookieTest.AssemblyInfoInputs.cache
+F:\14.大实训\demo\CookieTest\CookieTest\obj\Debug\netcoreapp2.1\CookieTest.AssemblyInfo.cs
